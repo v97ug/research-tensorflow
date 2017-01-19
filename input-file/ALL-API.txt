@@ -1,0 +1,2829 @@
+apiKey 
+appendParameter 
+client 
+conf 
+headers 
+httpResponse 
+image 
+logger 
+message 
+oauth 
+postParameter 
+TWITTER_VERIFY_CREDENTIALS_JSON_V1_1 
+uploadUrl 
+
+                       OAuthAuthorization oauth) 
+                       java.lang.String apiKey,                        OAuthAuthorization oauth) 
+Method and Description
+appendHttpParameters(HttpParameter[] src,                     HttpParameter[] dst) 
+equals(java.lang.Object o) 
+generateVerifyCredentialsAuthorizationHeader() 
+generateVerifyCredentialsAuthorizationURL(java.lang.String verifyCredentialsUrl) 
+hashCode() 
+postUpload() 
+preUpload() 
+toString() 
+upload() 
+upload(java.io.File file) 
+upload(java.io.File file,       java.lang.String message) 
+upload(java.lang.String imageFileName,       java.io.InputStream imageBody) 
+upload(java.lang.String imageFileName,       java.io.InputStream imageBody,screenName 
+serialVersionUID 
+userId 
+
+
+           java.lang.String tokenSecret) 
+           java.lang.String tokenSecret,            long userId) 
+Method and Description
+equals(java.lang.Object o) 
+getScreenName() 
+getUserId() 
+hashCode() 
+toString() getLanguage() Returns the language used to render Twitter's UII for this user.
+getScreenName() Returns the user's screen name
+getSleepEndTime() Returns sleep end time.
+getSleepStartTime() Returns sleep start time.
+getTimeZone() Returns the timezone configured for this user.
+getTrendLocations() Return the user's trend locations
+isAlwaysUseHttps() Returns true if the wants to always access twitter using HTTPS.
+isDiscoverableByEmail() Returns true if the user is discoverable by email.
+isGeoEnabled() Return true if the user is enabling geo location
+isSleepTimeEnabled() Returns true if the user enabled sleep time.getFavorites() Returns the number of total favorites.
+getFollowers() Returns the number of total followers.
+getFriends() Returns the number of total friends.
+getUpdates() Returns the number of total updates.getOAuth2TokenAsync() Obtains an OAuth 2 Bearer token.getOAuthAccessTokenAsync() Returns an access token associated with this instance.
+getOAuthAccessTokenAsync(RequestToken requestToken) Retrieves an access token associated with the supplied request token and sets userId.
+getOAuthAccessTokenAsync(RequestToken requestToken,                         java.lang.String oauthVerifier)
+getOAuthAccessTokenAsync(java.lang.String oauthVerifier) Retrieves an access token.
+getOAuthAccessTokenAsync(java.lang.String screenName,                         java.lang.String password)
+getOAuthRequestTokenAsync() Retrieves a request token
+getOAuthRequestTokenAsync(java.lang.String callbackURL) Retrieves a request token
+getOAuthRequestTokenAsync(java.lang.String callbackURL,                          java.lang.String xAuthAccessType)
+getOAuthRequestTokenAsync(java.lang.String callbackURL,                          java.lang.String xAuthAccessType,addListener(TwitterListener listener) Adds twitter listener
+shutdown() Shuts down internal dispatcher thread shared across all AsyncTwitter instances.conf 
+serialVersionUID 
+SINGLETON 
+
+Creates an AsyncTwitterFactory with the root configuration, with no listener.
+Creates an AsyncTwitterFactory with the given configuration.
+Creates a AsyncTwitterFactory with the specified config tree, with given listener
+Method and Description
+getInstance() Returns an instance associated with the configuration bound to this factory.
+getInstance(AccessToken accessToken) Returns a OAuth Authenticated instance.
+getInstance(Authorization auth) 
+getInstance(Twitter twitter) a kind of copy factory method constructs an AsyncTwitter from Twitter instance
+getSingleton() Returns default singleton AsyncTwitter instance.AsyncTwitterImpl.AsyncTask 
+Field and Description
+dispatcher 
+listeners 
+serialVersionUID 
+twitter 
+
+                Authorization auth) 
+Method and Description
+addListener(TwitterListener listener) Adds twitter listener
+createBlock(long userId) Blocks the user specified in the ID parameter as the authenticating user.
+createBlock(java.lang.String screenName) Blocks the user specified in the ID parameter as the authenticating user.
+createFavorite(long id) Favorites the status specified in the ID parameter as the authenticating user.
+createFriendship(long userId) Allows the authenticating users to follow the user specified in the ID parameter.
+createFriendship(long userId,                 boolean follow)
+createFriendship(java.lang.String screenName) Allows the authenticating users to follow the user specified in the ID parameter.
+createFriendship(java.lang.String screenName,                 boolean follow)
+createMute(long userId) Mutes the user specified in the ID parameter as the authenticating user.
+createMute(java.lang.String screenName) Mutes the user specified in the screen name parameter as the authenticating user.
+createSavedSearch(java.lang.String query) Creates a saved search for the authenticated user.
+createUserList(java.lang.String listName,               boolean isPublicList,
+createUserListMember(long listId,                     long userId)
+createUserListMember(long ownerId,                     java.lang.String slug,
+createUserListMembers(long listId,                      long... userIds)
+createUserListMembers(long listId,                      java.lang.String... screenNames)
+createUserListMembers(long ownerId,                      java.lang.String slug,
+createUserListMembers(long ownerId,                      java.lang.String slug,
+createUserListSubscription(long listId) Make the authenticated user follow the specified list.
+createUserListSubscription(long ownerId,                           java.lang.String slug)
+destroyBlock(long userId) Un-blocks the user specified in the ID parameter as the authenticating user.
+destroyBlock(java.lang.String screenName) Un-blocks the user specified in the ID parameter as the authenticating user.
+destroyDirectMessage(long id) Destroys the direct message specified in the required ID parameter.
+destroyFavorite(long id) Favorites the status specified in the ID parameter as the authenticating user.
+destroyFriendship(long userId) Allows the authenticating users to unfollow the user specified in the ID parameter.
+destroyFriendship(java.lang.String screenName) Allows the authenticating users to unfollow the user specified in the ID parameter.
+destroyMute(long userId) Un-mutes the user specified in the ID parameter as the authenticating user.
+destroyMute(java.lang.String screenName) Un-mutes the user specified in the screen name parameter as the authenticating user.
+destroySavedSearch(int id) Destroys a saved search for the authenticated user.
+destroyStatus(long statusId) Destroys the status specified by the required ID parameter.
+destroyUserList(long listId) Deletes the specified list.
+destroyUserList(long ownerId,                java.lang.String slug)
+destroyUserListMember(long listId,                      long userId)
+destroyUserListMember(long ownerId,                      java.lang.String slug,
+destroyUserListSubscription(long listId) Unsubscribes the authenticated user form the specified list.
+destroyUserListSubscription(long ownerId,                            java.lang.String slug)
+equals(java.lang.Object o) 
+getAccountSettings() Returns the current trend, geo and sleep time information for the authenticating user.
+getAPIConfiguration() Returns the current configuration used by Twitter including twitter.com slugs which are not usernames, maximum photo resolutions, and t.co URL lengths.
+getAvailableTrends() Retrieves the locations that Twitter has trending topic information for.
+getBlocksIDs() Returns an array of numeric user ids the authenticating user is blocking.
+getBlocksIDs(long cursor) Returns an array of numeric user ids the authenticating user is blocking.
+getBlocksList() Returns a list of user objects that the authenticating user is blocking.
+getBlocksList(long cursor) Returns a list of user objects that the authenticating user is blocking.
+getClosestTrends(GeoLocation location) Returns the locations that Twitter has trending topic information for, closest to a specified location.
+getContributees(long userId) Returns an array of users that the specified user can contribute to.
+getContributees(java.lang.String screenName) Returns an array of users that the specified user can contribute to.
+getContributors(long userId) Returns an array of users who can contribute to the specified account.
+getContributors(java.lang.String screenName) Returns an array of users who can contribute to the specified account.
+getDirectMessages() Returns a list of the direct messages sent to the authenticating user.
+getDirectMessages(Paging paging) Returns a list of the direct messages sent to the authenticating user.
+getDispatcher() 
+getFavorites() Returns the 20 most recent favorite statuses for the authenticating user or user specified by the ID parameter in the requested format.
+getFavorites(long userId) Returns the 20 most recent favorite statuses for the authenticating user or user specified by the ID parameter in the requested format.
+getFavorites(long userId,             Paging paging)
+getFavorites(Paging paging) Returns the 20 most recent favorite statuses for the authenticating user or user specified by the ID parameter in the requested format.
+getFavorites(java.lang.String screenName) Returns the 20 most recent favorite statuses for the authenticating user or user specified by the ID parameter in the requested format.
+getFavorites(java.lang.String screenName,             Paging paging)
+getFollowersIDs(long cursor) Returns an array of numeric IDs for every user the specified user is followed by.
+getFollowersIDs(long userId,                long cursor)
+getFollowersIDs(java.lang.String screenName,                long cursor)
+getFollowersList(long userId,                 long cursor)
+getFollowersList(java.lang.String screenName,                 long cursor)
+getFriendsIDs(long cursor) Returns an array of numeric IDs for every user the authenticating user is following.
+getFriendsIDs(long userId,              long cursor)
+getFriendsIDs(java.lang.String screenName,              long cursor)
+getFriendsList(long userId,               long cursor)
+getFriendsList(java.lang.String screenName,               long cursor)
+getGeoDetails(java.lang.String id) Find out more details of a place that was returned from the PlacesGeoResourcesAsync.reverseGeoCode(twitter4j.GeoQuery) method.
+getHomeTimeline() Returns the 20 most recent statuses, including retweets, posted by the authenticating user and that user's friends.
+getHomeTimeline(Paging paging) Returns the 20 most recent statuses, including retweets, posted by the authenticating user and that user's friends.
+getIncomingFriendships(long cursor) Returns an array of numeric IDs for every user who has a pending request to follow the authenticating user.
+getLanguages() Returns the list of languages supported by Twitter along with their ISO 639-1 code.
+getMemberSuggestions(java.lang.String categorySlug) Access the users in a given category of the Twitter suggested user list and return their most recent status if they are not a protected user.
+getMentions() Returns the 20 most recent replies (status updates prefixed with @username) to the authenticating user.
+getMentions(Paging paging) Returns the 20 most recent replies (status updates prefixed with @username) to the authenticating user.
+getMutesIDs(long cursor) Returns an array of numeric user ids the authenticating user is muting.
+getMutesList(long cursor) Returns a list of user objects that the authenticating user is muting.
+getOAuth2Token() Obtains an OAuth 2 Bearer token.
+getOAuth2TokenAsync() Obtains an OAuth 2 Bearer token.
+getOAuthAccessToken() Returns an access token associated with this instance.
+getOAuthAccessToken(RequestToken requestToken) Retrieves an access token associated with the supplied request token and sets userId.
+getOAuthAccessToken(RequestToken requestToken,                    java.lang.String oauthVerifier)
+getOAuthAccessToken(java.lang.String oauthVerifier) Retrieves an access token.
+getOAuthAccessToken(java.lang.String screenName,                    java.lang.String password)
+getOAuthAccessTokenAsync() Returns an access token associated with this instance.
+getOAuthAccessTokenAsync(RequestToken requestToken) Retrieves an access token associated with the supplied request token and sets userId.
+getOAuthAccessTokenAsync(RequestToken requestToken,                         java.lang.String oauthVerifier)
+getOAuthAccessTokenAsync(java.lang.String oauthVerifier) Retrieves an access token.
+getOAuthAccessTokenAsync(java.lang.String screenName,                         java.lang.String password)
+getOAuthRequestToken() Retrieves a request token
+getOAuthRequestToken(java.lang.String callbackUrl) Retrieves a request token
+getOAuthRequestTokenAsync() Retrieves a request token
+getOAuthRequestTokenAsync(java.lang.String callbackURL) Retrieves a request token
+getOAuthRequestTokenAsync(java.lang.String callbackURL,                          java.lang.String xAuthAccessType)
+getOAuthRequestTokenAsync(java.lang.String callbackURL,                          java.lang.String xAuthAccessType,
+getOEmbed(OEmbedRequest req) Returns information allowing the creation of an embedded representation of a Tweet on third party sites.
+getOutgoingFriendships(long cursor) Returns an array of numeric IDs for every protected user for whom the authenticating user has a pending follow request.
+getPlaceTrends(int woeid) Returns the top 10 trending topics for a specific WOEID, if trending information is available for it.
+getPrivacyPolicy() Returns Twitter's Privacy Policy.
+getRateLimitStatus() Returns the current rate limits for methods belonging to the specified resource families.
+getRateLimitStatus(java.lang.String... resources) Returns the current rate limits for methods belonging to the specified resource families.
+getRetweets(long statusId) Returns up to 100 of the first retweets of a given tweet.
+getRetweetsOfMe() Returns the 20 most recent tweets of the authenticated user that have been retweeted by others.
+getRetweetsOfMe(Paging paging) Returns the 20 most recent tweets of the authenticated user that have been retweeted by others.
+getSavedSearches() Returns the authenticated user's saved search queries.
+getSentDirectMessages() Returns a list of the direct messages sent by the authenticating user.
+getSentDirectMessages(Paging paging) Returns a list of the direct messages sent by the authenticating user.
+getSimilarPlaces(GeoLocation location,                 java.lang.String name,
+getSuggestedUserCategories() Access to Twitter's suggested user list.
+getTermsOfService() Returns Twitter's' Terms of Service.
+getUserListMembers(long listId,                   long cursor)
+getUserListMembers(long ownerId,                   java.lang.String slug,
+getUserListMemberships(long cursor) List the lists the authenticating user has been added to.
+getUserListMemberships(long listMemberId,                       long cursor)
+getUserListMemberships(long listMemberId,                       long cursor,
+getUserListMemberships(java.lang.String listMemberScreenName,                       long cursor)
+getUserListMemberships(java.lang.String listMemberScreenName,                       long cursor,
+getUserLists(long listOwnerUserId) List the lists of the specified user.
+getUserLists(java.lang.String listOwnerScreenName) List the lists of the specified user.
+getUserListStatuses(long listId,                    Paging paging)
+getUserListStatuses(long ownerId,                    java.lang.String slug,
+getUserListSubscribers(long listId,                       long cursor)
+getUserListSubscribers(long ownerId,                       java.lang.String slug,
+getUserListSubscriptions(java.lang.String listOwnerScreenName,                         long cursor)
+getUserSuggestions(java.lang.String categorySlug) Access the users in a given category of the Twitter suggested user list.
+getUserTimeline() Returns the 20 most recent statuses posted from the authenticating user.
+getUserTimeline(long userId) Returns the 20 most recent statuses posted from the authenticating user.
+getUserTimeline(long userId,                Paging paging)
+getUserTimeline(Paging paging) Returns the 20 most recent statuses posted from the authenticating user.
+getUserTimeline(java.lang.String screenName) Returns the 20 most recent statuses posted from the authenticating user.
+getUserTimeline(java.lang.String screenName,                Paging paging)
+hashCode() 
+invalidateOAuth2Token() Revokes an issued OAuth 2 Bearer Token.
+lookup(long... ids) Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.
+lookupFriendships(long... ids) Returns the relationship of the authenticating user to the specified users.
+lookupFriendships(java.lang.String... screenNames) Returns the relationship of the authenticating user to the specified users.
+lookupUsers(long... ids) Return up to 100 users worth of extended information, specified by either ID, screen name, or combination of the two.
+lookupUsers(java.lang.String... screenNames) Return up to 100 users worth of extended information, specified by either ID, screen name, or combination of the two.
+removeProfileBanner() Removes the uploaded profile banner for the authenticating user.
+reportSpam(long userId) The user specified in the id is blocked by the authenticated user and reported as a spammer.
+reportSpam(java.lang.String screenName) The user specified in the id is blocked by the authenticated user and reported as a spammer.
+retweetStatus(long statusId) Retweets a tweet.
+reverseGeoCode(GeoQuery query) Search for places (cities and neighborhoods) that can be attached to a statuses/update.
+search(Query query) Returns tweets that match a specified query.
+searchPlaces(GeoQuery query) Search for places that can be attached to a statuses/update.
+searchUsers(java.lang.String query,            int page)
+sendDirectMessage(long userId,                  java.lang.String text)
+sendDirectMessage(java.lang.String screenName,                  java.lang.String text)
+setOAuth2Token(OAuth2Token oauth2Token) Sets the OAuth 2 Bearer token.
+setOAuthAccessToken(AccessToken accessToken) Sets the access token
+setOAuthConsumer(java.lang.String consumerKey,                 java.lang.String consumerSecret)
+showDirectMessage(long id) Returns a single direct message, specified by an id parameter.
+showFriendship(long sourceId,               long targetId)
+showFriendship(java.lang.String sourceScreenName,               java.lang.String targetScreenName)
+showSavedSearch(int id) Retrieve the data for a saved search owned by the authenticating user specified by the given id.
+showStatus(long id) Returns a single status, specified by the id parameter below.
+showUser(long userId) Returns extended information of a given user, specified by ID or screen name as per the required id parameter.
+showUser(java.lang.String screenName) Returns extended information of a given user, specified by ID or screen name as per the required id parameter.
+showUserList(long listId) Show the specified list.
+showUserList(long ownerId,             java.lang.String slug)
+showUserListMembership(long listId,                       long userId)
+showUserListMembership(long ownerId,                       java.lang.String slug,
+showUserListSubscription(long listId,                         long userId)
+showUserListSubscription(long ownerId,                         java.lang.String slug,
+shutdown() Shuts down internal dispatcher thread shared across all AsyncTwitter instances.
+toString() 
+updateAccountSettings(java.lang.Integer trend_locationWoeid,                      java.lang.Boolean sleep_timeEnabled,
+updateFriendship(long userId,                 boolean enableDeviceNotification,
+updateFriendship(java.lang.String screenName,                 boolean enableDeviceNotification,
+updateProfile(java.lang.String name,              java.lang.String url,
+updateProfileBackgroundImage(java.io.File image,                             boolean tile)
+updateProfileBackgroundImage(java.io.InputStream image,                             boolean tile)
+updateProfileBanner(java.io.File image) Uploads a profile banner on behalf of the authenticating user.
+updateProfileBanner(java.io.InputStream image) Uploads a profile banner on behalf of the authenticating user.
+updateProfileColors(java.lang.String profileBackgroundColor,                    java.lang.String profileTextColor,
+updateProfileImage(java.io.File image) Updates the authenticating user's profile image.
+updateProfileImage(java.io.InputStream image) Updates the authenticating user's profile image.
+updateStatus(StatusUpdate latestStatus) Updates the authenticating user's status.
+updateStatus(java.lang.String statusText) Updates the authenticating user's status.
+updateUserList(long listId,               java.lang.String newListName,
+updateUserList(long ownerId,               java.lang.String slug,
+verifyCredentials() Returns an HTTP 200 OK response code and a representation of the requesting user if authentication was successful; returns a 401 status code and an error message if not.getAuthorizationHeader(HttpRequest req) 
+isEnabled() Returns true if authorization credentials are set.getOAuth2AccessToken() 
+getOAuth2TokenType() 
+getOAuthAccessToken() 
+getOAuthAccessTokenSecret() 
+getOAuthConsumerKey() 
+getOAuthConsumerSecret() 
+getPassword() 
+getUser() 
+Method and Description
+getInstance(Configuration conf) basic 
+password 
+serialVersionUID 
+userId 
+
+                  java.lang.String password) 
+Method and Description
+encodeBasicAuthenticationString() 
+equals(java.lang.Object o) 
+getAuthorizationHeader(HttpRequest req) 
+getPassword() 
+getUserId() 
+hashCode() 
+isEnabled() #{inheritDoc}
+toString() getName() 
+getSize() 
+getSlug() CharacterUtil() 
+Method and Description
+count(java.lang.String text) Counts the length of the tweet
+isExceedingLengthLimitation(java.lang.String text) Returns true if the length of the string is exceeding length limitationgetAsyncNumThreads() 
+getContributingTo() 
+getDispatcherImpl() 
+getHttpClientConfiguration() 
+getHttpStreamingReadTimeout() 
+getLoggerFactory() 
+getMediaProvider() 
+getMediaProviderAPIKey() 
+getMediaProviderParameters() 
+getOAuth2AccessToken() 
+getOAuth2InvalidateTokenURL() 
+getOAuth2Scope() 
+getOAuth2TokenType() 
+getOAuth2TokenURL() 
+getOAuthAccessToken() 
+getOAuthAccessTokenSecret() 
+getOAuthAccessTokenURL() 
+getOAuthAuthenticationURL() 
+getOAuthAuthorizationURL() 
+getOAuthConsumerKey() 
+getOAuthConsumerSecret() 
+getOAuthRequestTokenURL() 
+getPassword() 
+getRestBaseURL() 
+getSiteStreamBaseURL() 
+getStreamBaseURL() 
+getUploadBaseURL() 
+getUser() 
+getUserStreamBaseURL() 
+isApplicationOnlyAuthEnabled() 
+isDaemonEnabled() 
+isDebugEnabled() 
+isIncludeEntitiesEnabled() 
+isIncludeMyRetweetEnabled() 
+isJSONStoreEnabled() 
+isMBeanEnabled() 
+isStallWarningsEnabled() 
+isTrimUserEnabled() 
+isUserStreamRepliesAllEnabled() 
+isUserStreamWithFollowingsEnabled() ConfigurationBase.MyHttpClientConfiguration 
+Field and Description
+applicationOnlyAuthEnabled 
+asyncNumThreads 
+contributingTo 
+daemonEnabled 
+debug 
+dispatcherImpl 
+httpConf 
+httpRetryCount 
+httpRetryIntervalSeconds 
+httpStreamingReadTimeout 
+includeEntitiesEnabled 
+includeMyRetweetEnabled 
+instances 
+jsonStoreEnabled 
+loggerFactory 
+mbeanEnabled 
+mediaProvider 
+mediaProviderAPIKey 
+mediaProviderParameters 
+oAuth2AccessToken 
+oAuth2InvalidateTokenURL 
+oAuth2Scope 
+oAuth2TokenType 
+oAuth2TokenURL 
+oAuthAccessToken 
+oAuthAccessTokenSecret 
+oAuthAccessTokenURL 
+oAuthAuthenticationURL 
+oAuthAuthorizationURL 
+oAuthConsumerKey 
+oAuthConsumerSecret 
+oAuthRequestTokenURL 
+password 
+restBaseURL 
+serialVersionUID 
+siteStreamBaseURL 
+stallWarningsEnabled 
+streamBaseURL 
+trimUserEnabled 
+uploadBaseURL 
+user 
+userStreamBaseURL 
+userStreamRepliesAllEnabled 
+userStreamWithFollowingsEnabled 
+Constructor and Description
+ConfigurationBase() 
+Method and Description
+cacheInstance() 
+cacheInstance(ConfigurationBase conf) 
+dumpConfiguration() 
+equals(java.lang.Object o) 
+fixURL(boolean useSSL,       java.lang.String url) 
+getAsyncNumThreads() 
+getContributingTo() 
+getDispatcherImpl() 
+getHttpClientConfiguration() 
+getHttpStreamingReadTimeout() 
+getInstance(ConfigurationBase configurationBase) 
+getLoggerFactory() 
+getMediaProvider() 
+getMediaProviderAPIKey() 
+getMediaProviderParameters() 
+getOAuth2AccessToken() 
+getOAuth2InvalidateTokenURL() 
+getOAuth2Scope() 
+getOAuth2TokenType() 
+getOAuth2TokenURL() 
+getOAuthAccessToken() 
+getOAuthAccessTokenSecret() 
+getOAuthAccessTokenURL() 
+getOAuthAuthenticationURL() 
+getOAuthAuthorizationURL() 
+getOAuthConsumerKey() 
+getOAuthConsumerSecret() 
+getOAuthRequestTokenURL() 
+getPassword() 
+getRestBaseURL() 
+getSiteStreamBaseURL() 
+getStreamBaseURL() 
+getUploadBaseURL() 
+getUser() 
+getUserStreamBaseURL() 
+hashCode() 
+isApplicationOnlyAuthEnabled() 
+isDaemonEnabled() 
+isDebugEnabled() 
+isIncludeEntitiesEnabled() 
+isIncludeMyRetweetEnabled() 
+isJSONStoreEnabled() 
+isMBeanEnabled() 
+isStallWarningsEnabled() 
+isTrimUserEnabled() 
+isUserStreamRepliesAllEnabled() 
+isUserStreamWithFollowingsEnabled() 
+readResolve() 
+setApplicationOnlyAuthEnabled(boolean applicationOnlyAuthEnabled) 
+setAsyncNumThreads(int asyncNumThreads) 
+setContributingTo(long contributingTo) 
+setDaemonEnabled(boolean daemonEnabled) 
+setDebug(boolean debug) 
+setDispatcherImpl(java.lang.String dispatcherImpl) 
+setGZIPEnabled(boolean gzipEnabled) 
+setHttpConnectionTimeout(int connectionTimeout) 
+setHttpProxyHost(java.lang.String proxyHost) 
+setHttpProxyPassword(java.lang.String proxyPassword) 
+setHttpProxyPort(int proxyPort) 
+setHttpProxyUser(java.lang.String proxyUser) 
+setHttpReadTimeout(int readTimeout) 
+setHttpRetryCount(int retryCount) 
+setHttpRetryIntervalSeconds(int retryIntervalSeconds) 
+setHttpStreamingReadTimeout(int httpStreamingReadTimeout) 
+setIncludeEntitiesEnabled(boolean includeEntitiesEnabled) 
+setIncludeMyRetweetEnabled(boolean enabled) 
+setJSONStoreEnabled(boolean enabled) 
+setLoggerFactory(java.lang.String loggerImpl) 
+setMBeanEnabled(boolean enabled) 
+setMediaProvider(java.lang.String mediaProvider) 
+setMediaProviderAPIKey(java.lang.String mediaProviderAPIKey) 
+setMediaProviderParameters(java.util.Properties props) 
+setOAuth2AccessToken(java.lang.String oAuth2AccessToken) 
+setOAuth2InvalidateTokenURL(java.lang.String oAuth2InvalidateTokenURL) 
+setOAuth2Scope(java.lang.String oAuth2Scope) 
+setOAuth2TokenType(java.lang.String oAuth2TokenType) 
+setOAuth2TokenURL(java.lang.String oAuth2TokenURL) 
+setOAuthAccessToken(java.lang.String oAuthAccessToken) 
+setOAuthAccessTokenSecret(java.lang.String oAuthAccessTokenSecret) 
+setOAuthAccessTokenURL(java.lang.String oAuthAccessTokenURL) 
+setOAuthAuthenticationURL(java.lang.String oAuthAuthenticationURL) 
+setOAuthAuthorizationURL(java.lang.String oAuthAuthorizationURL) 
+setOAuthConsumerKey(java.lang.String oAuthConsumerKey) 
+setOAuthConsumerSecret(java.lang.String oAuthConsumerSecret) 
+setOAuthRequestTokenURL(java.lang.String oAuthRequestTokenURL) 
+setPassword(java.lang.String password) 
+setPrettyDebugEnabled(boolean prettyDebug) 
+setRestBaseURL(java.lang.String restBaseURL) 
+setSiteStreamBaseURL(java.lang.String siteStreamBaseURL) 
+setStallWarningsEnabled(boolean stallWarningsEnabled) 
+setStreamBaseURL(java.lang.String streamBaseURL) 
+setTrimUserEnabled(boolean enabled) 
+setUploadBaseURL(java.lang.String uploadBaseURL) 
+setUser(java.lang.String user) 
+setUserStreamBaseURL(java.lang.String siteStreamBaseURL) 
+setUserStreamRepliesAllEnabled(boolean enabled) 
+setUserStreamWithFollowingsEnabled(boolean enabled) 
+toString() configurationBean 
+
+
+Method and Description
+build() 
+checkNotBuilt() 
+setApplicationOnlyAuthEnabled(boolean applicationOnlyAuthEnabled) 
+setAsyncNumThreads(int asyncNumThreads) 
+setContributingTo(long contributingTo) 
+setDaemonEnabled(boolean daemonEnabled) 
+setDebugEnabled(boolean debugEnabled) 
+setDispatcherImpl(java.lang.String dispatcherImpl) 
+setGZIPEnabled(boolean gzipEnabled) 
+setHttpConnectionTimeout(int httpConnectionTimeout) 
+setHttpProxyHost(java.lang.String httpProxyHost) 
+setHttpProxyPassword(java.lang.String httpProxyPassword) 
+setHttpProxyPort(int httpProxyPort) 
+setHttpProxyUser(java.lang.String httpProxyUser) 
+setHttpReadTimeout(int httpReadTimeout) 
+setHttpRetryCount(int httpRetryCount) 
+setHttpRetryIntervalSeconds(int httpRetryIntervalSeconds) 
+setHttpStreamingReadTimeout(int httpStreamingReadTimeout) 
+setIncludeEntitiesEnabled(boolean enabled) 
+setIncludeMyRetweetEnabled(boolean enabled) 
+setJSONStoreEnabled(boolean enabled) 
+setMBeanEnabled(boolean enabled) 
+setMediaProvider(java.lang.String mediaProvider) 
+setMediaProviderAPIKey(java.lang.String mediaProviderAPIKey) 
+setMediaProviderParameters(java.util.Properties props) 
+setOAuth2AccessToken(java.lang.String oAuth2AccessToken) 
+setOAuth2InvalidateTokenURL(java.lang.String invalidateTokenURL) 
+setOAuth2Scope(java.lang.String oAuth2Scope) 
+setOAuth2TokenType(java.lang.String oAuth2TokenType) 
+setOAuth2TokenURL(java.lang.String oAuth2TokenURL) 
+setOAuthAccessToken(java.lang.String oAuthAccessToken) 
+setOAuthAccessTokenSecret(java.lang.String oAuthAccessTokenSecret) 
+setOAuthAccessTokenURL(java.lang.String oAuthAccessTokenURL) 
+setOAuthAuthenticationURL(java.lang.String oAuthAuthenticationURL) 
+setOAuthAuthorizationURL(java.lang.String oAuthAuthorizationURL) 
+setOAuthConsumerKey(java.lang.String oAuthConsumerKey) 
+setOAuthConsumerSecret(java.lang.String oAuthConsumerSecret) 
+setOAuthRequestTokenURL(java.lang.String oAuthRequestTokenURL) 
+setPassword(java.lang.String password) 
+setPrettyDebugEnabled(boolean prettyDebugEnabled) 
+setRestBaseURL(java.lang.String restBaseURL) 
+setSiteStreamBaseURL(java.lang.String siteStreamBaseURL) 
+setStreamBaseURL(java.lang.String streamBaseURL) 
+setTrimUserEnabled(boolean enabled) 
+setUser(java.lang.String user) 
+setUserStreamBaseURL(java.lang.String userStreamBaseURL) 
+setUserStreamRepliesAllEnabled(boolean enabled) 
+setUserStreamWithFollowingsEnabled(boolean enabled) CONFIGURATION_IMPL 
+DEFAULT_CONFIGURATION_FACTORY 
+factory 
+
+
+Method and Description
+getInstance() 
+getInstance(java.lang.String configTreePath) dispose() clean up resources acquired by this factory.
+getInstance() returns the root configuration
+getInstance(java.lang.String configTreePath) returns the configuration specified by the pathonCleanUp() called before thread gets cleaned up
+onConnect() called after connection was established
+onDisconnect() called after connection was disconnectedaccept(T t) includeFollowingsActivity 
+includeUserChanges 
+replies 
+serialVersionUID 
+users 
+with 
+
+                 JSONObject json) 
+Method and Description
+equals(java.lang.Object o) 
+getUsers() 
+hashCode() 
+isIncludeFollowingsActivity() 
+isIncludeUserChanges() 
+isReplies() 
+isWith() 
+toString() START 
+Method and Description
+getNextCursor() 
+getPreviousCursor() 
+hasNext() 
+hasPrevious() DataObjectFactory() Deprecated. 
+Method and Description
+createAccountTotals(java.lang.String rawJSON) Deprecated. 
+createCategory(java.lang.String rawJSON) Deprecated. 
+createDirectMessage(java.lang.String rawJSON) Deprecated. 
+createIDs(java.lang.String rawJSON) Deprecated. 
+createLocation(java.lang.String rawJSON) Deprecated. 
+createObject(java.lang.String rawJSON) Deprecated. 
+createOEmbed(java.lang.String rawJSON) Deprecated. 
+createPlace(java.lang.String rawJSON) Deprecated. 
+createRateLimitStatus(java.lang.String rawJSON) Deprecated. 
+createRelationship(java.lang.String rawJSON) Deprecated. 
+createSavedSearch(java.lang.String rawJSON) Deprecated. 
+createStatus(java.lang.String rawJSON) Deprecated. 
+createTrend(java.lang.String rawJSON) Deprecated. 
+createTrends(java.lang.String rawJSON) Deprecated. 
+createUser(java.lang.String rawJSON) Deprecated. 
+createUserList(java.lang.String rawJSON) Deprecated. 
+getRawJSON(java.lang.Object obj) Deprecated. getCreatedAt() 
+getId() 
+getRecipient() 
+getRecipientId() 
+getRecipientScreenName() 
+getSender() 
+getSenderId() 
+getSenderScreenName() 
+getText() destroyDirectMessage(long id) Destroys the direct message specified in the required ID parameter.
+getDirectMessages() Returns a list of the direct messages sent to the authenticating user.
+getDirectMessages(Paging paging) Returns a list of the direct messages sent to the authenticating user.
+getDMImageAsStream(java.lang.String url) Returns a stream of the image included in direct messages.
+getSentDirectMessages() Returns a list of the direct messages sent by the authenticating user.
+getSentDirectMessages(Paging paging) Returns a list of the direct messages sent by the authenticating user.
+sendDirectMessage(long userId,                  java.lang.String text)
+sendDirectMessage(java.lang.String screenName,                  java.lang.String text)
+showDirectMessage(long id) Returns a single direct message, specified by an id parameter.destroyDirectMessage(long id) Destroys the direct message specified in the required ID parameter.
+getDirectMessages() Returns a list of the direct messages sent to the authenticating user.
+getDirectMessages(Paging paging) Returns a list of the direct messages sent to the authenticating user.
+getSentDirectMessages() Returns a list of the direct messages sent by the authenticating user.
+getSentDirectMessages(Paging paging) Returns a list of the direct messages sent by the authenticating user.
+sendDirectMessage(long userId,                  java.lang.String text)
+sendDirectMessage(java.lang.String screenName,                  java.lang.String text)
+showDirectMessage(long id) Returns a single direct message, specified by an id parameter.getExtendedMediaEntities() Returns an array of ExtendedMediaEntities if media of extended_entities are available in the tweet.
+getHashtagEntities() Returns an array if hashtag mentioned in the tweet.
+getMediaEntities() Returns an array of MediaEntities if medias are available in the tweet.
+getSymbolEntities() Returns an array of SymbolEntities if medias are available in the tweet.
+getURLEntities() Returns an array if URLEntity mentioned in the tweet.
+getUserMentionEntities() Returns an array of user mentions in the tweet.hexString 
+lineNumberHash 
+serialVersionUID 
+stackLineHash 
+
+
+                  java.lang.String[] inclusionFilter) 
+Method and Description
+asHexString() 
+equals(java.lang.Object o) 
+getLineNumberHash() 
+getLineNumberHashAsHex() 
+getStackLineHash() 
+getStackLineHashAsHex() 
+hashCode() 
+toHexString(int value) 
+toString() getBitrate() 
+getContentType() 
+getUrl() ExtendedMediaEntity.Variant 
+Method and Description
+getVideoAspectRatioHeight() 
+getVideoAspectRatioWidth() 
+getVideoDurationMillis() 
+getVideoVariants() createFavorite(long id) Favorites the status specified in the ID parameter as the authenticating user.
+destroyFavorite(long id) Un-favorites the status specified in the ID parameter as the authenticating user.
+getFavorites() Returns the 20 most recent favorite statuses for the authenticating user or user specified by the ID parameter in the requested format.
+getFavorites(long userId) Returns the 20 most recent favorite statuses for the authenticating user or user specified by the ID parameter in the requested format.
+getFavorites(long userId,             Paging paging)
+getFavorites(Paging paging) Returns the 20 most recent favorite statuses for the authenticating user or user specified by the ID parameter in the requested format.
+getFavorites(java.lang.String screenName) Returns the 20 most recent favorite statuses for the authenticating user or user specified by the ID parameter in the requested format.
+getFavorites(java.lang.String screenName,             Paging paging)createFavorite(long id) Favorites the status specified in the ID parameter as the authenticating user.
+destroyFavorite(long id) Favorites the status specified in the ID parameter as the authenticating user.
+getFavorites() Returns the 20 most recent favorite statuses for the authenticating user or user specified by the ID parameter in the requested format.
+getFavorites(long id) Returns the 20 most recent favorite statuses for the authenticating user or user specified by the ID parameter in the requested format.
+getFavorites(long userId,             Paging paging)
+getFavorites(Paging paging) Returns the 20 most recent favorite statuses for the authenticating user or user specified by the ID parameter in the requested format.
+getFavorites(java.lang.String screenName) Returns the 20 most recent favorite statuses for the authenticating user or user specified by the ID parameter in the requested format.
+getFavorites(java.lang.String screenName,             Paging paging)count 
+filterLevel 
+follow 
+language 
+locations 
+serialVersionUID 
+track 
+
+Creates a new FilterQuery
+           long... follow) Creates a new FilterQuery
+           long[] follow,            java.lang.String[] track)
+           long[] follow,            java.lang.String[] track,
+           long[] follow,            java.lang.String[] track,
+Creates a new FilterQuery
+Creates a new FilterQuery
+Method and Description
+asHttpParameterArray(HttpParameter stallWarningsParam) 
+count(int count) Sets count
+equals(java.lang.Object o) 
+filterLevel(java.lang.String filterLevel) The filter level limits what tweets appear in the stream to those with
+follow(long... follow) Sets follow
+hashCode() 
+language(java.lang.String... language) Sets language
+locations(double[]... locations) Sets locations
+toLocationsString(double[][] keywords) 
+toString() 
+track(java.lang.String... track) Sets trackcreateFriendship(long userId) Allows the authenticating users to follow the user specified in the ID parameter.
+createFriendship(long userId,                 boolean follow)
+createFriendship(java.lang.String screenName) Allows the authenticating users to follow the user specified in the ID parameter.
+createFriendship(java.lang.String screenName,                 boolean follow)
+destroyFriendship(long userId) Allows the authenticating users to unfollow the user specified in the ID parameter.
+destroyFriendship(java.lang.String screenName) Allows the authenticating users to unfollow the user specified in the ID parameter.
+getFollowersIDs(long cursor) Returns an array of numeric IDs for every user the specified user is followed by.
+getFollowersIDs(long userId,                long cursor)
+getFollowersIDs(long userId,                long cursor,
+getFollowersIDs(java.lang.String screenName,                long cursor)
+getFollowersIDs(java.lang.String screenName,                long cursor,
+getFollowersList(long userId,                 long cursor)
+getFollowersList(long userId,                 long cursor,
+getFollowersList(long userId,                 long cursor,
+getFollowersList(java.lang.String screenName,                 long cursor)
+getFollowersList(java.lang.String screenName,                 long cursor,
+getFollowersList(java.lang.String screenName,                 long cursor,
+getFriendsIDs(long cursor) Returns an array of numeric IDs for every user the authenticating user is following.
+getFriendsIDs(long userId,              long cursor)
+getFriendsIDs(long userId,              long cursor,
+getFriendsIDs(java.lang.String screenName,              long cursor)
+getFriendsIDs(java.lang.String screenName,              long cursor,
+getFriendsList(long userId,               long cursor)
+getFriendsList(long userId,               long cursor,
+getFriendsList(long userId,               long cursor,
+getFriendsList(java.lang.String screenName,               long cursor)
+getFriendsList(java.lang.String screenName,               long cursor,
+getFriendsList(java.lang.String screenName,               long cursor,
+getIncomingFriendships(long cursor) Returns an array of numeric IDs for every user who has a pending request to follow the authenticating user.
+getNoRetweetsFriendships() Returns a collection of user IDs that the currently authenticated user does not want to receive retweets from.
+getOutgoingFriendships(long cursor) Returns an array of numeric IDs for every protected user for whom the authenticating user has a pending follow request.
+lookupFriendships(long... ids) Returns the relationship of the authenticating user to the specified users.
+lookupFriendships(java.lang.String... screenNames) Returns the relationship of the authenticating user to the specified users.
+showFriendship(long sourceId,               long targetId)
+showFriendship(java.lang.String sourceScreenName,               java.lang.String targetScreenName)
+updateFriendship(long userId,                 boolean enableDeviceNotification,
+updateFriendship(java.lang.String screenName,                 boolean enableDeviceNotification,createFriendship(long userId) Allows the authenticating users to follow the user specified in the ID parameter.
+createFriendship(long userId,                 boolean follow)
+createFriendship(java.lang.String screenName) Allows the authenticating users to follow the user specified in the ID parameter.
+createFriendship(java.lang.String screenName,                 boolean follow)
+destroyFriendship(long userId) Allows the authenticating users to unfollow the user specified in the ID parameter.
+destroyFriendship(java.lang.String screenName) Allows the authenticating users to unfollow the user specified in the ID parameter.
+getFollowersIDs(long cursor) Returns an array of numeric IDs for every user the specified user is followed by.
+getFollowersIDs(long userId,                long cursor)
+getFollowersIDs(java.lang.String screenName,                long cursor)
+getFollowersList(long userId,                 long cursor)
+getFollowersList(java.lang.String screenName,                 long cursor)
+getFriendsIDs(long cursor) Returns an array of numeric IDs for every user the authenticating user is following.
+getFriendsIDs(long userId,              long cursor)
+getFriendsIDs(java.lang.String screenName,              long cursor)
+getFriendsList(long userId,               long cursor)
+getFriendsList(java.lang.String screenName,               long cursor)
+getIncomingFriendships(long cursor) Returns an array of numeric IDs for every user who has a pending request to follow the authenticating user.
+getOutgoingFriendships(long cursor) Returns an array of numeric IDs for every protected user for whom the authenticating user has a pending follow request.
+lookupFriendships(long... ids) Returns the relationship of the authenticating user to the specified users.
+lookupFriendships(java.lang.String... screenNames) Returns the relationship of the authenticating user to the specified users.
+showFriendship(long sourceId,               long targetId)
+showFriendship(java.lang.String sourceScreenName,               java.lang.String targetScreenName)
+updateFriendship(long userId,                 boolean enableDeviceNotification,
+updateFriendship(java.lang.String screenName,                 boolean enableDeviceNotification,getId() 
+getName() 
+getScreenName() 
+isFollowedBy() 
+isFollowing() latitude 
+longitude 
+serialVersionUID 
+
+
+           double longitude) Creates a GeoLocation instance
+Method and Description
+equals(java.lang.Object o) 
+getLatitude() returns the latitude of the geo location
+getLongitude() returns the longitude of the geo location
+hashCode() 
+toString() accuracy 
+granularity 
+ip 
+location 
+maxResults 
+query 
+serialVersionUID 
+
+Creates a GeoQuery with the specified location
+Creates a GeoQuery with the specified IP address
+Method and Description
+accuracy(java.lang.String accuracy) 
+appendParameter(java.lang.String name,                double value,
+appendParameter(java.lang.String name,                int value,
+appendParameter(java.lang.String name,                java.lang.String value,
+asHttpParameterArray() 
+equals(java.lang.Object o) 
+getAccuracy() 
+getGranularity() 
+getIp() 
+getLocation() 
+getMaxResults() 
+getQuery() Gets the query to filter Place results from geo/search
+granularity(java.lang.String granularity) 
+hashCode() 
+maxResults(int maxResults) 
+setAccuracy(java.lang.String accuracy) Sets a hint on the "region" in which to search.
+setGranularity(java.lang.String granularity) Sets the minimal granularity of data to return.
+setMaxResults(int maxResults) Sets a hint as to the number of results to return.
+setQuery(java.lang.String query) 
+toString() getEnd() Returns the index of the end character of the hashtag.
+getStart() Returns the index of the start character of the hashtag.
+getText() Returns the text of the hashtag without #.getCode() 
+getName() 
+getStatus() HelpResources.Language 
+Method and Description
+getAPIConfiguration() Returns the current configuration used by Twitter including twitter.com slugs which are not usernames, maximum photo resolutions, and t.co URL lengths.
+getLanguages() Returns the list of languages supported by Twitter along with their ISO 639-1 code.
+getPrivacyPolicy() Returns Twitter's Privacy Policy.
+getRateLimitStatus() Returns the current rate limits for methods belonging to the specified resource families.
+getRateLimitStatus(java.lang.String... resources) Returns the current rate limits for methods belonging to the specified resource families.
+getTermsOfService() Returns Twitter's' Terms of Service.getAPIConfiguration() Returns the current configuration used by Twitter including twitter.com slugs which are not usernames, maximum photo resolutions, and t.co URL lengths.
+getLanguages() Returns the list of languages supported by Twitter along with their ISO 639-1 code.
+getPrivacyPolicy() Returns Twitter's Privacy Policy.
+getRateLimitStatus() Returns the current rate limits for methods belonging to the specified resource families.
+getRateLimitStatus(java.lang.String... resources) Returns the current rate limits for methods belonging to the specified resource families.
+getTermsOfService() Returns Twitter's' Terms of Service.getIDs() 
+getNextCursor() 
+getPreviousCursor() 
+hasNext() 
+hasPrevious() upload(java.io.File image) 
+upload(java.io.File image,       java.lang.String message) 
+upload(java.lang.String imageFileName,       java.io.InputStream imageBody) 
+upload(java.lang.String imageFileName,       java.io.InputStream imageBody,apiKey 
+conf 
+defaultMediaProvider 
+
+Creates an ImageUploadFactory with default configuration
+Creates an ImageUploadFactory with the specified configuration
+Method and Description
+getInstance() Returns an ImageUpload instance associated with the default media provider
+getInstance(Authorization authorization) Returns an ImageUpload instance associated with the default media provider
+getInstance(MediaProvider mediaProvider) Returns an ImageUploader instance associated with the specified media provider
+getInstance(MediaProvider mediaProvider,            Authorization authorization)           OAuthAuthorization oauth) 
+Method and Description
+postUpload() 
+preUpload() 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Method and Description
+valueOf(java.lang.String name) Returns the enum constant of this type with the specified name.
+values() Returns an array containing the constants of this enum type, inJSONObjectType.Type 
+Field and Description
+logger 
+
+
+Method and Description
+determine(JSONObject json) Determine the respective object type for a given JSONObject.createUserList(java.lang.String listName,               boolean isPublicList,
+createUserListMember(long listId,                     long userId)
+createUserListMember(long ownerId,                     java.lang.String slug,
+createUserListMember(java.lang.String ownerScreenName,                     java.lang.String slug,
+createUserListMembers(long listId,                      long... userIds)
+createUserListMembers(long listId,                      java.lang.String... screenNames)
+createUserListMembers(long ownerId,                      java.lang.String slug,
+createUserListMembers(long ownerId,                      java.lang.String slug,
+createUserListMembers(java.lang.String ownerScreenName,                      java.lang.String slug,
+createUserListMembers(java.lang.String ownerScreenName,                      java.lang.String slug,
+createUserListSubscription(long listId) Make the authenticated user follow the specified list.
+createUserListSubscription(long ownerId,                           java.lang.String slug)
+createUserListSubscription(java.lang.String ownerScreenName,                           java.lang.String slug)
+destroyUserList(long listId) Deletes the specified list.
+destroyUserList(long ownerId,                java.lang.String slug)
+destroyUserList(java.lang.String ownerScreenName,                java.lang.String slug)
+destroyUserListMember(long listId,                      long userId)
+destroyUserListMember(long listId,                      java.lang.String screenName)
+destroyUserListMember(long ownerId,                      java.lang.String slug,
+destroyUserListMember(java.lang.String ownerScreenName,                      java.lang.String slug,
+destroyUserListMembers(long listId,                       long[] userIds)
+destroyUserListMembers(long listId,                       java.lang.String[] screenNames)
+destroyUserListMembers(java.lang.String ownerScreenName,                       java.lang.String slug,
+destroyUserListSubscription(long listId) Unsubscribes the authenticated user form the specified list.
+destroyUserListSubscription(long ownerId,                            java.lang.String slug)
+destroyUserListSubscription(java.lang.String ownerScreenName,                            java.lang.String slug)
+getUserListMembers(long listId,                   int count,
+getUserListMembers(long listId,                   int count,
+getUserListMembers(long listId,                   long cursor)
+getUserListMembers(long ownerId,                   java.lang.String slug,
+getUserListMembers(long ownerId,                   java.lang.String slug,
+getUserListMembers(long ownerId,                   java.lang.String slug,
+getUserListMembers(java.lang.String ownerScreenName,                   java.lang.String slug,
+getUserListMembers(java.lang.String ownerScreenName,                   java.lang.String slug,
+getUserListMembers(java.lang.String ownerScreenName,                   java.lang.String slug,
+getUserListMemberships(int count,                       long cursor)
+getUserListMemberships(long cursor) List the lists the authenticating user has been added to.
+getUserListMemberships(long listMemberId,                       int count,
+getUserListMemberships(long listMemberId,                       int count,
+getUserListMemberships(long listMemberId,                       long cursor)
+getUserListMemberships(long listMemberId,                       long cursor,
+getUserListMemberships(java.lang.String listMemberScreenName,                       int count,
+getUserListMemberships(java.lang.String listMemberScreenName,                       int count,
+getUserListMemberships(java.lang.String listMemberScreenName,                       long cursor)
+getUserListMemberships(java.lang.String listMemberScreenName,                       long cursor,
+getUserLists(long listOwnerUserId) List the lists of the specified user.
+getUserLists(long listOwnerUserId,             boolean reverse)
+getUserLists(java.lang.String listOwnerScreenName) List the lists of the specified user.
+getUserLists(java.lang.String listOwnerScreenName,             boolean reverse)
+getUserListsOwnerships(long listOwnerId,                       int count,
+getUserListsOwnerships(long listOwnerId,                       long cursor)
+getUserListsOwnerships(java.lang.String listOwnerScreenName,                       int count,
+getUserListsOwnerships(java.lang.String listOwnerScreenName,                       long cursor)
+getUserListStatuses(long listId,                    Paging paging)
+getUserListStatuses(long ownerId,                    java.lang.String slug,
+getUserListStatuses(java.lang.String ownerScreenName,                    java.lang.String slug,
+getUserListSubscribers(long listId,                       int count,
+getUserListSubscribers(long listId,                       int count,
+getUserListSubscribers(long listId,                       long cursor)
+getUserListSubscribers(long ownerId,                       java.lang.String slug,
+getUserListSubscribers(long ownerId,                       java.lang.String slug,
+getUserListSubscribers(long ownerId,                       java.lang.String slug,
+getUserListSubscribers(java.lang.String ownerScreenName,                       java.lang.String slug,
+getUserListSubscribers(java.lang.String ownerScreenName,                       java.lang.String slug,
+getUserListSubscribers(java.lang.String ownerScreenName,                       java.lang.String slug,
+getUserListSubscriptions(long listSubscriberId,                         int count,
+getUserListSubscriptions(long listSubscriberId,                         long cursor)
+getUserListSubscriptions(java.lang.String listSubscriberScreenName,                         int count,
+getUserListSubscriptions(java.lang.String listSubscriberScreenName,                         long cursor)
+showUserList(long listId) Show the specified list.
+showUserList(long ownerId,             java.lang.String slug)
+showUserList(java.lang.String ownerScreenName,             java.lang.String slug)
+showUserListMembership(long listId,                       long userId)
+showUserListMembership(long ownerId,                       java.lang.String slug,
+showUserListMembership(java.lang.String ownerScreenName,                       java.lang.String slug,
+showUserListSubscription(long listId,                         long userId)
+showUserListSubscription(long ownerId,                         java.lang.String slug,
+showUserListSubscription(java.lang.String ownerScreenName,                         java.lang.String slug,
+updateUserList(long listId,               java.lang.String newListName,
+updateUserList(long ownerId,               java.lang.String slug,
+updateUserList(java.lang.String ownerScreenName,               java.lang.String slug,createUserList(java.lang.String listName,               boolean isPublicList,
+createUserListMember(long listId,                     long userId)
+createUserListMember(long ownerId,                     java.lang.String slug,
+createUserListMembers(long listId,                      long... userIds)
+createUserListMembers(long listId,                      java.lang.String... screenNames)
+createUserListMembers(long ownerId,                      java.lang.String slug,
+createUserListMembers(long ownerId,                      java.lang.String slug,
+createUserListSubscription(long listId) Make the authenticated user follow the specified list.
+createUserListSubscription(long ownerId,                           java.lang.String slug)
+destroyUserList(long listId) Deletes the specified list.
+destroyUserList(long ownerId,                java.lang.String slug)
+destroyUserListMember(long listId,                      long userId)
+destroyUserListMember(long ownerId,                      java.lang.String slug,
+destroyUserListSubscription(long listId) Unsubscribes the authenticated user form the specified list.
+destroyUserListSubscription(long ownerId,                            java.lang.String slug)
+getUserListMembers(long listId,                   long cursor)
+getUserListMembers(long ownerId,                   java.lang.String slug,
+getUserListMemberships(long cursor) List the lists the authenticating user has been added to.
+getUserListMemberships(long listMemberId,                       long cursor)
+getUserListMemberships(long listMemberId,                       long cursor,
+getUserListMemberships(java.lang.String listMemberScreenName,                       long cursor)
+getUserListMemberships(java.lang.String listMemberScreenName,                       long cursor,
+getUserLists(long listOwnerUserId) List the lists of the specified user.
+getUserLists(java.lang.String listOwnerScreenName) List the lists of the specified user.
+getUserListStatuses(long listId,                    Paging paging)
+getUserListStatuses(long ownerId,                    java.lang.String slug,
+getUserListSubscribers(long listId,                       long cursor)
+getUserListSubscribers(long ownerId,                       java.lang.String slug,
+getUserListSubscriptions(java.lang.String listOwnerScreenName,                         long cursor)
+showUserList(long listId) Show the specified list.
+showUserList(long ownerId,             java.lang.String slug)
+showUserListMembership(long listId,                       long userId)
+showUserListMembership(long ownerId,                       java.lang.String slug,
+showUserListSubscription(long listId,                         long userId)
+showUserListSubscription(long ownerId,                         java.lang.String slug,
+updateUserList(long listId,               java.lang.String newListName,
+updateUserList(long ownerId,               java.lang.String slug,getCountryCode() 
+getCountryName() 
+getName() 
+getPlaceCode() 
+getPlaceName() 
+getURL() 
+getWoeid() CROP 
+FIT 
+LARGE 
+MEDIUM 
+SMALL 
+THUMB 
+Method and Description
+getHeight() 
+getResize() 
+getWidth() MediaEntity.Size 
+Method and Description
+getId() Returns the id of the media.
+getMediaURL() Returns the media URL.
+getMediaURLHttps() Returns the media secure URL.
+getSizes() Returns size variations of the media.
+getType() Returns the media type ("photo", "video", "animated_gif").
+
+
+
+
+Method and Description
+valueOf(java.lang.String name) Returns the enum constant of this type with the specified name.
+values() Returns an array containing the constants of this enum type, in                 java.lang.String apiKey,                  OAuthAuthorization oauth) 
+Method and Description
+postUpload() 
+preUpload() serialVersionUID 
+SINGLETON 
+Constructor and Description
+NullAuthorization() 
+Method and Description
+equals(java.lang.Object o) 
+getAuthorizationHeader(HttpRequest req) 
+getInstance() 
+isEnabled() Returns true if authorization credentials are set.
+readResolve() 
+toString() conf 
+consumerKey 
+consumerSecret 
+http 
+serialVersionUID 
+token 
+
+
+Method and Description
+equals(java.lang.Object obj) 
+getAuthorizationHeader(HttpRequest req) 
+getOAuth2Token() Obtains an OAuth 2 Bearer token.
+hashCode() 
+invalidateOAuth2Token() Revokes an issued OAuth 2 Bearer Token.
+isEnabled() Returns true if authorization credentials are set.
+setOAuth2Token(OAuth2Token oauth2Token) Sets the OAuth 2 Bearer token.
+setOAuthConsumer(java.lang.String consumerKey,                 java.lang.String consumerSecret)
+toString() getOAuth2Token() Obtains an OAuth 2 Bearer token.
+invalidateOAuth2Token() Revokes an issued OAuth 2 Bearer Token.
+setOAuth2Token(OAuth2Token oauth2Token) Sets the OAuth 2 Bearer token.
+setOAuthConsumer(java.lang.String consumerKey,                 java.lang.String consumerSecret)accessToken 
+serialVersionUID 
+tokenType 
+
+
+           java.lang.String accessToken) 
+Method and Description
+equals(java.lang.Object obj) 
+generateAuthorizationHeader() 
+getAccessToken() 
+getRawString(java.lang.String name,             JSONObject json) 
+getTokenType() 
+hashCode() 
+toString() conf 
+consumerKey 
+consumerSecret 
+HMAC_SHA1 
+http 
+logger 
+OAUTH_SIGNATURE_METHOD 
+oauthToken 
+RAND 
+realm 
+serialVersionUID 
+
+
+Method and Description
+constructRequestURL(java.lang.String url) The Signature Base String includes the request absolute URL, tying the signature to a specific endpoint.
+encodeParameters(java.util.List<HttpParameter> httpParams) 
+encodeParameters(java.util.List<HttpParameter> httpParams,                 java.lang.String splitter,
+ensureTokenIsAvailable() 
+equals(java.lang.Object o) 
+generateAuthorizationHeader(java.lang.String method,                            java.lang.String url,
+generateAuthorizationHeader(java.lang.String method,                            java.lang.String url,
+generateOAuthSignatureHttpParams(java.lang.String method,                                 java.lang.String url) 
+generateSignature(java.lang.String data) 
+generateSignature(java.lang.String data,                  OAuthToken token)
+getAuthorizationHeader(HttpRequest req) 
+getOAuthAccessToken() Returns an access token associated with this instance.
+getOAuthAccessToken(RequestToken requestToken) Retrieves an access token associated with the supplied request token and sets userId.
+getOAuthAccessToken(RequestToken requestToken,                    java.lang.String oauthVerifier)
+getOAuthAccessToken(java.lang.String oauthVerifier) Retrieves an access token.
+getOAuthAccessToken(java.lang.String screenName,                    java.lang.String password)
+getOAuthRequestToken() Retrieves a request token
+getOAuthRequestToken(java.lang.String callbackURL) Retrieves a request token
+getOAuthRequestToken(java.lang.String callbackURL,                     java.lang.String xAuthAccessType)
+getOAuthRequestToken(java.lang.String callbackURL,                     java.lang.String xAuthAccessType,
+hashCode() 
+isEnabled() Returns true if authorization credentials are set.
+normalizeRequestParameters(HttpParameter[] params) The request parameters are collected, sorted and concatenated into a normalized string:
+normalizeRequestParameters(java.util.List<HttpParameter> params) 
+parseGetParameters(java.lang.String url,                   java.util.List<HttpParameter> signatureBaseParams) 
+setOAuthAccessToken(AccessToken accessToken) Sets the access token
+setOAuthConsumer(java.lang.String consumerKey,                 java.lang.String consumerSecret)
+setOAuthRealm(java.lang.String realm) Sets the OAuth realm
+toParamList(HttpParameter[] params) 
+toString() getOAuthAccessToken() Returns an access token associated with this instance.
+getOAuthAccessToken(RequestToken requestToken) Retrieves an access token associated with the supplied request token and sets userId.
+getOAuthAccessToken(RequestToken requestToken,                    java.lang.String oauthVerifier)
+getOAuthAccessToken(java.lang.String oauthVerifier) Retrieves an access token.
+getOAuthAccessToken(java.lang.String screenName,                    java.lang.String password)
+getOAuthRequestToken() Retrieves a request token
+getOAuthRequestToken(java.lang.String callbackURL) Retrieves a request token
+getOAuthRequestToken(java.lang.String callbackURL,                     java.lang.String xAuthAccessType)
+getOAuthRequestToken(java.lang.String callbackURL,                     java.lang.String xAuthAccessType,
+setOAuthAccessToken(AccessToken accessToken) Sets the access token
+setOAuthConsumer(java.lang.String consumerKey,                 java.lang.String consumerSecret)responseStr 
+secretKeySpec 
+serialVersionUID 
+token 
+tokenSecret 
+
+
+          java.lang.String tokenSecret) 
+Method and Description
+equals(java.lang.Object o) 
+getParameter(java.lang.String parameter) 
+getSecretKeySpec() 
+getToken() 
+getTokenSecret() 
+hashCode() 
+setSecretKeySpec(javax.crypto.spec.SecretKeySpec secretKeySpec) 
+toString() getAuthorName() The name of the author/owner of the resource.
+getAuthorURL() A URL for the author/owner of the resource.
+getCacheAge() The suggested cache lifetime for this resource, in seconds.
+getHtml() The HTML required to display the resource.
+getURL() The url of the resource provider.
+getVersion() The oEmbed version number.
+getWidth() The width in pixels of the image specified in the url parameter.
+
+
+
+Method and Description
+valueOf(java.lang.String name) Returns the enum constant of this type with the specified name.
+values() Returns an array containing the constants of this enum type, inOEmbedRequest.Align 
+Field and Description
+align 
+hideMedia 
+hideThread 
+lang 
+maxWidth 
+omitScript 
+related 
+serialVersionUID 
+statusId 
+url 
+
+             java.lang.String url) 
+Method and Description
+align(OEmbedRequest.Align align) 
+appendParameter(java.lang.String name,                long value,
+appendParameter(java.lang.String name,                java.lang.String value,
+asHttpParameterArray() 
+equals(java.lang.Object o) 
+hashCode() 
+HideMedia(boolean hideMedia) 
+HideThread(boolean hideThread) 
+lang(java.lang.String lang) 
+MaxWidth(int maxWidth) 
+omitScript(boolean omitScript) 
+related(java.lang.String[] related) 
+setAlign(OEmbedRequest.Align align) 
+setHideMedia(boolean hideMedia) 
+setHideThread(boolean hideThread) 
+setLang(java.lang.String lang) 
+setMaxWidth(int maxWidth) 
+setOmitScript(boolean omitScript) 
+setRelated(java.lang.String[] related) 
+toString() getNextCursor() 
+getPreviousCursor() 
+hasNext() 
+hasPrevious() count 
+COUNT 
+maxId 
+NULL_PARAMETER_ARRAY 
+NULL_PARAMETER_LIST 
+page 
+PER_PAGE 
+S 
+serialVersionUID 
+sinceId 
+SMCP 
+
+
+
+      int count) 
+      int count,       long sinceId) 
+      int count,       long sinceId,
+      long sinceId) 
+
+Method and Description
+addPostParameter(char[] supportedParams,                 char paramKey,
+asPostParameterArray() 
+asPostParameterArray(char[] supportedParams,                     java.lang.String perPageParamName)
+asPostParameterList() 
+asPostParameterList(char[] supportedParams) 
+asPostParameterList(char[] supportedParams,                    java.lang.String perPageParamName)
+count(int count) 
+equals(java.lang.Object o) 
+getCount() 
+getMaxId() 
+getPage() 
+getSinceId() 
+hashCode() 
+maxId(long maxId) 
+setCount(int count) 
+setMaxId(long maxId) 
+setPage(int page) 
+setSinceId(long sinceId) 
+sinceId(long sinceId) 
+toString() getBoundingBoxCoordinates() 
+getBoundingBoxType() 
+getContainedWithIn() 
+getCountry() 
+getCountryCode() 
+getFullName() 
+getGeometryCoordinates() 
+getGeometryType() 
+getId() 
+getName() 
+getPlaceType() 
+getStreetAddress() 
+getURL() getGeoDetails(java.lang.String placeId) Find out more details of a place that was returned from the reverseGeoCode(twitter4j.GeoQuery) method.
+getSimilarPlaces(GeoLocation location,                 java.lang.String name,
+reverseGeoCode(GeoQuery query) Search for places (cities and neighborhoods) that can be attached to a statuses/update.
+searchPlaces(GeoQuery query) Search for places that can be attached to a statuses/update.getGeoDetails(java.lang.String id) Find out more details of a place that was returned from the reverseGeoCode(twitter4j.GeoQuery) method.
+getSimilarPlaces(GeoLocation location,                 java.lang.String name,
+reverseGeoCode(GeoQuery query) Search for places (cities and neighborhoods) that can be attached to a statuses/update.
+searchPlaces(GeoQuery query) Search for places that can be attached to a statuses/update.APPLICATION_ONLY_AUTH_ENABLED 
+ASYNC_DAEMON_ENABLED 
+ASYNC_DISPATCHER_IMPL 
+ASYNC_NUM_THREADS 
+CONTRIBUTING_TO 
+DEBUG 
+HTTP_CONNECTION_TIMEOUT 
+HTTP_GZIP 
+HTTP_PRETTY_DEBUG 
+HTTP_PROXY_HOST 
+HTTP_PROXY_HOST_FALLBACK 
+HTTP_PROXY_PASSWORD 
+HTTP_PROXY_PORT 
+HTTP_PROXY_PORT_FALLBACK 
+HTTP_PROXY_USER 
+HTTP_READ_TIMEOUT 
+HTTP_RETRY_COUNT 
+HTTP_RETRY_INTERVAL_SECS 
+HTTP_STREAMING_READ_TIMEOUT 
+INCLUDE_ENTITIES 
+INCLUDE_MY_RETWEET 
+JSON_STORE_ENABLED 
+LOGGER_FACTORY 
+MBEAN_ENABLED 
+MEDIA_PROVIDER 
+MEDIA_PROVIDER_API_KEY 
+MEDIA_PROVIDER_PARAMETERS 
+OAUTH_ACCESS_TOKEN 
+OAUTH_ACCESS_TOKEN_SECRET 
+OAUTH_ACCESS_TOKEN_URL 
+OAUTH_AUTHENTICATION_URL 
+OAUTH_AUTHORIZATION_URL 
+OAUTH_CONSUMER_KEY 
+OAUTH_CONSUMER_SECRET 
+OAUTH_REQUEST_TOKEN_URL 
+OAUTH2_ACCESS_TOKEN 
+OAUTH2_INVALIDATE_TOKEN_URL 
+OAUTH2_SCOPE 
+OAUTH2_TOKEN_TYPE 
+OAUTH2_TOKEN_URL 
+OAuth2Scope 
+PASSWORD 
+REST_BASE_URL 
+serialVersionUID 
+SITE_STREAM_BASE_URL 
+STREAM_BASE_URL 
+STREAM_STALL_WARNINGS_ENABLED 
+STREAM_USER_REPLIES_ALL 
+STREAM_USER_WITH_FOLLOWINGS 
+USER 
+USER_STREAM_BASE_URL 
+
+Creates a root PropertyConfiguration.
+
+
+                     java.lang.String treePath) 
+
+Method and Description
+getBoolean(java.util.Properties props,           java.lang.String prefix,
+getIntProperty(java.util.Properties props,               java.lang.String prefix,
+getLongProperty(java.util.Properties props,                java.lang.String prefix,
+getString(java.util.Properties props,          java.lang.String prefix,
+loadProperties(java.util.Properties props,               java.io.InputStream is) 
+loadProperties(java.util.Properties props,               java.lang.String path) 
+normalize(java.util.Properties props) 
+notNull(java.util.Properties props,        java.lang.String prefix,
+readResolve() 
+setFieldsWithPrefix(java.util.Properties props,                    java.lang.String prefix) 
+setFieldsWithTreePath(java.util.Properties props,                      java.lang.String treePath)ROOT_CONFIGURATION 
+
+
+Method and Description
+dispose() clean up resources acquired by this factory.
+getInstance() returns the root configuration
+getInstance(java.lang.String configTreePath) returns the configuration specified by the path
+
+
+Method and Description
+valueOf(java.lang.String name) Returns the enum constant of this type with the specified name.
+values() Returns an array containing the constants of this enum type, in
+
+Method and Description
+valueOf(java.lang.String name) Returns the enum constant of this type with the specified name.
+values() Returns an array containing the constants of this enum type, inQuery.ResultType 
+Query.Unit 
+Field and Description
+count 
+geocode 
+KILOMETERS 
+lang 
+locale 
+maxId 
+MILES 
+MIXED mixed: Include both popular and real time results in the response.
+nextPageQuery 
+POPULAR popular: return only the most popular results in the response.
+query 
+RECENT recent: return only the most recent results in the response
+resultType 
+serialVersionUID 
+since 
+sinceId 
+until 
+WITH_TWITTER_USER_ID 
+
+
+
+Method and Description
+appendParameter(java.lang.String name,                long value,
+appendParameter(java.lang.String name,                java.lang.String value,
+asHttpParameterArray() 
+count(int count) sets the number of tweets to return per page, up to a max of 100
+createWithNextPageQuery(java.lang.String nextPageQuery) 
+equals(java.lang.Object o) 
+geoCode(GeoLocation location,        double radius,
+getCount() Returns the number of tweets to return per page, up to a max of 100
+getGeocode() Returns the specified geocode
+getLang() Returns the lang
+getLocale() Returns the language of the query you are sending (only ja is currently effective).
+getMaxId() Returns tweets with status ids less than the given id.
+getQuery() Returns the specified query
+getResultType() Returns resultType
+getSince() Returns tweets with since the given date.
+getSinceId() returns sinceId
+getUntil() Returns until
+hashCode() 
+lang(java.lang.String lang) restricts tweets to the given language, given by an ISO 639-1 code
+locale(java.lang.String locale) Specify the language of the query you are sending (only ja is currently effective).
+maxId(long maxId) If specified, returns tweets with status ids less than the given id.
+nextPage() 
+query(java.lang.String query) Sets the query string
+resultType(Query.ResultType resultType) If specified, returns tweets included popular or real time or both in the response
+setCount(int count) sets the number of tweets to return per page, up to a max of 100
+setGeoCode(GeoLocation location,           double radius,
+setGeoCode(GeoLocation location,           double radius,
+setLang(java.lang.String lang) restricts tweets to the given language, given by an ISO 639-1 code
+setLocale(java.lang.String locale) Specify the language of the query you are sending (only ja is currently effective).
+setMaxId(long maxId) If specified, returns tweets with status ids less than the given id.
+setQuery(java.lang.String query) Sets the query string
+setResultType(Query.ResultType resultType) Default value is Query.MIXED if parameter not specified
+setSince(java.lang.String since) If specified, returns tweets with since the given date.
+setSinceId(long sinceId) returns tweets with status ids greater than the given id.
+setUntil(java.lang.String until) If specified, returns tweets with generated before the given date.
+since(java.lang.String since) If specified, returns tweets with since the given date.
+sinceId(long sinceId) returns tweets with status ids greater than the given id.
+toString() 
+until(java.lang.String until) If specified, returns tweets with generated before the given date.getCompletedIn() 
+getCount() 
+getMaxId() 
+getQuery() 
+getRefreshURL() 
+getSinceId() 
+getTweets() 
+hasNext() test if there is next page
+nextQuery() Returns a Query instance to fetch next page or null if there is no next page.getLimit() Returns the current limit in effect
+getRemaining() Returns the remaining number of API requests available.
+getResetTimeInSeconds() Returns the seconds the current rate limiting period ends.
+getSecondsUntilReset() Returns the amount of seconds until the current rate limiting period ends.isAccountRateLimitStatus 
+rateLimitStatus 
+serialVersionUID 
+
+                    RateLimitStatus rateLimitStatus,                     boolean isAccountRateLimitStatus) 
+Method and Description
+getRateLimitStatus() 
+isAccountRateLimitStatus() 
+isIPRateLimitStatus() onRateLimitReached(RateLimitStatusEvent event) Called when the account or IP address is hitting the rate limit.
+onRateLimitStatus(RateLimitStatusEvent event) Called when the response contains rate limit status.onMessage(java.lang.String rawString) canSourceDm() Checks if source user can send dm to target user
+getSourceUserId() Returns the source user id
+getSourceUserScreenName() Returns the source user screen name
+getTargetUserId() Returns the target user id
+getTargetUserScreenName() Returns the target user screen name
+isSourceBlockingTarget() Returns if the source user is blocking the target user
+isSourceFollowedByTarget() Checks if source user is being followed by target user
+isSourceFollowingTarget() Checks if source user is following target user
+isSourceMutingTarget() Returns id the source user is muting the target user
+isSourceNotificationsEnabled() Checks if the source user has enabled notifications for updates of the target user
+isSourceWantRetweets() Checks if the retweets from the target user enabled
+isTargetFollowedBySource() Checks if target user is being followed by source user.
+isTargetFollowingSource() Checks if target user is following source user.conf 
+oauth 
+serialVersionUID 
+
+            OAuthSupport oauth) 
+            java.lang.String tokenSecret) 
+            java.lang.String tokenSecret,             OAuthSupport oauth) 
+Method and Description
+getAuthenticationURL() 
+getAuthorizationURL() getRateLimitStatus() Returns the current rate limit status if available.getCreatedAt() 
+getId() 
+getName() 
+getPosition() 
+getQuery() createSavedSearch(java.lang.String query) Creates a saved search for the authenticated user.
+destroySavedSearch(long id) Destroys a saved search for the authenticated user.
+getSavedSearches() Returns the authenticated user's saved search queries.
+showSavedSearch(long id) Retrieve the data for a saved search owned by the authenticating user specified by the given id.createSavedSearch(java.lang.String query) Creates a saved search for the authenticated user.
+destroySavedSearch(int id) Destroys a saved search for the authenticated user.
+getSavedSearches() Returns the authenticated user's saved search queries.
+showSavedSearch(int id) Retrieve the data for a saved search owned by the authenticating user specified by the given id.getPlaceIds() Returns the place_ids that identify the scope of the status.search(Query query) Returns tweets that match a specified query.search(Query query) Returns tweets that match a specified query.
+Method and Description
+onBlock(long forUser,        User source,
+onDeletionNotice(long forUser,                 long directMessageId,
+onDeletionNotice(long forUser,                 StatusDeletionNotice statusDeletionNotice) 
+onDirectMessage(long forUser,                DirectMessage directMessage) 
+onDisconnectionNotice(java.lang.String screenName) callback method for StreamController.removeUsers(long[])
+onException(java.lang.Exception ex) 
+onFavorite(long forUser,           User source,
+onFavoritedRetweet(User source,                   User target,
+onFollow(long forUser,         User source,
+onFriendList(long forUser,             long[] friendIds) 
+onRetweetedRetweet(User source,                   User target,
+onStatus(long forUser,         Status status) 
+onUnblock(long forUser,          User source,
+onUnfavorite(long forUser,             User source,
+onUnfollow(long forUser,           User source,
+onUserDeletion(long forUser,               long deletedUser) 
+onUserListCreation(long forUser,                   User listOwner,
+onUserListDeletion(long forUser,                   User listOwner,
+onUserListMemberAddition(long forUser,                         User addedUser,
+onUserListMemberDeletion(long forUser,                         User deletedUser,
+onUserListSubscription(long forUser,                       User subscriber,
+onUserListUnsubscription(long forUser,                         User subscriber,
+onUserListUpdate(long forUser,                 User listOwner,
+onUserProfileUpdate(long forUser,                    User updatedUser) 
+onUserSuspension(long forUser,                 long suspendedUser) cs 
+EMPTY 
+forUser 
+
+               HttpResponse response,                Configuration conf,
+               java.io.InputStream stream,                Configuration conf,
+Method and Description
+next(StatusListener listener) Reads next status from this stream.
+next(StreamListener[] listeners,     RawStreamListener[] rawStreamListeners) 
+onBlock(JSONObject source,        JSONObject target,
+onClose() 
+onDelete(JSONObject json,         StreamListener[] listeners) 
+onDirectMessage(JSONObject json,                StreamListener[] listeners) 
+onDisconnectionNotice(java.lang.String line,                      StreamListener[] listeners) 
+onException(java.lang.Exception ex,            StreamListener[] listeners) 
+onFavorite(JSONObject source,           JSONObject target,
+onFavoritedRetweet(JSONObject source,                   JSONObject target,
+onFollow(JSONObject source,         JSONObject target,
+onFriends(JSONObject json,          StreamListener[] listeners) 
+onMessage(java.lang.String rawString,          RawStreamListener[] listeners) 
+onRetweetedRetweet(JSONObject source,                   JSONObject target,
+onStatus(JSONObject json,         StreamListener[] listeners) 
+onUnblock(JSONObject source,          JSONObject target,
+onUnfavorite(JSONObject source,             JSONObject target,
+onUnfollow(JSONObject source,           JSONObject target,
+onUserDeletion(long target,               StreamListener[] listeners) 
+onUserListCreation(JSONObject source,                   JSONObject userList,
+onUserListDestroyed(JSONObject source,                    JSONObject userList,
+onUserListMemberAddition(JSONObject addedMember,                         JSONObject owner,
+onUserListMemberDeletion(JSONObject deletedMember,                         JSONObject owner,
+onUserListSubscription(JSONObject source,                       JSONObject owner,
+onUserListUnsubscription(JSONObject source,                         JSONObject owner,
+onUserListUpdated(JSONObject source,                  JSONObject userList,
+onUserSuspension(long target,                 StreamListener[] listeners) 
+onUserUpdate(JSONObject source,             JSONObject target,
+parseLine(java.lang.String line) onBlock(long forUser,        User source,
+onDeletionNotice(long forUser,                 long directMessageId,
+onDeletionNotice(long forUser,                 StatusDeletionNotice statusDeletionNotice) 
+onDirectMessage(long forUser,                DirectMessage directMessage) 
+onDisconnectionNotice(java.lang.String line) callback method for StreamController.removeUsers(long[])
+onException(java.lang.Exception ex) 
+onFavorite(long forUser,           User source,
+onFavoritedRetweet(User source,                   User target,
+onFollow(long forUser,         User source,
+onFriendList(long forUser,             long[] friendIds) 
+onRetweetedRetweet(User source,                   User target,
+onStatus(long forUser,         Status status) 
+onUnblock(long forUser,          User source,
+onUnfavorite(long forUser,             User source,
+onUnfollow(long forUser,           User source,
+onUserDeletion(long forUser,               long deletedUser) 
+onUserListCreation(long forUser,                   User listOwner,
+onUserListDeletion(long forUser,                   User listOwner,
+onUserListMemberAddition(long forUser,                         User addedMember,
+onUserListMemberDeletion(long forUser,                         User deletedMember,
+onUserListSubscription(long forUser,                       User subscriber,
+onUserListUnsubscription(long forUser,                         User subscriber,
+onUserListUpdate(long forUser,                 User listOwner,
+onUserProfileUpdate(long forUser,                    User updatedUser) 
+onUserSuspension(long forUser,                 long suspendedUser) reportSpam(long userId) The user specified in the id is blocked by the authenticated user and reported as a spammer.
+reportSpam(java.lang.String screenName) The user specified in the id is blocked by the authenticated user and reported as a spammer.reportSpam(long userId) The user specified in the id is blocked by the authenticated user and reported as a spammer.
+reportSpam(java.lang.String screenName) The user specified in the id is blocked by the authenticated user and reported as a spammer.code 
+message 
+percentFull 
+serialVersionUID 
+
+
+Method and Description
+equals(java.lang.Object o) 
+getCode() 
+getMessage() 
+getPercentFull() 
+hashCode() 
+toString() getContributors() Returns an array of contributors, or null if no contributor is associated with this status.
+getCreatedAt() Return the created_at
+getCurrentUserRetweetId() Returns the authenticating user's retweet's id of this tweet, or -1L when the tweet was created
+getFavoriteCount() Indicates approximately how many times this Tweet has been "favorited" by Twitter users.
+getGeoLocation() Returns The location that this tweet refers to if available.
+getId() Returns the id of the status
+getInReplyToScreenName() Returns the in_reply_to_screen_name
+getInReplyToStatusId() Returns the in_reply_tostatus_id
+getInReplyToUserId() Returns the in_reply_user_id
+getLang() Returns the lang of the status text if available.
+getPlace() Returns the place attached to this status
+getQuotedStatus() Returns the Tweet object of the original Tweet that was quoted.
+getQuotedStatusId() Returns the Tweet ID of the quoted Tweet
+getRetweetCount() Returns the number of times this tweet has been retweeted, or -1 when the tweet was
+getRetweetedStatus() 
+getScopes() Returns the targeting scopes applied to a status.
+getSource() Returns the source
+getText() Returns the text of the status
+getUser() Return the user associated with the status.
+getWithheldInCountries() Returns the list of country codes where the tweet is withheld
+isFavorited() Test if the status is favorited
+isPossiblySensitive() Returns true if the status contains a link that is identified as sensitive.
+isRetweet() 
+isRetweeted() Test if the status is retweeted
+isRetweetedByMe() Returns true if the authenticating user has retweeted this tweet, or false when the tweet was
+isTruncated() Test if the status is truncated
+Method and Description
+onDeletionNotice(StatusDeletionNotice statusDeletionNotice) Called upon deletionNotice notices.
+onException(java.lang.Exception ex) 
+onScrubGeo(long userId,           long upToStatusId)
+onStallWarning(StallWarning warning) Called when receiving stall warnings.
+onStatus(Status status) 
+onTrackLimitationNotice(int numberOfLimitedStatuses) This notice will be sent each time a limited stream becomes unlimited.getStatusId() 
+getUserId() serialVersionUID 
+statusId 
+userId 
+
+
+Method and Description
+compareTo(StatusDeletionNotice that) 
+equals(java.lang.Object o) 
+getStatusId() 
+getUserId() 
+hashCode() 
+toString() onDeletionNotice(StatusDeletionNotice statusDeletionNotice) Called upon deletionNotice notices.
+onScrubGeo(long userId,           long upToStatusId)
+onStallWarning(StallWarning warning) Called when receiving stall warnings.
+onStatus(Status status) 
+onTrackLimitationNotice(int numberOfLimitedStatuses) This notice will be sent each time a limited stream becomes unlimited.close() 
+next(StatusListener listener) Reads next status from this stream.StatusStreamBase.StreamEvent 
+Field and Description
+br 
+CONF 
+dispatcher 
+factory 
+is 
+logger 
+response 
+streamAlive 
+
+                HttpResponse response,                 Configuration conf) 
+                java.io.InputStream stream,                 Configuration conf) 
+Method and Description
+asDirectMessage(JSONObject json) 
+asFriendList(JSONObject json) 
+asStatus(JSONObject json) 
+asUser(JSONObject json) 
+asUserList(JSONObject json) 
+close() 
+handleNextElement(StreamListener[] listeners,                  RawStreamListener[] rawStreamListeners) 
+next(StatusListener listener) Reads next status from this stream.
+next(StreamListener[] listeners,     RawStreamListener[] rawStreamListeners) 
+onBlock(JSONObject source,        JSONObject target,
+onClose() 
+onDelete(JSONObject json,         StreamListener[] listeners) 
+onDirectMessage(JSONObject json,                StreamListener[] listeners) 
+onDisconnectionNotice(java.lang.String line,                      StreamListener[] listeners) 
+onException(java.lang.Exception e,            StreamListener[] listeners) 
+onException(java.lang.Exception e,            StreamListener[] listeners,
+onFavorite(JSONObject source,           JSONObject target,
+onFavoritedRetweet(JSONObject source,                   JSONObject target,
+onFollow(JSONObject source,         JSONObject target,
+onFriends(JSONObject json,          StreamListener[] listeners) 
+onLimit(JSONObject json,        StreamListener[] listeners) 
+onMessage(java.lang.String rawString,          RawStreamListener[] listeners) 
+onQuotedTweet(JSONObject source,              JSONObject target,
+onRetweetedRetweet(JSONObject source,                   JSONObject target,
+onScrubGeo(JSONObject json,           StreamListener[] listeners) 
+onSender(JSONObject json,         StreamListener[] listeners) 
+onStallWarning(JSONObject json,               StreamListener[] listeners) 
+onStatus(JSONObject json,         StreamListener[] listeners) 
+onUnblock(JSONObject source,          JSONObject target,
+onUnfavorite(JSONObject source,             JSONObject target,
+onUnfollow(JSONObject source,           JSONObject target,
+onUserDeletion(long target,               StreamListener[] listeners) 
+onUserListCreation(JSONObject source,                   JSONObject userList,
+onUserListDestroyed(JSONObject source,                    JSONObject userList,
+onUserListMemberAddition(JSONObject addedMember,                         JSONObject owner,
+onUserListMemberDeletion(JSONObject deletedMember,                         JSONObject owner,
+onUserListSubscription(JSONObject source,                       JSONObject owner,
+onUserListUnsubscription(JSONObject source,                         JSONObject owner,
+onUserListUpdated(JSONObject source,                  JSONObject userList,
+onUserSuspension(long target,                 StreamListener[] listeners) 
+onUserUpdate(JSONObject source,             JSONObject target,
+parseLine(java.lang.String line) EMPTY 
+line 
+
+                HttpResponse response,                 Configuration conf) 
+                java.io.InputStream stream,                 Configuration conf) 
+Method and Description
+next(StatusListener listener) Reads next status from this stream.
+next(StreamListener[] listeners,     RawStreamListener[] rawStreamListeners) 
+onClose() 
+onDelete(JSONObject json,         StreamListener[] listeners) 
+onException(java.lang.Exception e,            StreamListener[] listeners) 
+onLimit(JSONObject json,        StreamListener[] listeners) 
+onMessage(java.lang.String rawString,          RawStreamListener[] listeners) 
+onScrubGeo(JSONObject json,           StreamListener[] listeners) 
+onStallWarning(JSONObject json,               StreamListener[] listeners) 
+onStatus(JSONObject json,         StreamListener[] listeners) 
+parseLine(java.lang.String line) displayCoordinates 
+inReplyToStatusId 
+location 
+mediaBody 
+mediaFile 
+mediaIds 
+mediaName 
+placeId 
+possiblySensitive 
+serialVersionUID 
+status 
+
+
+Method and Description
+appendParameter(java.lang.String name,                double value,
+appendParameter(java.lang.String name,                long value,
+appendParameter(java.lang.String name,                java.lang.String value,
+asHttpParameterArray() 
+displayCoordinates(boolean displayCoordinates) 
+equals(java.lang.Object o) 
+getInReplyToStatusId() 
+getLocation() 
+getPlaceId() 
+getStatus() 
+hashCode() 
+inReplyToStatusId(long inReplyToStatusId) 
+isDisplayCoordinates() 
+isForUpdateWithMedia() 
+isPossiblySensitive() 
+location(GeoLocation location) 
+media(java.io.File file) 
+media(java.lang.String name,      java.io.InputStream body) 
+placeId(java.lang.String placeId) 
+possiblySensitive(boolean possiblySensitive) 
+setDisplayCoordinates(boolean displayCoordinates) 
+setInReplyToStatusId(long inReplyToStatusId) 
+setLocation(GeoLocation location) 
+setMedia(java.io.File file) 
+setMedia(java.lang.String name,         java.io.InputStream body) 
+setMediaIds(long[] mediaIds) 
+setPlaceId(java.lang.String placeId) 
+setPossiblySensitive(boolean possiblySensitive) 
+toString() StreamController.FriendsIDs 
+StreamController.User 
+Field and Description
+AUTH 
+controlURI 
+http 
+lock 
+logger 
+
+
+                Authorization auth) 
+Method and Description
+addUsers(long... userIds) 
+createUser(JSONObject json) 
+ensureControlURISet() 
+getControlURI() 
+getFriendsIDs(long userId,              long cursor) 
+getInfo() 
+removeUsers(long... userIds) 
+setControlURI(java.lang.String controlURI) close() 
+next(StreamListener[] listeners,     RawStreamListener[] rawStreamListeners) 
+onException(java.lang.Exception ex,            StreamListener[] listeners,onException(java.lang.Exception ex) nestedConf 
+
+
+Method and Description
+getHttpConnectionTimeout() 
+getHttpProxyHost() 
+getHttpProxyPassword() 
+getHttpProxyPort() 
+getHttpProxyUser() 
+getHttpReadTimeout() 
+getHttpRetryCount() 
+getHttpRetryIntervalSeconds() 
+isGZIPEnabled() 
+isPrettyDebugEnabled() getMemberSuggestions(java.lang.String categorySlug) Access the users in a given category of the Twitter suggested user list and return their most recent status if they are not a protected user.
+getSuggestedUserCategories() Access to Twitter's suggested user list.
+getUserSuggestions(java.lang.String categorySlug) Access the users in a given category of the Twitter suggested user list.getMemberSuggestions(java.lang.String categorySlug) Access the users in a given category of the Twitter suggested user list and return their most recent status if they are not a protected user.
+getSuggestedUserCategories() Access to Twitter's suggested user list.
+getUserSuggestions(java.lang.String categorySlug) Access the users in a given category of the Twitter suggested user list.getEnd() Returns the index of the end character of the symbol.
+getStart() Returns the index of the start character of the symbol.A_MINUTE_AGO 
+AN_HOUR_AGO 
+dateMonth 
+dateMonthYear 
+formats 
+N_HOURS_AGO 
+N_MINUTES_AGO 
+N_SECONDS_AGO 
+NOW 
+ONE_DAY_IN_SECONDS 
+ONE_HOUR_IN_SECONDS 
+ONE_MONTH_IN_SECONDS 
+serialVersionUID 
+
+Constructs an instance with default locale
+Constructs an instance with the specified locale
+Method and Description
+toTimeSpanString(java.util.Date date) 
+toTimeSpanString(int deltaInSeconds) 
+toTimeSpanString(long milliseconds) getName() 
+tzinfoName() 
+utcOffset() getHomeTimeline() Returns the 20 most recent statuses, including retweets, posted by the authenticating user and that user's friends.
+getHomeTimeline(Paging paging) Returns the 20 most recent statuses, including retweets, posted by the authenticating user and that user's friends.
+getMentionsTimeline() Returns the 20 most recent mentions (tweets containing a users's @screen_name) for the authenticating user.
+getMentionsTimeline(Paging paging) Returns the 20 most recent mentions (tweets containing a users's @screen_name) for the authenticating user.
+getRetweetsOfMe() Returns the 20 most recent tweets of the authenticated user that have been retweeted by others.
+getRetweetsOfMe(Paging paging) Returns the 20 most recent tweets of the authenticated user that have been retweeted by others.
+getUserTimeline() Returns the 20 most recent statuses posted from the authenticating user.
+getUserTimeline(long userId) Returns the 20 most recent statuses posted from the authenticating user.
+getUserTimeline(long userId,                Paging paging)
+getUserTimeline(Paging paging) Returns the 20 most recent statuses posted from the authenticating user.
+getUserTimeline(java.lang.String screenName) Returns the 20 most recent statuses posted from the authenticating user.
+getUserTimeline(java.lang.String screenName,                Paging paging)getHomeTimeline() Returns the 20 most recent statuses, including retweets, posted by the authenticating user and that user's friends.
+getHomeTimeline(Paging paging) Returns the 20 most recent statuses, including retweets, posted by the authenticating user and that user's friends.
+getMentions() Returns the 20 most recent replies (status updates prefixed with @username) to the authenticating user.
+getMentions(Paging paging) Returns the 20 most recent replies (status updates prefixed with @username) to the authenticating user.
+getRetweetsOfMe() Returns the 20 most recent tweets of the authenticated user that have been retweeted by others.
+getRetweetsOfMe(Paging paging) Returns the 20 most recent tweets of the authenticated user that have been retweeted by others.
+getUserTimeline() Returns the 20 most recent statuses posted from the authenticating user.
+getUserTimeline(long userId) Returns the 20 most recent statuses posted from the authenticating user.
+getUserTimeline(long userId,                Paging paging)
+getUserTimeline(Paging paging) Returns the 20 most recent statuses posted from the authenticating user.
+getUserTimeline(java.lang.String screenName) Returns the 20 most recent statuses posted from the authenticating user.
+getUserTimeline(java.lang.String screenName,                Paging paging)getName() 
+getQuery() 
+getURL() getAsOf() 
+getLocation() Returns the location associated with the trends.
+getTrendAt() 
+getTrends() getAvailableTrends() Returns the locations that Twitter has trending topic information for.
+getClosestTrends(GeoLocation location) Returns the locations that Twitter has trending topic information for, closest to a specified location.
+getPlaceTrends(int woeid) Returns the top 10 trending topics for a specific WOEID, if trending information is available for it.getAvailableTrends() Retrieves the locations that Twitter has trending topic information for.
+getClosestTrends(GeoLocation location) Returns the locations that Twitter has trending topic information for, closest to a specified location.
+getPlaceTrends(int woeid) Returns the top 10 trending topics for a specific WOEID, if trending information is available for it.getEnd() Returns the index of the end character of the entity in the tweet.
+getStart() Returns the index of the start character of the entity in the tweet.
+getText() Returns the text of the entitydestroyStatus(long statusId) Destroys the status specified by the required ID parameter.
+getOEmbed(OEmbedRequest req) Returns information allowing the creation of an embedded representation of a Tweet on third party sites.
+getRetweeterIds(long statusId,                int count,
+getRetweeterIds(long statusId,                long cursor)
+getRetweets(long statusId) Returns up to 100 of the first retweets of a given tweet.
+lookup(long... ids) Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.
+retweetStatus(long statusId) Retweets a tweet.
+showStatus(long id) Returns a single status, specified by the id parameter below.
+updateStatus(StatusUpdate latestStatus) Updates the authenticating user's status.
+updateStatus(java.lang.String status) Updates the authenticating user's status.
+uploadMedia(java.io.File mediaFile) Uploads media image to be attached via updateStatus(twitter4j.StatusUpdate)
+uploadMedia(java.lang.String fileName,            java.io.InputStream media)destroyStatus(long statusId) Destroys the status specified by the required ID parameter.
+getOEmbed(OEmbedRequest req) Returns information allowing the creation of an embedded representation of a Tweet on third party sites.
+getRetweets(long statusId) Returns up to 100 of the first retweets of a given tweet.
+lookup(long... ids) Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.
+retweetStatus(long statusId) Retweets a tweet.
+showStatus(long id) Returns a single status, specified by the id parameter below.
+updateStatus(StatusUpdate status) Updates the authenticating user's status.
+updateStatus(java.lang.String status) Updates the authenticating user's status.             OAuthAuthorization oauth) 
+Method and Description
+postUpload() 
+preUpload() directMessages() 
+favorites() 
+friendsFollowers() 
+help() 
+list() 
+placesGeo() 
+savedSearches() 
+search() 
+spamReporting() 
+suggestedUsers() 
+timelines() 
+trends() 
+tweets() 
+users() getCharactersReservedPerMedia() 
+getMaxMediaPerUpload() 
+getNonUsernamePaths() 
+getPhotoSizeLimit() 
+getPhotoSizes() 
+getShortURLLength() 
+getShortURLLengthHttps() logger 
+pattern 
+SINGLETON 
+STATISTICS 
+Constructor and Description
+TwitterAPIMonitor() Constructor
+Method and Description
+getInstance() 
+getStatistics() 
+methodCalled(java.lang.String twitterUrl,             long elapsedTime,
+Method and Description
+checkedUserListMembership(User users) 
+checkedUserListSubscription(User user) 
+createdBlock(User user) 
+createdFavorite(Status status) 
+createdFriendship(User user) 
+createdMute(User user) 
+createdSavedSearch(SavedSearch savedSearch) 
+createdUserList(UserList userList) 
+createdUserListMember(UserList userList) 
+createdUserListMembers(UserList userList) 
+destroyedBlock(User user) 
+destroyedDirectMessage(DirectMessage message) 
+destroyedFavorite(Status status) 
+destroyedFriendship(User user) 
+destroyedMute(User user) 
+destroyedSavedSearch(SavedSearch savedSearch) 
+destroyedStatus(Status destroyedStatus) 
+destroyedUserList(UserList userList) 
+destroyedUserListMember(UserList userList) 
+gotAccountSettings(AccountSettings settings) 
+gotAPIConfiguration(TwitterAPIConfiguration conf) 
+gotAvailableTrends(ResponseList<Location> locations) 
+gotBlockIDs(IDs blockingUsersIDs) 
+gotBlocksList(ResponseList<User> blockingUsers) 
+gotClosestTrends(ResponseList<Location> locations) 
+gotContributees(ResponseList<User> users) 
+gotContributors(ResponseList<User> users) 
+gotDirectMessage(DirectMessage message) 
+gotDirectMessages(ResponseList<DirectMessage> messages) 
+gotFavorites(ResponseList<Status> statuses) 
+gotFollowersIDs(IDs ids) 
+gotFollowersList(PagableResponseList<User> users) 
+gotFriendsIDs(IDs ids) 
+gotFriendsList(PagableResponseList<User> users) 
+gotGeoDetails(Place place) 
+gotHomeTimeline(ResponseList<Status> statuses) 
+gotIncomingFriendships(IDs ids) 
+gotLanguages(ResponseList<HelpResources.Language> languages) 
+gotMemberSuggestions(ResponseList<User> users) 
+gotMentions(ResponseList<Status> statuses) 
+gotMuteIDs(IDs blockingUsersIDs) 
+gotMutesList(ResponseList<User> blockingUsers) 
+gotOAuth2Token(OAuth2Token token) 
+gotOAuthAccessToken(AccessToken token) 
+gotOAuthRequestToken(RequestToken token) 
+gotOEmbed(OEmbed oembed) 
+gotOutgoingFriendships(IDs ids) 
+gotPlaceTrends(Trends trends) 
+gotPrivacyPolicy(java.lang.String privacyPolicy) 
+gotRateLimitStatus(java.util.Map<java.lang.String,RateLimitStatus> rateLimitStatus) 
+gotRetweets(ResponseList<Status> retweets) 
+gotRetweetsOfMe(ResponseList<Status> statuses) 
+gotReverseGeoCode(ResponseList<Place> places) 
+gotSavedSearch(SavedSearch savedSearch) 
+gotSavedSearches(ResponseList<SavedSearch> savedSearches) 
+gotSentDirectMessages(ResponseList<DirectMessage> messages) 
+gotShowFriendship(Relationship relationship) 
+gotShowStatus(Status status) 
+gotShowUserList(UserList userList) 
+gotSimilarPlaces(ResponseList<Place> places) 
+gotSuggestedUserCategories(ResponseList<Category> category) 
+gotTermsOfService(java.lang.String tof) 
+gotUserDetail(User user) 
+gotUserListMembers(PagableResponseList<User> users) 
+gotUserListMemberships(PagableResponseList<UserList> userLists) 
+gotUserLists(ResponseList<UserList> userLists) 
+gotUserListStatuses(ResponseList<Status> statuses) 
+gotUserListSubscribers(PagableResponseList<User> users) 
+gotUserListSubscriptions(PagableResponseList<UserList> userLists) 
+gotUserSuggestions(ResponseList<User> users) 
+gotUserTimeline(ResponseList<Status> statuses) 
+lookedup(ResponseList<Status> statuses) 
+lookedUpFriendships(ResponseList<Friendship> friendships) 
+lookedupUsers(ResponseList<User> users) 
+onException(TwitterException te,            TwitterMethod method) 
+removedProfileBanner() 
+reportedSpam(User reportedSpammer) 
+retweetedStatus(Status retweetedStatus) 
+searched(QueryResult queryResult) 
+searchedPlaces(ResponseList<Place> places) 
+searchedUser(ResponseList<User> userList) 
+sentDirectMessage(DirectMessage message) 
+subscribedUserList(UserList userList) 
+unsubscribedUserList(UserList userList) 
+updatedAccountSettings(AccountSettings settings) 
+updatedFriendship(Relationship relationship) 
+updatedProfile(User user) 
+updatedProfileBackgroundImage(User user) 
+updatedProfileBanner() 
+updatedProfileColors(User user) 
+updatedProfileImage(User user) 
+updatedStatus(Status status) 
+updatedUserList(UserList userList) 
+verifiedCredentials(User user) addRateLimitStatusListener(RateLimitStatusListener listener) Registers a RateLimitStatusListener for account associated rate limits
+getAuthorization() Returns the authorization scheme for this instance.
+getConfiguration() Returns the configuration associated with this instance
+getId() Returns authenticating user's user id.
+getScreenName() Returns authenticating user's screen name.
+onRateLimitReached(Consumer<RateLimitStatusEvent> action) Registers a RateLimitStatusListener for account associated rate limits
+onRateLimitStatus(Consumer<RateLimitStatusEvent> action) Registers a lambda action for account associated rate limitsauth 
+conf 
+factory 
+http 
+id 
+rateLimitStatusListeners 
+screenName 
+serialVersionUID 
+WWW_DETAILS 
+
+               Authorization auth) 
+Method and Description
+addRateLimitStatusListener(RateLimitStatusListener listener) Registers a RateLimitStatusListener for account associated rate limits
+ensureAuthorizationEnabled() 
+ensureOAuthEnabled() 
+equals(java.lang.Object o) 
+fillInIDAndScreenName() 
+getAuthorization() Returns the authorization scheme for this instance.
+getConfiguration() Returns the configuration associated with this instance
+getId() Returns authenticating user's user id.
+getOAuth() 
+getOAuth2() 
+getOAuth2Token() Obtains an OAuth 2 Bearer token.
+getOAuthAccessToken() Returns an access token associated with this instance.
+getOAuthAccessToken(RequestToken requestToken) Retrieves an access token associated with the supplied request token and sets userId.
+getOAuthAccessToken(RequestToken requestToken,                    java.lang.String oauthVerifier)
+getOAuthAccessToken(java.lang.String oauthVerifier) Retrieves an access token.
+getOAuthAccessToken(java.lang.String screenName,                    java.lang.String password)
+getOAuthRequestToken() Retrieves a request token
+getOAuthRequestToken(java.lang.String callbackUrl) Retrieves a request token
+getOAuthRequestToken(java.lang.String callbackUrl,                     java.lang.String xAuthAccessType)
+getOAuthRequestToken(java.lang.String callbackUrl,                     java.lang.String xAuthAccessType,
+getScreenName() Returns authenticating user's screen name.
+hashCode() 
+httpResponseReceived(HttpResponseEvent event) 
+init() 
+invalidateOAuth2Token() Revokes an issued OAuth 2 Bearer Token.
+onRateLimitReached(Consumer<RateLimitStatusEvent> action) Registers a RateLimitStatusListener for account associated rate limits
+onRateLimitStatus(Consumer<RateLimitStatusEvent> action) Registers a lambda action for account associated rate limits
+readObject(java.io.ObjectInputStream stream) 
+setFactory() 
+setOAuth2Token(OAuth2Token oauth2Token) Sets the OAuth 2 Bearer token.
+setOAuthAccessToken(AccessToken accessToken) Sets the access token
+setOAuthConsumer(java.lang.String consumerKey,                 java.lang.String consumerSecret)
+toString() 
+writeObject(java.io.ObjectOutputStream out) errorCode 
+errorMessage 
+exceptionDiagnosis 
+FILTER 
+nested 
+response 
+serialVersionUID 
+statusCode 
+
+
+
+                java.lang.Exception cause,                 int statusCode) 
+                HttpResponse res) 
+                java.lang.Throwable cause) 
+Method and Description
+decode(java.lang.String str) 
+equals(java.lang.Object o) 
+exceededRateLimitation() Tests if the exception is caused by rate limitation exceed
+getAccessLevel() 
+getCause(int statusCode) 
+getErrorCode() 
+getErrorMessage() Returns error message from the API if available.
+getExceptionCode() Returns a hexadecimal representation of this exception stacktrace.
+getExceptionDiagnosis() 
+getMessage() 
+getRateLimitStatus() Returns the current rate limit status if available.
+getResponseHeader(java.lang.String name) 
+getRetryAfter() Returns int value of "Retry-After" response header (Search API) or seconds_until_reset (REST API).
+getStatusCode() 
+hashCode() 
+isCausedByNetworkIssue() Tests if the exception is caused by network issue
+isErrorMessageAvailable() Tests if error message from the API is available
+resourceNotFound() Tests if the exception is caused by non-existing resource
+setNested() 
+toString() conf 
+DEFAULT_AUTHORIZATION 
+serialVersionUID 
+SINGLETON 
+TWITTER_CONSTRUCTOR 
+
+Creates a TwitterFactory with the root configuration.
+Creates a TwitterFactory with the given configuration.
+Creates a TwitterFactory with a specified config tree
+Method and Description
+getInstance() Returns a instance associated with the configuration bound to this factory.
+getInstance(AccessToken accessToken) Returns a OAuth Authenticated instance.
+getInstance(Authorization auth) 
+getSingleton() Returns default singleton Twitter instance.IMPLICIT_PARAMS 
+IMPLICIT_PARAMS_STR 
+implicitParamsMap 
+implicitParamsStrMap 
+INCLUDE_MY_RETWEET 
+serialVersionUID 
+
+           Authorization auth) 
+Method and Description
+addParameterToList(java.util.List<HttpParameter> colors,                   java.lang.String paramName,
+checkFileValidity(java.io.File image) Check the existence, and the type of the specified file.
+createBlock(long userId) Blocks the user specified in the ID parameter as the authenticating user.
+createBlock(java.lang.String screenName) Blocks the user specified in the ID parameter as the authenticating user.
+createFavorite(long id) Favorites the status specified in the ID parameter as the authenticating user.
+createFriendship(long userId) Allows the authenticating users to follow the user specified in the ID parameter.
+createFriendship(long userId,                 boolean follow)
+createFriendship(java.lang.String screenName) Allows the authenticating users to follow the user specified in the ID parameter.
+createFriendship(java.lang.String screenName,                 boolean follow)
+createMute(long userId) Mutes the user specified in the ID parameter as the authenticating user.
+createMute(java.lang.String screenName) Mutes the user specified in the screen name parameter as the authenticating user.
+createSavedSearch(java.lang.String query) Creates a saved search for the authenticated user.
+createUserList(java.lang.String listName,               boolean isPublicList,
+createUserListMember(long listId,                     long userId)
+createUserListMember(long ownerId,                     java.lang.String slug,
+createUserListMember(java.lang.String ownerScreenName,                     java.lang.String slug,
+createUserListMembers(long listId,                      long... userIds)
+createUserListMembers(long listId,                      java.lang.String... screenNames)
+createUserListMembers(long ownerId,                      java.lang.String slug,
+createUserListMembers(long ownerId,                      java.lang.String slug,
+createUserListMembers(java.lang.String ownerScreenName,                      java.lang.String slug,
+createUserListMembers(java.lang.String ownerScreenName,                      java.lang.String slug,
+createUserListSubscription(long listId) Make the authenticated user follow the specified list.
+createUserListSubscription(long ownerId,                           java.lang.String slug)
+createUserListSubscription(java.lang.String ownerScreenName,                           java.lang.String slug)
+destroyBlock(long userId) Un-blocks the user specified in the ID parameter as the authenticating user.
+destroyBlock(java.lang.String screenName) Un-blocks the user specified in the ID parameter as the authenticating user.
+destroyDirectMessage(long id) Destroys the direct message specified in the required ID parameter.
+destroyFavorite(long id) Un-favorites the status specified in the ID parameter as the authenticating user.
+destroyFriendship(long userId) Allows the authenticating users to unfollow the user specified in the ID parameter.
+destroyFriendship(java.lang.String screenName) Allows the authenticating users to unfollow the user specified in the ID parameter.
+destroyMute(long userId) Un-mutes the user specified in the ID parameter as the authenticating user.
+destroyMute(java.lang.String screenName) Un-mutes the user specified in the screen name parameter as the authenticating user.
+destroySavedSearch(long id) Destroys a saved search for the authenticated user.
+destroyStatus(long statusId) Destroys the status specified by the required ID parameter.
+destroyUserList(long listId) Deletes the specified list.
+destroyUserList(long ownerId,                java.lang.String slug)
+destroyUserList(java.lang.String ownerScreenName,                java.lang.String slug)
+destroyUserListMember(long listId,                      long userId)
+destroyUserListMember(long listId,                      java.lang.String screenName)
+destroyUserListMember(long ownerId,                      java.lang.String slug,
+destroyUserListMember(java.lang.String ownerScreenName,                      java.lang.String slug,
+destroyUserListMembers(long listId,                       long[] userIds)
+destroyUserListMembers(long listId,                       java.lang.String[] screenNames)
+destroyUserListMembers(java.lang.String ownerScreenName,                       java.lang.String slug,
+destroyUserListSubscription(long listId) Unsubscribes the authenticated user form the specified list.
+destroyUserListSubscription(long ownerId,                            java.lang.String slug)
+destroyUserListSubscription(java.lang.String ownerScreenName,                            java.lang.String slug)
+directMessages() 
+favorites() 
+friendsFollowers() 
+get(java.lang.String url) 
+get(java.lang.String url,    HttpParameter... params) 
+getAccountSettings() Returns the current trend, geo, language, timezone and sleep time information for the authenticating user.
+getAPIConfiguration() Returns the current configuration used by Twitter including twitter.com slugs which are not usernames, maximum photo resolutions, and t.co URL lengths.
+getAvailableTrends() Returns the locations that Twitter has trending topic information for.
+getBlocksIDs() Returns an array of numeric user ids the authenticating user is blocking.
+getBlocksIDs(long cursor) Returns an array of numeric user ids the authenticating user is blocking.
+getBlocksList() Returns a list of user objects that the authenticating user is blocking.
+getBlocksList(long cursor) Returns a list of user objects that the authenticating user is blocking.
+getClosestTrends(GeoLocation location) Returns the locations that Twitter has trending topic information for, closest to a specified location.
+getContributees(long userId) Returns an array of users that the specified user can contribute to.
+getContributees(java.lang.String screenName) Returns an array of users that the specified user can contribute to.
+getContributors(long userId) Returns an array of users who can contribute to the specified account.
+getContributors(java.lang.String screenName) Returns an array of users who can contribute to the specified account.
+getDirectMessages() Returns a list of the direct messages sent to the authenticating user.
+getDirectMessages(Paging paging) Returns a list of the direct messages sent to the authenticating user.
+getDMImageAsStream(java.lang.String url) Returns a stream of the image included in direct messages.
+getFavorites() Returns the 20 most recent favorite statuses for the authenticating user or user specified by the ID parameter in the requested format.
+getFavorites(long userId) Returns the 20 most recent favorite statuses for the authenticating user or user specified by the ID parameter in the requested format.
+getFavorites(long userId,             Paging paging)
+getFavorites(Paging paging) Returns the 20 most recent favorite statuses for the authenticating user or user specified by the ID parameter in the requested format.
+getFavorites(java.lang.String screenName) Returns the 20 most recent favorite statuses for the authenticating user or user specified by the ID parameter in the requested format.
+getFavorites(java.lang.String screenName,             Paging paging)
+getFollowersIDs(long cursor) Returns an array of numeric IDs for every user the specified user is followed by.
+getFollowersIDs(long userId,                long cursor)
+getFollowersIDs(long userId,                long cursor,
+getFollowersIDs(java.lang.String screenName,                long cursor)
+getFollowersIDs(java.lang.String screenName,                long cursor,
+getFollowersList(long userId,                 long cursor)
+getFollowersList(long userId,                 long cursor,
+getFollowersList(long userId,                 long cursor,
+getFollowersList(java.lang.String screenName,                 long cursor)
+getFollowersList(java.lang.String screenName,                 long cursor,
+getFollowersList(java.lang.String screenName,                 long cursor,
+getFriendsIDs(long cursor) Returns an array of numeric IDs for every user the authenticating user is following.
+getFriendsIDs(long userId,              long cursor)
+getFriendsIDs(long userId,              long cursor,
+getFriendsIDs(java.lang.String screenName,              long cursor)
+getFriendsIDs(java.lang.String screenName,              long cursor,
+getFriendsList(long userId,               long cursor)
+getFriendsList(long userId,               long cursor,
+getFriendsList(long userId,               long cursor,
+getFriendsList(java.lang.String screenName,               long cursor)
+getFriendsList(java.lang.String screenName,               long cursor,
+getFriendsList(java.lang.String screenName,               long cursor,
+getGeoDetails(java.lang.String placeId) Find out more details of a place that was returned from the PlacesGeoResources.reverseGeoCode(twitter4j.GeoQuery) method.
+getHomeTimeline() Returns the 20 most recent statuses, including retweets, posted by the authenticating user and that user's friends.
+getHomeTimeline(Paging paging) Returns the 20 most recent statuses, including retweets, posted by the authenticating user and that user's friends.
+getIncomingFriendships(long cursor) Returns an array of numeric IDs for every user who has a pending request to follow the authenticating user.
+getLanguages() Returns the list of languages supported by Twitter along with their ISO 639-1 code.
+getMemberSuggestions(java.lang.String categorySlug) Access the users in a given category of the Twitter suggested user list and return their most recent status if they are not a protected user.
+getMentionsTimeline() Returns the 20 most recent mentions (tweets containing a users's @screen_name) for the authenticating user.
+getMentionsTimeline(Paging paging) Returns the 20 most recent mentions (tweets containing a users's @screen_name) for the authenticating user.
+getMutesIDs(long cursor) Returns an array of numeric user ids the authenticating user is muting.
+getMutesList(long cursor) Returns a list of user objects that the authenticating user is muting.
+getNoRetweetsFriendships() Returns a collection of user IDs that the currently authenticated user does not want to receive retweets from.
+getOEmbed(OEmbedRequest req) Returns information allowing the creation of an embedded representation of a Tweet on third party sites.
+getOutgoingFriendships(long cursor) Returns an array of numeric IDs for every protected user for whom the authenticating user has a pending follow request.
+getPlaceTrends(int woeid) Returns the top 10 trending topics for a specific WOEID, if trending information is available for it.
+getPrivacyPolicy() Returns Twitter's Privacy Policy.
+getRateLimitStatus() Returns the current rate limits for methods belonging to the specified resource families.
+getRateLimitStatus(java.lang.String... resources) Returns the current rate limits for methods belonging to the specified resource families.
+getRetweeterIds(long statusId,                int count,
+getRetweeterIds(long statusId,                long cursor)
+getRetweets(long statusId) Returns up to 100 of the first retweets of a given tweet.
+getRetweetsOfMe() Returns the 20 most recent tweets of the authenticated user that have been retweeted by others.
+getRetweetsOfMe(Paging paging) Returns the 20 most recent tweets of the authenticated user that have been retweeted by others.
+getSavedSearches() Returns the authenticated user's saved search queries.
+getSentDirectMessages() Returns a list of the direct messages sent by the authenticating user.
+getSentDirectMessages(Paging paging) Returns a list of the direct messages sent by the authenticating user.
+getSimilarPlaces(GeoLocation location,                 java.lang.String name,
+getSuggestedUserCategories() Access to Twitter's suggested user list.
+getTermsOfService() Returns Twitter's' Terms of Service.
+getUserListMembers(long listId,                   int count,
+getUserListMembers(long listId,                   int count,
+getUserListMembers(long listId,                   long cursor)
+getUserListMembers(long ownerId,                   java.lang.String slug,
+getUserListMembers(long ownerId,                   java.lang.String slug,
+getUserListMembers(long ownerId,                   java.lang.String slug,
+getUserListMembers(java.lang.String ownerScreenName,                   java.lang.String slug,
+getUserListMembers(java.lang.String ownerScreenName,                   java.lang.String slug,
+getUserListMembers(java.lang.String ownerScreenName,                   java.lang.String slug,
+getUserListMemberships(int count,                       long cursor)
+getUserListMemberships(long cursor) List the lists the authenticating user has been added to.
+getUserListMemberships(long listMemberId,                       int count,
+getUserListMemberships(long listMemberId,                       int count,
+getUserListMemberships(long listMemberId,                       long cursor)
+getUserListMemberships(long listMemberId,                       long cursor,
+getUserListMemberships(java.lang.String listMemberScreenName,                       int count,
+getUserListMemberships(java.lang.String listMemberScreenName,                       int count,
+getUserListMemberships(java.lang.String listMemberScreenName,                       long cursor)
+getUserListMemberships(java.lang.String listMemberScreenName,                       long cursor,
+getUserLists(long listOwnerUserId) List the lists of the specified user.
+getUserLists(long listOwnerUserId,             boolean reverse)
+getUserLists(java.lang.String listOwnerScreenName) List the lists of the specified user.
+getUserLists(java.lang.String listOwnerScreenName,             boolean reverse)
+getUserListsOwnerships(long listOwnerId,                       int count,
+getUserListsOwnerships(long listOwnerId,                       long cursor)
+getUserListsOwnerships(java.lang.String listOwnerScreenName,                       int count,
+getUserListsOwnerships(java.lang.String listOwnerScreenName,                       long cursor)
+getUserListStatuses(long listId,                    Paging paging)
+getUserListStatuses(long ownerId,                    java.lang.String slug,
+getUserListStatuses(java.lang.String ownerScreenName,                    java.lang.String slug,
+getUserListSubscribers(long listId,                       int count,
+getUserListSubscribers(long listId,                       int count,
+getUserListSubscribers(long listId,                       long cursor)
+getUserListSubscribers(long ownerId,                       java.lang.String slug,
+getUserListSubscribers(long ownerId,                       java.lang.String slug,
+getUserListSubscribers(long ownerId,                       java.lang.String slug,
+getUserListSubscribers(java.lang.String ownerScreenName,                       java.lang.String slug,
+getUserListSubscribers(java.lang.String ownerScreenName,                       java.lang.String slug,
+getUserListSubscribers(java.lang.String ownerScreenName,                       java.lang.String slug,
+getUserListSubscriptions(long listSubscriberId,                         int count,
+getUserListSubscriptions(long listSubscriberId,                         long cursor)
+getUserListSubscriptions(java.lang.String listSubscriberScreenName,                         int count,
+getUserListSubscriptions(java.lang.String listSubscriberScreenName,                         long cursor)
+getUserSuggestions(java.lang.String categorySlug) Access the users in a given category of the Twitter suggested user list.
+getUserTimeline() Returns the 20 most recent statuses posted from the authenticating user.
+getUserTimeline(long userId) Returns the 20 most recent statuses posted from the authenticating user.
+getUserTimeline(long userId,                Paging paging)
+getUserTimeline(Paging paging) Returns the 20 most recent statuses posted from the authenticating user.
+getUserTimeline(java.lang.String screenName) Returns the 20 most recent statuses posted from the authenticating user.
+getUserTimeline(java.lang.String screenName,                Paging paging)
+help() 
+isOk(HttpResponse response) 
+list() 
+lookup(long... ids) Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.
+lookupFriendships(long... ids) Returns the relationship of the authenticating user to the specified users.
+lookupFriendships(java.lang.String... screenNames) Returns the relationship of the authenticating user to the specified users.
+lookupUsers(long... ids) Return up to 100 users worth of extended information, specified by either ID, screen name, or combination of the two.
+lookupUsers(java.lang.String... screenNames) Return up to 100 users worth of extended information, specified by either ID, screen name, or combination of the two.
+mergeImplicitParams(HttpParameter... params) 
+mergeParameters(HttpParameter[] params1,                HttpParameter params2) 
+mergeParameters(HttpParameter[] params1,                HttpParameter[] params2) 
+placesGeo() 
+post(java.lang.String url) 
+post(java.lang.String url,     HttpParameter... params) 
+removeProfileBanner() Removes the uploaded profile banner for the authenticating user.
+reportSpam(long userId) The user specified in the id is blocked by the authenticated user and reported as a spammer.
+reportSpam(java.lang.String screenName) The user specified in the id is blocked by the authenticated user and reported as a spammer.
+retweetStatus(long statusId) Retweets a tweet.
+reverseGeoCode(GeoQuery query) Search for places (cities and neighborhoods) that can be attached to a statuses/update.
+savedSearches() 
+search() 
+search(Query query) Returns tweets that match a specified query.
+searchPlaces(GeoQuery query) Search for places that can be attached to a statuses/update.
+searchUsers(java.lang.String query,            int page)
+sendDirectMessage(long userId,                  java.lang.String text)
+sendDirectMessage(java.lang.String screenName,                  java.lang.String text)
+showDirectMessage(long id) Returns a single direct message, specified by an id parameter.
+showFriendship(long sourceId,               long targetId)
+showFriendship(java.lang.String sourceScreenName,               java.lang.String targetScreenName)
+showSavedSearch(long id) Retrieve the data for a saved search owned by the authenticating user specified by the given id.
+showStatus(long id) Returns a single status, specified by the id parameter below.
+showUser(long userId) Returns extended information of a given user, specified by ID or screen name as per the required id parameter.
+showUser(java.lang.String screenName) Returns extended information of a given user, specified by ID or screen name as per the required id parameter.
+showUserList(long listId) Show the specified list.
+showUserList(long ownerId,             java.lang.String slug)
+showUserList(java.lang.String ownerScreenName,             java.lang.String slug)
+showUserListMembership(long listId,                       long userId)
+showUserListMembership(long ownerId,                       java.lang.String slug,
+showUserListMembership(java.lang.String ownerScreenName,                       java.lang.String slug,
+showUserListSubscription(long listId,                         long userId)
+showUserListSubscription(long ownerId,                         java.lang.String slug,
+showUserListSubscription(java.lang.String ownerScreenName,                         java.lang.String slug,
+spamReporting() 
+suggestedUsers() 
+timelines() 
+toString() 
+trends() 
+tweets() 
+updateAccountSettings(java.lang.Integer trend_locationWoeid,                      java.lang.Boolean sleep_timeEnabled,
+updateFriendship(long userId,                 boolean enableDeviceNotification,
+updateFriendship(java.lang.String screenName,                 boolean enableDeviceNotification,
+updateProfile(java.lang.String name,              java.lang.String url,
+updateProfileBackgroundImage(java.io.File image,                             boolean tile)
+updateProfileBackgroundImage(java.io.InputStream image,                             boolean tile)
+updateProfileBanner(java.io.File image) Uploads a profile banner on behalf of the authenticating user.
+updateProfileBanner(java.io.InputStream image) Uploads a profile banner on behalf of the authenticating user.
+updateProfileColors(java.lang.String profileBackgroundColor,                    java.lang.String profileTextColor,
+updateProfileImage(java.io.File image) Updates the authenticating user's profile image.
+updateProfileImage(java.io.InputStream image) Updates the authenticating user's profile image.
+updateStatus(StatusUpdate status) Updates the authenticating user's status.
+updateStatus(java.lang.String status) Updates the authenticating user's status.
+updateUserList(long listId,               java.lang.String newListName,
+updateUserList(long ownerId,               java.lang.String slug,
+updateUserList(java.lang.String newListName,               boolean isPublicList,
+updateUserList(java.lang.String ownerScreenName,               java.lang.String slug,
+uploadMedia(java.io.File image) Uploads media image to be attached via TweetsResources.updateStatus(twitter4j.StatusUpdate)
+uploadMedia(java.lang.String fileName,            java.io.InputStream image)
+users() 
+verifyCredentials() Returns an HTTP 200 OK response code and a representation of the requesting user if authentication was successful; returns a 401 status code and an error message if not.checkedUserListMembership(User users) 
+checkedUserListSubscription(User user) 
+createdBlock(User user) 
+createdFavorite(Status status) 
+createdFriendship(User user) 
+createdMute(User user) 
+createdSavedSearch(SavedSearch savedSearch) 
+createdUserList(UserList userList) 
+createdUserListMember(UserList userList) 
+createdUserListMembers(UserList userList) 
+destroyedBlock(User user) 
+destroyedDirectMessage(DirectMessage message) 
+destroyedFavorite(Status status) 
+destroyedFriendship(User user) 
+destroyedMute(User user) 
+destroyedSavedSearch(SavedSearch savedSearch) 
+destroyedStatus(Status destroyedStatus) 
+destroyedUserList(UserList userList) 
+destroyedUserListMember(UserList userList) 
+gotAccountSettings(AccountSettings settings) 
+gotAPIConfiguration(TwitterAPIConfiguration conf) 
+gotAvailableTrends(ResponseList<Location> locations) 
+gotBlockIDs(IDs blockingUsersIDs) 
+gotBlocksList(ResponseList<User> blockingUsers) 
+gotClosestTrends(ResponseList<Location> locations) 
+gotContributees(ResponseList<User> users) 
+gotContributors(ResponseList<User> users) 
+gotDirectMessage(DirectMessage message) 
+gotDirectMessages(ResponseList<DirectMessage> messages) 
+gotFavorites(ResponseList<Status> statuses) 
+gotFollowersIDs(IDs ids) 
+gotFollowersList(PagableResponseList<User> users) 
+gotFriendsIDs(IDs ids) 
+gotFriendsList(PagableResponseList<User> users) 
+gotGeoDetails(Place place) 
+gotHomeTimeline(ResponseList<Status> statuses) 
+gotIncomingFriendships(IDs ids) 
+gotLanguages(ResponseList<HelpResources.Language> languages) 
+gotMemberSuggestions(ResponseList<User> users) 
+gotMentions(ResponseList<Status> statuses) 
+gotMuteIDs(IDs blockingUsersIDs) 
+gotMutesList(ResponseList<User> blockingUsers) 
+gotOAuth2Token(OAuth2Token token) 
+gotOAuthAccessToken(AccessToken token) 
+gotOAuthRequestToken(RequestToken token) 
+gotOEmbed(OEmbed oembed) 
+gotOutgoingFriendships(IDs ids) 
+gotPlaceTrends(Trends trends) 
+gotPrivacyPolicy(java.lang.String privacyPolicy) 
+gotRateLimitStatus(java.util.Map<java.lang.String,RateLimitStatus> rateLimitStatus) 
+gotRetweets(ResponseList<Status> retweets) 
+gotRetweetsOfMe(ResponseList<Status> statuses) 
+gotReverseGeoCode(ResponseList<Place> places) 
+gotSavedSearch(SavedSearch savedSearch) 
+gotSavedSearches(ResponseList<SavedSearch> savedSearches) 
+gotSentDirectMessages(ResponseList<DirectMessage> messages) 
+gotShowFriendship(Relationship relationship) 
+gotShowStatus(Status status) 
+gotShowUserList(UserList userList) 
+gotSimilarPlaces(ResponseList<Place> places) 
+gotSuggestedUserCategories(ResponseList<Category> category) 
+gotTermsOfService(java.lang.String tof) 
+gotUserDetail(User user) 
+gotUserListMembers(PagableResponseList<User> users) 
+gotUserListMemberships(PagableResponseList<UserList> userLists) 
+gotUserLists(ResponseList<UserList> userLists) 
+gotUserListStatuses(ResponseList<Status> statuses) 
+gotUserListSubscribers(PagableResponseList<User> users) 
+gotUserListSubscriptions(PagableResponseList<UserList> userLists) 
+gotUserSuggestions(ResponseList<User> users) 
+gotUserTimeline(ResponseList<Status> statuses) 
+lookedup(ResponseList<Status> statuses) 
+lookedUpFriendships(ResponseList<Friendship> friendships) 
+lookedupUsers(ResponseList<User> users) 
+onException(TwitterException te,            TwitterMethod method) 
+removedProfileBanner() 
+reportedSpam(User reportedSpammer) 
+retweetedStatus(Status retweetedStatus) 
+searched(QueryResult queryResult) 
+searchedPlaces(ResponseList<Place> places) 
+searchedUser(ResponseList<User> userList) 
+sentDirectMessage(DirectMessage message) 
+subscribedUserList(UserList userList) 
+unsubscribedUserList(UserList userList) 
+updatedAccountSettings(AccountSettings settings) 
+updatedFriendship(Relationship relationship) 
+updatedProfile(User user) 
+updatedProfileBackgroundImage(User user) 
+updatedProfileBanner() 
+updatedProfileColors(User user) 
+updatedProfileImage(User user) 
+updatedStatus(Status status) 
+updatedUserList(UserList userList) 
+verifiedCredentials(User user) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Method and Description
+valueOf(java.lang.String name) Returns the enum constant of this type with the specified name.
+values() Returns an array containing the constants of this enum type, inrawJsonMap 
+registeredAtleastOnce 
+Constructor and Description
+TwitterObjectFactory() 
+Method and Description
+clearThreadLocalMap() clear raw JSON forms associated with the current thread.
+createAccountTotals(java.lang.String rawJSON) Constructs an AccountTotals object from rawJSON string.
+createCategory(java.lang.String rawJSON) Constructs a Category object from rawJSON string.
+createDirectMessage(java.lang.String rawJSON) Constructs a DirectMessage object from rawJSON string.
+createIDs(java.lang.String rawJSON) Constructs a IDs object from rawJSON string.
+createLocation(java.lang.String rawJSON) Constructs a Location object from rawJSON string.
+createObject(java.lang.String rawJSON) Construct an object from rawJSON string.
+createOEmbed(java.lang.String rawJSON) Constructs an OEmbed object from rawJSON string.
+createPlace(java.lang.String rawJSON) Constructs a Place object from rawJSON string.
+createRateLimitStatus(java.lang.String rawJSON) Constructs a RateLimitStatus object from rawJSON string.
+createRelationship(java.lang.String rawJSON) Constructs a Relationship object from rawJSON string.
+createSavedSearch(java.lang.String rawJSON) Constructs a SavedSearch object from rawJSON string.
+createStatus(java.lang.String rawJSON) Constructs a Status object from rawJSON string.
+createTrend(java.lang.String rawJSON) Constructs a Trend object from rawJSON string.
+createTrends(java.lang.String rawJSON) Constructs a Trends object from rawJSON string.
+createUser(java.lang.String rawJSON) Constructs a User object from rawJSON string.
+createUserList(java.lang.String rawJSON) Constructs a UserList object from rawJSON string.
+getRawJSON(java.lang.Object obj) Returns a raw JSON form of the provided object.
+registerJSONObject(T key,                   java.lang.Object json)NONE 
+READ 
+READ_WRITE 
+READ_WRITE_DIRECTMESSAGES 
+Method and Description
+getAccessLevel() 
+getRateLimitStatus() Returns the current rate limit status if available.addConnectionLifeCycleListener(ConnectionLifeCycleListener listener) Adds a ConnectionLifeCycleListener
+addListener(StreamListener listener) 
+cleanUp() shutdown internal stream consuming thread
+clearListeners() clear status listeners
+filter(FilterQuery query) Start consuming public statuses that match one or more filter predicates.
+filter(java.lang.String... track) Start consuming public statuses that match the filter predicate.
+firehose(int count) Starts listening on all public statuses.
+links(int count) Starts listening on all public statuses containing links.
+onException(Consumer<java.lang.Exception> action) 
+onStatus(Consumer<Status> action) 
+removeListener(StreamListener listener) 
+replaceListener(StreamListener toBeRemoved,                StreamListener toBeAdded)
+retweet() Starts listening on all retweets.
+sample() Starts listening on random sample of all public statuses.
+sample(java.lang.String language) Starts listening on random sample of all public statuses.
+shutdown() Shuts down internal dispatcher thread shared by all TwitterStream instances.
+site(boolean withFollowings,     long... follow)
+user() User Streams provides real-time updates of all data needed to update a desktop application display.
+user(java.lang.String... track) User Streams provides real-time updates of all data needed to update a desktop application display.conf 
+serialVersionUID 
+SINGLETON 
+
+Creates a TwitterStreamFactory with the root configuration.
+Creates a TwitterStreamFactory with the given configuration.
+Creates a TwitterStreamFactory with a specified config tree.
+Method and Description
+getInstance() Returns a instance associated with the configuration bound to this factory.
+getInstance(AccessToken accessToken) Returns a OAuth Authenticated instance.
+getInstance(Authorization auth) Returns a instance.
+getInstance(Configuration conf,            Authorization auth) 
+getSingleton() Returns default singleton TwitterStream instance.
+
+
+Method and Description
+valueOf(java.lang.String name) Returns the enum constant of this type with the specified name.
+values() Returns an array containing the constants of this enum type, inTwitterStreamImpl.Mode 
+TwitterStreamImpl.TwitterStreamConsumer 
+Field and Description
+count 
+dispatcher 
+handler 
+http 
+HTTP_ERROR_INITIAL_WAIT 
+HTTP_ERROR_WAIT_CAP 
+lifeCycleListeners 
+logger 
+NO_WAIT 
+numberOfHandlers 
+serialVersionUID 
+stallWarningsGetParam 
+stallWarningsParam 
+streamListeners 
+TCP_ERROR_INITIAL_WAIT 
+TCP_ERROR_WAIT_CAP 
+
+                 Authorization auth) 
+Method and Description
+addConnectionLifeCycleListener(ConnectionLifeCycleListener listener) Adds a ConnectionLifeCycleListener
+addListener(StreamListener listener) 
+cleanUp() shutdown internal stream consuming thread
+clearListeners() clear status listeners
+ensureSiteStreamsListenerIsSet() 
+ensureStatusStreamListenerIsSet() check if any listener is set.
+equals(java.lang.Object o) 
+filter(FilterQuery query) Start consuming public statuses that match one or more filter predicates.
+filter(java.lang.String... track) Start consuming public statuses that match the filter predicate.
+firehose(int count) Starts listening on all public statuses.
+getCountStream(java.lang.String relativeUrl,               int count) 
+getDispatcher() 
+getFilterStream(FilterQuery query) Returns public statuses that match one or more filter predicates.
+getFirehoseStream(int count) Returns a status stream of all public statuses.
+getLinksStream(int count) Returns a status stream of all public statuses containing links.
+getRawStreamListeners() 
+getRetweetStream() Returns a stream of all retweets.
+getSampleStream() Returns a stream of random sample of all public statuses.
+getSampleStream(java.lang.String language) Returns a stream of random sample of all public statuses.
+getSiteStream(boolean withFollowings,              long[] follow) 
+getSiteStreamsListeners() 
+getStatusListeners() 
+getUserStream(java.lang.String[] track) User Streams provides real-time updates of all data needed to update a desktop application display.
+hashCode() 
+links(int count) Starts listening on all public statuses containing links.
+onException(Consumer<java.lang.Exception> action) 
+onStatus(Consumer<Status> action) 
+removeListener(StreamListener listener) 
+replaceListener(StreamListener toBeRemoved,                StreamListener toBeAdded)
+retweet() Starts listening on all retweets.
+sample() Starts listening on random sample of all public statuses.
+sample(java.lang.String language) Starts listening on random sample of all public statuses.
+shutdown() Shuts down internal dispatcher thread shared by all TwitterStream instances.
+site(boolean withFollowings,     long[] follow)
+startHandler(TwitterStreamImpl.TwitterStreamConsumer handler) 
+toString() 
+updateListeners() 
+user() User Streams provides real-time updates of all data needed to update a desktop application display.
+user(java.lang.String[] track) User Streams provides real-time updates of all data needed to update a desktop application display.twitter 
+
+             OAuthAuthorization oauth) 
+Method and Description
+equals(java.lang.Object o) 
+hashCode() 
+toString() 
+upload(java.io.File image) 
+upload(java.io.File image,       java.lang.String message) 
+upload(java.lang.String imageFileName,       java.io.InputStream imageBody) 
+upload(java.lang.String imageFileName,       java.io.InputStream imageBody,getDisplayURL() Returns the display URL if mentioned URL is shorten.
+getEnd() Returns the index of the end character of the URL mentioned in the tweet.
+getExpandedURL() Returns the expanded URL if mentioned URL is shorten.
+getStart() Returns the index of the start character of the URL mentioned in the tweet.
+getText() Returns the URL mentioned in the tweet.
+getURL() Returns the URL mentioned in the tweet.imageHeight 
+imageType 
+imageWidth 
+mediaId 
+serialVersionUID 
+size 
+
+
+Method and Description
+equals(java.lang.Object o) 
+getImageHeight() 
+getImageType() 
+getImageWidth() 
+getMediaId() 
+getSize() 
+hashCode() 
+init(JSONObject json) 
+toString() getBiggerProfileImageURL() 
+getBiggerProfileImageURLHttps() 
+getCreatedAt() 
+getDescription() Returns the description of the user
+getDescriptionURLEntities() Returns URL entities for user description.
+getFavouritesCount() 
+getFollowersCount() Returns the number of followers
+getFriendsCount() Returns the number of users the user follows (AKA "followings")
+getId() Returns the id of the user
+getLang() Returns the preferred language of the user
+getListedCount() Returns the number of public lists the user is listed on, or -1
+getLocation() Returns the location of the user
+getMiniProfileImageURL() 
+getMiniProfileImageURLHttps() 
+getName() Returns the name of the user
+getOriginalProfileImageURL() 
+getOriginalProfileImageURLHttps() 
+getProfileBackgroundColor() 
+getProfileBackgroundImageURL() 
+getProfileBackgroundImageUrlHttps() 
+getProfileBannerIPadRetinaURL() 
+getProfileBannerIPadURL() 
+getProfileBannerMobileRetinaURL() 
+getProfileBannerMobileURL() 
+getProfileBannerRetinaURL() 
+getProfileBannerURL() 
+getProfileImageURL() Returns the profile image url of the user
+getProfileImageURLHttps() 
+getProfileLinkColor() 
+getProfileSidebarBorderColor() 
+getProfileSidebarFillColor() 
+getProfileTextColor() 
+getScreenName() Returns the screen name of the user
+getStatus() Returns the current status of the user
+getStatusesCount() 
+getTimeZone() 
+getURL() Returns the url of the user
+getURLEntity() Returns URL entity for user's URL.
+getUtcOffset() 
+getWithheldInCountries() Returns the list of country codes where the user is withheld
+isContributorsEnabled() Tests if the user is enabling contributors
+isDefaultProfile() Tests if the user has not altered the theme or background
+isDefaultProfileImage() Tests if the user has not uploaded their own avatar
+isFollowRequestSent() Returns true if the authenticating user has requested to follow this user,
+isGeoEnabled() 
+isProfileBackgroundTiled() 
+isProfileUseBackgroundImage() 
+isProtected() Test if the user status is protected
+isShowAllInlineMedia() 
+isTranslator() 
+isVerified() getCreatedAt() 
+getDescription() Returns the description of the list
+getFullName() Returns the full name of the list
+getId() Returns the id of the list
+getMemberCount() Returns the member count of the list
+getName() Returns the name of the list
+getSlug() Returns the slug of the list
+getSubscriberCount() Returns the subscriber count of the list
+getURI() Returns the uri of the list
+getUser() Returns the user of the list
+isFollowing() Returns if the authenticated user is following the list
+isPublic() tests if the list is publicgetEnd() Returns the index of the end character of the user mention.
+getId() Returns the user id mentioned in the status.
+getName() Returns the name mentioned in the status.
+getScreenName() Returns the screen name mentioned in the status.
+getStart() Returns the index of the start character of the user mention.
+getText() Returns the screen name mentioned in the status.close() 
+next(UserStreamListener listener) Reads next element from this stream.
+Method and Description
+onBlock(User source,        User blockedUser) 
+onDeletionNotice(long directMessageId,                 long userId) 
+onDirectMessage(DirectMessage directMessage) 
+onException(java.lang.Exception ex) 
+onFavorite(User source,           User target,
+onFavoritedRetweet(User source,                   User target,
+onFollow(User source,         User followedUser) 
+onFriendList(long[] friendIds) 
+onQuotedTweet(User source,              User target,
+onRetweetedRetweet(User source,                   User target,
+onUnblock(User source,          User unblockedUser) 
+onUnfavorite(User source,             User target,
+onUnfollow(User source,           User unfollowedUser) 
+onUserDeletion(long deletedUser) 
+onUserListCreation(User listOwner,                   UserList list) 
+onUserListDeletion(User listOwner,                   UserList list) 
+onUserListMemberAddition(User addedMember,                         User listOwner,
+onUserListMemberDeletion(User deletedMember,                         User listOwner,
+onUserListSubscription(User subscriber,                       User listOwner,
+onUserListUnsubscription(User subscriber,                         User listOwner,
+onUserListUpdate(User listOwner,                 UserList list) 
+onUserProfileUpdate(User updatedUser) 
+onUserSuspension(long suspendedUser)               HttpResponse response,               Configuration conf) 
+              java.io.InputStream stream,               Configuration conf) 
+Method and Description
+next(UserStreamListener listener) Reads next element from this stream.
+onBlock(JSONObject source,        JSONObject target,
+onDirectMessage(JSONObject json,                StreamListener[] listeners) 
+onFavorite(JSONObject source,           JSONObject target,
+onFavoritedRetweet(JSONObject source,                   JSONObject target,
+onFollow(JSONObject source,         JSONObject target,
+onFriends(JSONObject json,          StreamListener[] listeners) 
+onQuotedTweet(JSONObject source,              JSONObject target,
+onRetweetedRetweet(JSONObject source,                   JSONObject target,
+onScrubGeo(JSONObject json,           StreamListener[] listeners) 
+onSender(JSONObject json,         StreamListener[] listeners) 
+onUnblock(JSONObject source,          JSONObject target,
+onUnfavorite(JSONObject source,             JSONObject target,
+onUnfollow(JSONObject source,           JSONObject target,
+onUserDeletion(long target,               StreamListener[] listeners) 
+onUserListCreation(JSONObject source,                   JSONObject target,
+onUserListDestroyed(JSONObject source,                    JSONObject target,
+onUserListMemberAddition(JSONObject addedMember,                         JSONObject owner,
+onUserListMemberDeletion(JSONObject deletedMember,                         JSONObject owner,
+onUserListSubscription(JSONObject source,                       JSONObject owner,
+onUserListUnsubscription(JSONObject source,                         JSONObject owner,
+onUserListUpdated(JSONObject source,                  JSONObject target,
+onUserSuspension(long target,                 StreamListener[] listeners) 
+onUserUpdate(JSONObject source,             JSONObject target,onBlock(User source,        User blockedUser) 
+onDeletionNotice(long directMessageId,                 long userId) 
+onDirectMessage(DirectMessage directMessage) 
+onFavorite(User source,           User target,
+onFavoritedRetweet(User source,                   User target,
+onFollow(User source,         User followedUser) 
+onFriendList(long[] friendIds) 
+onQuotedTweet(User source,              User target,
+onRetweetedRetweet(User source,                   User target,
+onUnblock(User source,          User unblockedUser) 
+onUnfavorite(User source,             User target,
+onUnfollow(User source,           User unfollowedUser) 
+onUserDeletion(long deletedUser) 
+onUserListCreation(User listOwner,                   UserList list) 
+onUserListDeletion(User listOwner,                   UserList list) 
+onUserListMemberAddition(User addedMember,                         User listOwner,
+onUserListMemberDeletion(User deletedMember,                         User listOwner,
+onUserListSubscription(User subscriber,                       User listOwner,
+onUserListUnsubscription(User subscriber,                         User listOwner,
+onUserListUpdate(User listOwner,                 UserList list) 
+onUserProfileUpdate(User updatedUser) 
+onUserSuspension(long suspendedUser) createBlock(long userId) Blocks the user specified in the ID parameter as the authenticating user.
+createBlock(java.lang.String screenName) Blocks the user specified in the ID parameter as the authenticating user.
+createMute(long userId) Mutes the user specified in the ID parameter as the authenticating user.
+createMute(java.lang.String screenName) Mutes the user specified in the screen name parameter as the authenticating user.
+destroyBlock(long userId) Un-blocks the user specified in the ID parameter as the authenticating user.
+destroyBlock(java.lang.String screen_name) Un-blocks the user specified in the ID parameter as the authenticating user.
+destroyMute(long userId) Un-mutes the user specified in the ID parameter as the authenticating user.
+destroyMute(java.lang.String screenName) Un-mutes the user specified in the screen name parameter as the authenticating user.
+getAccountSettings() Returns the current trend, geo, language, timezone and sleep time information for the authenticating user.
+getBlocksIDs() Returns an array of numeric user ids the authenticating user is blocking.
+getBlocksIDs(long cursor) Returns an array of numeric user ids the authenticating user is blocking.
+getBlocksList() Returns a list of user objects that the authenticating user is blocking.
+getBlocksList(long cursor) Returns a list of user objects that the authenticating user is blocking.
+getContributees(long userId) Returns an array of users that the specified user can contribute to.
+getContributees(java.lang.String screenName) Returns an array of users that the specified user can contribute to.
+getContributors(long userId) Returns an array of users who can contribute to the specified account.
+getContributors(java.lang.String screenName) Returns an array of users who can contribute to the specified account.
+getMutesIDs(long cursor) Returns an array of numeric user ids the authenticating user is muting.
+getMutesList(long cursor) Returns a list of user objects that the authenticating user is muting.
+lookupUsers(long... ids) Return up to 100 users worth of extended information, specified by either ID, screen name, or combination of the two.
+lookupUsers(java.lang.String... screenNames) Return up to 100 users worth of extended information, specified by either ID, screen name, or combination of the two.
+removeProfileBanner() Removes the uploaded profile banner for the authenticating user.
+searchUsers(java.lang.String query,            int page)
+showUser(long userId) Returns extended information of a given user, specified by ID or screen name as per the required id parameter.
+showUser(java.lang.String screenName) Returns extended information of a given user, specified by ID or screen name as per the required id parameter.
+updateAccountSettings(java.lang.Integer trendLocationWoeid,                      java.lang.Boolean sleepTimeEnabled,
+updateProfile(java.lang.String name,              java.lang.String url,
+updateProfileBackgroundImage(java.io.File image,                             boolean tile)
+updateProfileBackgroundImage(java.io.InputStream image,                             boolean tile)
+updateProfileBanner(java.io.File image) Uploads a profile banner on behalf of the authenticating user.
+updateProfileBanner(java.io.InputStream image) Uploads a profile banner on behalf of the authenticating user.
+updateProfileColors(java.lang.String profileBackgroundColor,                    java.lang.String profileTextColor,
+updateProfileImage(java.io.File image) Updates the authenticating user's profile image.
+updateProfileImage(java.io.InputStream image) Updates the authenticating user's profile image.
+verifyCredentials() Returns an HTTP 200 OK response code and a representation of the requesting user if authentication was successful; returns a 401 status code and an error message if not.createBlock(long userId) Blocks the user specified in the ID parameter as the authenticating user.
+createBlock(java.lang.String screenName) Blocks the user specified in the ID parameter as the authenticating user.
+createMute(long userId) Mutes the user specified in the ID parameter as the authenticating user.
+createMute(java.lang.String screenName) Mutes the user specified in the screen name parameter as the authenticating user.
+destroyBlock(long userId) Un-blocks the user specified in the ID parameter as the authenticating user.
+destroyBlock(java.lang.String screenName) Un-blocks the user specified in the ID parameter as the authenticating user.
+destroyMute(long userId) Un-mutes the user specified in the ID parameter as the authenticating user.
+destroyMute(java.lang.String screenName) Un-mutes the user specified in the screen name parameter as the authenticating user.
+getAccountSettings() Returns the current trend, geo and sleep time information for the authenticating user.
+getBlocksIDs() Returns an array of numeric user ids the authenticating user is blocking.
+getBlocksIDs(long cursor) Returns an array of numeric user ids the authenticating user is blocking.
+getBlocksList() Returns a list of user objects that the authenticating user is blocking.
+getBlocksList(long cursor) Returns a list of user objects that the authenticating user is blocking.
+getContributees(long userId) Returns an array of users that the specified user can contribute to.
+getContributees(java.lang.String screenName) Returns an array of users that the specified user can contribute to.
+getContributors(long userId) Returns an array of users who can contribute to the specified account.
+getContributors(java.lang.String screenName) Returns an array of users who can contribute to the specified account.
+getMutesIDs(long cursor) Returns an array of numeric user ids the authenticating user is muting.
+getMutesList(long cursor) Returns a list of user objects that the authenticating user is muting.
+lookupUsers(long... ids) Return up to 100 users worth of extended information, specified by either ID, screen name, or combination of the two.
+lookupUsers(java.lang.String... screenNames) Return up to 100 users worth of extended information, specified by either ID, screen name, or combination of the two.
+removeProfileBanner() Removes the uploaded profile banner for the authenticating user.
+searchUsers(java.lang.String query,            int page)
+showUser(long userId) Returns extended information of a given user, specified by ID or screen name as per the required id parameter.
+showUser(java.lang.String screenName) Returns extended information of a given user, specified by ID or screen name as per the required id parameter.
+updateAccountSettings(java.lang.Integer trendLocationWoeid,                      java.lang.Boolean sleepTimeEnabled,
+updateProfile(java.lang.String name,              java.lang.String url,
+updateProfileBackgroundImage(java.io.File image,                             boolean tile)
+updateProfileBackgroundImage(java.io.InputStream image,                             boolean tile)
+updateProfileBanner(java.io.File image) Uploads a profile banner on behalf of the authenticating user.
+updateProfileBanner(java.io.InputStream image) Uploads a profile banner on behalf of the authenticating user.
+updateProfileColors(java.lang.String profileBackgroundColor,                    java.lang.String profileTextColor,
+updateProfileImage(java.io.File image) Updates the authenticating user's profile image.
+updateProfileImage(java.io.InputStream image) Updates the authenticating user's profile image.
+verifyCredentials() Returns an HTTP 200 OK response code and a representation of the requesting user if authentication was successful; returns a 401 status code and an error message if not.TITLE 
+VERSION 
+Constructor and Description
+Version() 
+Method and Description
+getVersion() 
+main(java.lang.String[] args) prints the version stringTITLE 
+VERSION 
+Constructor and Description
+VersionAsync() 
+Method and Description
+getVersion() 
+main(java.lang.String[] args) prints the version stringTITLE 
+VERSION 
+Constructor and Description
+VersionStream() 
+Method and Description
+getVersion() 
+main(java.lang.String[] args) prints the version string           OAuthAuthorization oauth) 
+Method and Description
+postUpload() 
+preUpload() 
