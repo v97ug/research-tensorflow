@@ -203,10 +203,11 @@ for i in xrange(vocabulary_size):
         resource_normalized_embeddings = resource_method / resource_norm
 
         sim_array = np.matmul(resource_normalized_embeddings,
-                              np.transpose(final_normalized_embeddings))  # その単語と、その他全ての単語とのsimilarityを求めた一次元配列
+                              np.transpose(final_normalized_embeddings))[0, :]  # その単語と、その他全ての単語とのsimilarityを求めた一次元配列
         # sim_arrayを逆順ソートし、上位３つのindexを取ってくる。
         # なお、indexとは、ソートする前にどこのindexにあったかである.
-        large_sim_indices = np.argsort(sim_array)[::-1][0, :]
+        large_sim_indices = np.argsort(sim_array)[::-1]
+        most_sim_values = np.sort(sim_array)[::-1]
 
         resource_name = freq_rank_word_dict[i]
         log_str = "Nearest to %s:" % resource_name
@@ -214,9 +215,11 @@ for i in xrange(vocabulary_size):
             close_word_index = large_sim_indices[k]
             close_word = freq_rank_word_dict[close_word_index]
             if close_word in all_method_words:
-                log_str = "%s %s," % (log_str, close_word)
+                log_str = "%s %s -> %s ," % (log_str, close_word, most_sim_values[k])
 
         print(log_str)
+
+
 print(count)
 
 
