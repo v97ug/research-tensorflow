@@ -126,7 +126,7 @@ def generate_batch(batch_size, num_skips, skip_window):
     return batch, labels
 
 
-batch, labels = generate_batch(batch_size=8, num_skips=2, skip_window=1)
+# batch, labels = generate_batch(batch_size=8, num_skips=2, skip_window=1)
 # for i in range(8):
     # print(batch[i], freq_rank_word_dict[batch[i]],
     #       '->', labels[i, 0], freq_rank_word_dict[labels[i, 0]])
@@ -237,13 +237,37 @@ with tf.Session(graph=graph) as session:
             #     print(log_str)
     final_embeddings = normalized_embeddings.eval()
 
+
+#
 count = 0
-for i, em in enumerate(final_embeddings):
+for i in xrange(vocabulary_size):
     if freq_rank_word_dict[i] in tfidf_words:
         count += 1
         print(freq_rank_word_dict[i])
-        # print(tfidf_words.index(freq_rank_word_dict[i]))
-        print(em)
+        print(final_embeddings[i, :])
+
+        resourse_method = final_embeddings[i, :].reshape(1, embedding_size)  #縦ベクトルになってる
+        print(resourse_method)
+
+        # 正規化する
+        final_norm = tf.sqrt(tf.reduce_sum(tf.square(final_embeddings), 1, keep_dims=True))
+        final_normalized_embeddings = final_embeddings / final_norm
+
+        resourse_norm =  tf.sqrt(tf.reduce_sum(tf.square(resourse_method)))
+        resourse_normalized_embeddings = resourse_method / resourse_norm
+
+        sim_array = tf.matmul(resourse_normalized_embeddings, final_normalized_embeddings, transpose_b=True)  # その単語と、その他全ての単語とのsimilarityを求めた一次元配列
+        large_sim_indices = np.argsort(sim_array)[::-1][0:3]  # sim_arrayを逆順ソートし、上位３つのindexを取ってくる。なお、indexとは、ソートする前にどこのindexにあったかである.
+        # index_sorted_sim = sorted(enumerate(sim_array), key=lambda x: x[1], reverse=True)  # with_indexして、降順にソート
+
+        print(large_sim_indices)
+        resourse_name = freq_rank_word_dict[i]
+        log_str = "Nearest to %s:" % resourse_name
+        for k in xrange(3):
+            # close_word_index = index_sorted_sim[k][0]
+            close_word_index = large_sim_indices[k]
+            log_str = "%s %s," % (log_str, freq_rank_word_dict[close_word_index])
+        print(log_str)
 print(count)
 
 # Step 6: Visualize the embeddings.
