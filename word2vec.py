@@ -216,7 +216,7 @@ for i in xrange(vocabulary_size):
             close_word = freq_rank_word_dict[close_word_index]
             if close_word in all_method_words:
                 if close_word != resource_name:
-                    log_str = "%s %s -> %s ," % (log_str, close_word, most_sim_values[k])
+                    log_str = "%s %s ," % (log_str, close_word)
 
         print(log_str)
 
