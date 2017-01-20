@@ -66,7 +66,7 @@ words = open('input-file/ALL-HADOOP-API-ascii.txt').read().split()
 # Step 2: Build the dictionary and replace rare words with UNK token.
 vocabulary_size = 50000
 
-tfidf_words = open('all-methods-modify.txt','r').read().split()
+tfidf_words = open('all-methods-really.txt','r').read().split("\n")  #改行でsplitするよ
 
 def build_dataset(param_words):
     pair_word_and_word_freq = [['UNK', -1]]
@@ -242,6 +242,7 @@ for i, em in enumerate(final_embeddings):
     if freq_rank_word_dict[i] in tfidf_words:
         count += 1
         print(freq_rank_word_dict[i])
+        # print(tfidf_words.index(freq_rank_word_dict[i]))
         print(em)
 print(count)
 
