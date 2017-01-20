@@ -64,9 +64,10 @@ words = open('input-file/ALL-HADOOP-API-ascii.txt').read().split()
 # print('Data size', len(words))
 
 # Step 2: Build the dictionary and replace rare words with UNK token.
-vocabulary_size = 50000
+vocabulary_size = 20000
 
-tfidf_words = open('all-methods-really.txt','r').read().split("\n")  #改行でsplitするよ
+tfidf_words = open('all-methods-really.txt', 'r').read().split("\n")  # 改行でsplitするよ
+
 
 def build_dataset(param_words):
     pair_word_and_word_freq = [['UNK', -1]]
@@ -128,8 +129,8 @@ def generate_batch(batch_size, num_skips, skip_window):
 
 # batch, labels = generate_batch(batch_size=8, num_skips=2, skip_window=1)
 # for i in range(8):
-    # print(batch[i], freq_rank_word_dict[batch[i]],
-    #       '->', labels[i, 0], freq_rank_word_dict[labels[i, 0]])
+# print(batch[i], freq_rank_word_dict[batch[i]],
+#       '->', labels[i, 0], freq_rank_word_dict[labels[i, 0]])
 
 # Step 4: Build and train a skip-gram model.
 
@@ -237,7 +238,6 @@ with tf.Session(graph=graph) as session:
             #     print(log_str)
     final_embeddings = normalized_embeddings.eval()
 
-
 #
 count = 0
 for i in xrange(vocabulary_size):
@@ -246,18 +246,19 @@ for i in xrange(vocabulary_size):
         print(freq_rank_word_dict[i])
         print(final_embeddings[i, :])
 
-        resourse_method = final_embeddings[i, :].reshape(1, embedding_size)  #縦ベクトルになってる
+        resourse_method = final_embeddings[i, :].reshape(1, embedding_size)  # 縦ベクトルになってる
         print(resourse_method)
 
         # 正規化する
-        final_norm = tf.sqrt(tf.reduce_sum(tf.square(final_embeddings), 1, keep_dims=True))
+        final_norm = np.sqrt(np.sum(np.square(final_embeddings), axis=1)).reshape(vocabulary_size,1)
         final_normalized_embeddings = final_embeddings / final_norm
 
-        resourse_norm =  tf.sqrt(tf.reduce_sum(tf.square(resourse_method)))
+        resourse_norm = np.sqrt(np.sum(np.square(resourse_method)))
         resourse_normalized_embeddings = resourse_method / resourse_norm
 
-        sim_array = tf.matmul(resourse_normalized_embeddings, final_normalized_embeddings, transpose_b=True)  # その単語と、その他全ての単語とのsimilarityを求めた一次元配列
-        large_sim_indices = np.argsort(sim_array)[::-1][0:3]  # sim_arrayを逆順ソートし、上位３つのindexを取ってくる。なお、indexとは、ソートする前にどこのindexにあったかである.
+        sim_array = np.matmul(resourse_normalized_embeddings,
+                              np.transpose(final_normalized_embeddings))  # その単語と、その他全ての単語とのsimilarityを求めた一次元配列
+        large_sim_indices = np.argsort(sim_array)[::-1][0,:]  # sim_arrayを逆順ソートし、上位３つのindexを取ってくる。なお、indexとは、ソートする前にどこのindexにあったかである.
         # index_sorted_sim = sorted(enumerate(sim_array), key=lambda x: x[1], reverse=True)  # with_indexして、降順にソート
 
         print(large_sim_indices)
@@ -270,6 +271,7 @@ for i in xrange(vocabulary_size):
         print(log_str)
 print(count)
 
+
 # Step 6: Visualize the embeddings.
 
 
@@ -278,7 +280,7 @@ def plot_with_labels(low_dim_embs, labels, filename='tsne.png'):
     plt.figure(figsize=(18, 18))  # in inches
     for i, label in enumerate(labels):
         x, y = low_dim_embs[i, :]
-        plt.scatter(x, y)  #plotする
+        plt.scatter(x, y)  # plotする
         plt.annotate(label,  # 文字列をつけたり、位置を調整したり
                      xy=(x, y),
                      xytext=(5, 2),
