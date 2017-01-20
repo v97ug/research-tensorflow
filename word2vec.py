@@ -193,14 +193,14 @@ for i in xrange(vocabulary_size):
     if freq_rank_word_dict[i] in all_method_words:
         count += 1
 
-        resource_method = final_embeddings[i, :].reshape(1, embedding_size)  # 縦ベクトルになってる
+        resource_method_mat = final_embeddings[i, :].reshape(1, embedding_size)  # 縦ベクトルになってるので、reshapeで行列にする
 
         # 正規化する
         final_norm = np.sqrt(np.sum(np.square(final_embeddings), axis=1)).reshape(vocabulary_size, 1)
         final_normalized_embeddings = final_embeddings / final_norm
 
-        resource_norm = np.sqrt(np.sum(np.square(resource_method)))
-        resource_normalized_embeddings = resource_method / resource_norm
+        resource_norm = np.sqrt(np.sum(np.square(resource_method_mat)))
+        resource_normalized_embeddings = resource_method_mat / resource_norm
 
         sim_array = np.matmul(resource_normalized_embeddings,
                               np.transpose(final_normalized_embeddings))[0, :]  # その単語と、その他全ての単語とのsimilarityを求めた一次元配列
@@ -215,7 +215,8 @@ for i in xrange(vocabulary_size):
             close_word_index = large_sim_indices[k]
             close_word = freq_rank_word_dict[close_word_index]
             if close_word in all_method_words:
-                log_str = "%s %s -> %s ," % (log_str, close_word, most_sim_values[k])
+                if close_word != resource_name:
+                    log_str = "%s %s -> %s ," % (log_str, close_word, most_sim_values[k])
 
         print(log_str)
 
