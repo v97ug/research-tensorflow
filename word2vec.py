@@ -30,43 +30,13 @@ from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
 import types
 
-# Step 1: Download the data.
-# url = 'http://mattmahoney.net/dc/'
-#
-#
-# def maybe_download(filename, expected_bytes):
-#     """Download a file if not present, and make sure it's the right size."""
-#     if not os.path.exists(filename):
-#         filename, _ = urllib.request.urlretrieve(url + filename, filename)
-#     statinfo = os.stat(filename)
-#     if statinfo.st_size == expected_bytes:
-#         print('Found and verified', filename)
-#     else:
-#         print(statinfo.st_size)
-#         raise Exception(
-#             'Failed to verify ' + filename + '. Can you get to it with a browser?')
-#     return filename
-#
-#
-# filename = maybe_download('text8.zip', 31344016)
-#
-#
-# # Read the data into a list of strings.
-# def read_data(filename):
-#     """Extract the first file enclosed in a zip file as a list of words"""
-#     with zipfile.ZipFile(filename) as f:
-#         words_list = tf.compat.as_str(f.read(f.namelist()[0])).split()
-#     return words_list
-#
-#
-# words = read_data(filename)
+# Step 1: Read the data.
 words = open('input-file/ALL-HADOOP-API-ascii.txt').read().split()
-# print('Data size', len(words))
 
 # Step 2: Build the dictionary and replace rare words with UNK token.
 vocabulary_size = 20000
 
-tfidf_words = open('all-methods-really.txt', 'r').read().split("\n")  # 改行でsplitするよ
+all_method_words = open('all-methods-really.txt', 'r').read().split("\n")  # 改行でsplitするよ
 
 
 def build_dataset(param_words):
@@ -93,7 +63,6 @@ def build_dataset(param_words):
 
 word_ranks, freq_rank_word_dict = build_dataset(words)
 del words  # Hint to reduce memory.
-# print('Sample data', word_ranks[:10], [freq_rank_word_dict[i] for i in word_ranks[:10]])
 
 data_index = 0
 
@@ -126,11 +95,6 @@ def generate_batch(batch_size, num_skips, skip_window):
         data_index = (data_index + 1) % len(word_ranks)
     return batch, labels
 
-
-# batch, labels = generate_batch(batch_size=8, num_skips=2, skip_window=1)
-# for i in range(8):
-# print(batch[i], freq_rank_word_dict[batch[i]],
-#       '->', labels[i, 0], freq_rank_word_dict[labels[i, 0]])
 
 # Step 4: Build and train a skip-gram model.
 
@@ -201,9 +165,7 @@ num_steps = 10001
 with tf.Session(graph=graph) as session:
     # We must initialize all variables before we use them.
     init.run()
-    # print("Initialized")
-
-    # print(session.run(norm))
+    print("Initialized")
 
     average_loss = 0
     for step in xrange(num_steps):
@@ -220,54 +182,40 @@ with tf.Session(graph=graph) as session:
             if step > 0:
                 average_loss /= 2000
             # The average loss is an estimate of the loss over the last 2000 batches.
-            # print("Average loss at step ", step, ": ", average_loss)
+            print("Average loss at step ", step, ": ", average_loss)
             average_loss = 0
 
-        # Note that this is expensive (~20% slowdown if computed every 500 steps)
-        if step % 10000 == 0:
-            sim = similarity.eval()  # sim :: numpy.ndarray
-            # print(sim)
-            # for i in xrange(valid_size):
-            #     valid_word = freq_rank_word_dict[valid_examples[i]]
-            #     top_k = 8  # number of nearest neighbors
-            #     nearest = (-sim[i, :]).argsort()[1:top_k + 1]  #０からでないのは、自分自身を含ませないため
-            #     log_str = "Nearest to %s:" % valid_word
-            #     for k in xrange(top_k):
-            #         close_word = freq_rank_word_dict[nearest[k]]
-            #         log_str = "%s %s," % (log_str, close_word)
-            #     print(log_str)
     final_embeddings = normalized_embeddings.eval()
 
-#
+
 count = 0
 for i in xrange(vocabulary_size):
-    if freq_rank_word_dict[i] in tfidf_words:
+    if freq_rank_word_dict[i] in all_method_words:
         count += 1
-        print(freq_rank_word_dict[i])
-        print(final_embeddings[i, :])
 
-        resourse_method = final_embeddings[i, :].reshape(1, embedding_size)  # 縦ベクトルになってる
-        print(resourse_method)
+        resource_method = final_embeddings[i, :].reshape(1, embedding_size)  # 縦ベクトルになってる
 
         # 正規化する
-        final_norm = np.sqrt(np.sum(np.square(final_embeddings), axis=1)).reshape(vocabulary_size,1)
+        final_norm = np.sqrt(np.sum(np.square(final_embeddings), axis=1)).reshape(vocabulary_size, 1)
         final_normalized_embeddings = final_embeddings / final_norm
 
-        resourse_norm = np.sqrt(np.sum(np.square(resourse_method)))
-        resourse_normalized_embeddings = resourse_method / resourse_norm
+        resource_norm = np.sqrt(np.sum(np.square(resource_method)))
+        resource_normalized_embeddings = resource_method / resource_norm
 
-        sim_array = np.matmul(resourse_normalized_embeddings,
+        sim_array = np.matmul(resource_normalized_embeddings,
                               np.transpose(final_normalized_embeddings))  # その単語と、その他全ての単語とのsimilarityを求めた一次元配列
-        large_sim_indices = np.argsort(sim_array)[::-1][0,:]  # sim_arrayを逆順ソートし、上位３つのindexを取ってくる。なお、indexとは、ソートする前にどこのindexにあったかである.
-        # index_sorted_sim = sorted(enumerate(sim_array), key=lambda x: x[1], reverse=True)  # with_indexして、降順にソート
+        # sim_arrayを逆順ソートし、上位３つのindexを取ってくる。
+        # なお、indexとは、ソートする前にどこのindexにあったかである.
+        large_sim_indices = np.argsort(sim_array)[::-1][0, :]
 
-        print(large_sim_indices)
-        resourse_name = freq_rank_word_dict[i]
-        log_str = "Nearest to %s:" % resourse_name
-        for k in xrange(3):
-            # close_word_index = index_sorted_sim[k][0]
+        resource_name = freq_rank_word_dict[i]
+        log_str = "Nearest to %s:" % resource_name
+        for k in xrange(100):
             close_word_index = large_sim_indices[k]
-            log_str = "%s %s," % (log_str, freq_rank_word_dict[close_word_index])
+            close_word = freq_rank_word_dict[close_word_index]
+            if close_word in all_method_words:
+                log_str = "%s %s," % (log_str, close_word)
+
         print(log_str)
 print(count)
 
