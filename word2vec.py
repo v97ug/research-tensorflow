@@ -188,22 +188,26 @@ with tf.Session(graph=graph) as session:
     final_embeddings = normalized_embeddings.eval()
 
 
+def cal_similarity(mat_1m, mat_mn):
+
+    # 正規化する
+    mat_1m_norm = np.sqrt(np.sum(np.square(mat_1m)))
+    mat_1m_normalized = resource_method_mat / mat_1m_norm
+
+    mat_mn_norm = np.sqrt(np.sum(np.square(mat_mn), axis=1)).reshape(vocabulary_size, 1)
+    mat_nm_normalized = final_embeddings / mat_mn_norm
+
+    return np.matmul(mat_1m_normalized,
+                          np.transpose(mat_nm_normalized))[0, :]  # その単語と、その他全ての単語とのsimilarityを求めた一次元配列
+
 count = 0
 for i in xrange(vocabulary_size):
     if freq_rank_word_dict[i] in all_method_words:
         count += 1
 
         resource_method_mat = final_embeddings[i, :].reshape(1, embedding_size)  # 縦ベクトルになってるので、reshapeで行列にする
+        sim_array = cal_similarity(resource_method_mat, final_embeddings)
 
-        # 正規化する
-        final_norm = np.sqrt(np.sum(np.square(final_embeddings), axis=1)).reshape(vocabulary_size, 1)
-        final_normalized_embeddings = final_embeddings / final_norm
-
-        resource_norm = np.sqrt(np.sum(np.square(resource_method_mat)))
-        resource_normalized_embeddings = resource_method_mat / resource_norm
-
-        sim_array = np.matmul(resource_normalized_embeddings,
-                              np.transpose(final_normalized_embeddings))[0, :]  # その単語と、その他全ての単語とのsimilarityを求めた一次元配列
         # sim_arrayを逆順ソートし、上位３つのindexを取ってくる。
         # なお、indexとは、ソートする前にどこのindexにあったかである.
         large_sim_indices = np.argsort(sim_array)[::-1]
@@ -214,9 +218,8 @@ for i in xrange(vocabulary_size):
         for k in xrange(100):
             close_word_index = large_sim_indices[k]
             close_word = freq_rank_word_dict[close_word_index]
-            if close_word in all_method_words:
-                if close_word != resource_name:
-                    log_str = "%s %s ," % (log_str, close_word)
+            if close_word in all_method_words and close_word != resource_name:
+                log_str = "%s %s %s," % (log_str, close_word, most_sim_values[k])
 
         print(log_str)
 
@@ -227,31 +230,31 @@ print(count)
 # Step 6: Visualize the embeddings.
 
 
-def plot_with_labels(low_dim_embs, labels, filename='tsne.png'):
-    assert low_dim_embs.shape[0] >= len(labels), "More labels than embeddings"
-    plt.figure(figsize=(18, 18))  # in inches
-    for i, label in enumerate(labels):
-        x, y = low_dim_embs[i, :]
-        plt.scatter(x, y)  # plotする
-        plt.annotate(label,  # 文字列をつけたり、位置を調整したり
-                     xy=(x, y),
-                     xytext=(5, 2),
-                     textcoords='offset points',
-                     ha='right',
-                     va='bottom')
-
-    plt.savefig(filename)
-
-
-try:
-    from sklearn.manifold import TSNE
-    import matplotlib.pyplot as plt
-
-    tsne = TSNE(perplexity=30, n_components=2, init='pca', n_iter=5000)
-    plot_only = 500
-    low_dim_embs = tsne.fit_transform(final_embeddings[:plot_only, :])  # [[x,y]]
-    labels = [freq_rank_word_dict[i] for i in xrange(plot_only)]
-    plot_with_labels(low_dim_embs, labels)
-
-except ImportError:
-    print("Please install sklearn, matplotlib, and scipy to visualize embeddings.")
+# def plot_with_labels(low_dim_embs, labels, filename='tsne.png'):
+#     assert low_dim_embs.shape[0] >= len(labels), "More labels than embeddings"
+#     plt.figure(figsize=(18, 18))  # in inches
+#     for i, label in enumerate(labels):
+#         x, y = low_dim_embs[i, :]
+#         plt.scatter(x, y)  # plotする
+#         plt.annotate(label,  # 文字列をつけたり、位置を調整したり
+#                      xy=(x, y),
+#                      xytext=(5, 2),
+#                      textcoords='offset points',
+#                      ha='right',
+#                      va='bottom')
+#
+#     plt.savefig(filename)
+#
+#
+# try:
+#     from sklearn.manifold import TSNE
+#     import matplotlib.pyplot as plt
+#
+#     tsne = TSNE(perplexity=30, n_components=2, init='pca', n_iter=5000)
+#     plot_only = 500
+#     low_dim_embs = tsne.fit_transform(final_embeddings[:plot_only, :])  # [[x,y]]
+#     labels = [freq_rank_word_dict[i] for i in xrange(plot_only)]
+#     plot_with_labels(low_dim_embs, labels)
+#
+# except ImportError:
+#     print("Please install sklearn, matplotlib, and scipy to visualize embeddings.")
