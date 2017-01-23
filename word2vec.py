@@ -61,6 +61,7 @@ def build_dataset(param_words):
     return rank_list, reverse_dictionary
 
 
+# 以下の２つの変数の必要性は？
 word_ranks, freq_rank_word_dict = build_dataset(words)
 del words  # Hint to reduce memory.
 
@@ -189,7 +190,6 @@ with tf.Session(graph=graph) as session:
 
 
 def cal_similarity(mat_1m, mat_mn):
-
     # 正規化する
     mat_1m_norm = np.sqrt(np.sum(np.square(mat_1m)))
     mat_1m_normalized = resource_method_mat / mat_1m_norm
@@ -198,7 +198,8 @@ def cal_similarity(mat_1m, mat_mn):
     mat_nm_normalized = final_embeddings / mat_mn_norm
 
     return np.matmul(mat_1m_normalized,
-                          np.transpose(mat_nm_normalized))[0, :]  # その単語と、その他全ての単語とのsimilarityを求めた一次元配列
+                     np.transpose(mat_nm_normalized))[0, :]  # その単語と、その他全ての単語とのsimilarityを求めた一次元配列
+
 
 count = 0
 for i in xrange(vocabulary_size):
@@ -222,7 +223,6 @@ for i in xrange(vocabulary_size):
                 log_str = "%s %s %s," % (log_str, close_word, most_sim_values[k])
 
         print(log_str)
-
 
 print(count)
 
