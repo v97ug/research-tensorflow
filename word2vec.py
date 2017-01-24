@@ -29,6 +29,7 @@ from six.moves import urllib
 from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
 import types
+from cal_method_sim import cal_similarity,find_near_words
 
 # Step 1: Read the data.
 words = open('input-file/ALL-HADOOP-API-ascii.txt').read().split()
@@ -58,11 +59,11 @@ def build_dataset(param_words):
     # print('Most common words (+UNK)', pair_word_and_word_freq[:5])
 
     reverse_dictionary = dict(zip(word_freq_rank_dict.values(), word_freq_rank_dict.keys()))
-    return rank_list, reverse_dictionary
+    return rank_list, reverse_dictionary, word_freq_rank_dict
 
 
 # 以下の２つの変数の必要性は？
-word_ranks, freq_rank_word_dict = build_dataset(words)
+word_ranks, freq_rank_word_dict, word_freq_rank_d = build_dataset(words)
 del words  # Hint to reduce memory.
 
 data_index = 0
@@ -189,18 +190,6 @@ with tf.Session(graph=graph) as session:
     final_embeddings = normalized_embeddings.eval()
 
 
-def cal_similarity(mat_1m, mat_mn):
-    # 正規化する
-    mat_1m_norm = np.sqrt(np.sum(np.square(mat_1m)))
-    mat_1m_normalized = resource_method_mat / mat_1m_norm
-
-    mat_mn_norm = np.sqrt(np.sum(np.square(mat_mn), axis=1)).reshape(vocabulary_size, 1)
-    mat_nm_normalized = final_embeddings / mat_mn_norm
-
-    return np.matmul(mat_1m_normalized,
-                     np.transpose(mat_nm_normalized))[0, :]  # その単語と、その他全ての単語とのsimilarityを求めた一次元配列
-
-
 count = 0
 for i in xrange(vocabulary_size):
     if freq_rank_word_dict[i] in all_method_words:
@@ -215,46 +204,22 @@ for i in xrange(vocabulary_size):
         most_sim_values = np.sort(sim_array)[::-1]
 
         resource_name = freq_rank_word_dict[i]
-        log_str = "Nearest to %s:" % resource_name
-        for k in xrange(100):
-            close_word_index = large_sim_indices[k]
-            close_word = freq_rank_word_dict[close_word_index]
-            if close_word in all_method_words and close_word != resource_name:
-                log_str = "%s %s %s," % (log_str, close_word, most_sim_values[k])
+        nearest_word_list = find_near_words(resource_name, large_sim_indices, freq_rank_word_dict, num_slice_words=6)
+        print("Nearest to %s: %s" % (resource_name, ", ".join(nearest_word_list)) )
 
-        print(log_str)
+        for nearest_word in nearest_word_list:
+            freq_rank = word_freq_rank_d[nearest_word]
+            _resource_method_mat = final_embeddings[freq_rank, :].reshape(1, embedding_size)  # 縦ベクトルになってるので、reshapeで行列にする
+            _sim_array = cal_similarity(_resource_method_mat, final_embeddings)
+
+            # sim_arrayを逆順ソートし、上位３つのindexを取ってくる。
+            # なお、indexとは、ソートする前にどこのindexにあったかである.
+            _large_sim_indices = np.argsort(_sim_array)[::-1]
+            _most_sim_values = np.sort(_sim_array)[::-1]
+
+            _nearest_word_list = find_near_words(nearest_word, _large_sim_indices, freq_rank_word_dict, 100)
+            _filter_method_list = filter(lambda x: x in all_method_words, _nearest_word_list)
+            print("near to %s: %s" % (nearest_word, ", ".join(_filter_method_list)))
+
 
 print(count)
-
-
-# Step 6: Visualize the embeddings.
-
-
-# def plot_with_labels(low_dim_embs, labels, filename='tsne.png'):
-#     assert low_dim_embs.shape[0] >= len(labels), "More labels than embeddings"
-#     plt.figure(figsize=(18, 18))  # in inches
-#     for i, label in enumerate(labels):
-#         x, y = low_dim_embs[i, :]
-#         plt.scatter(x, y)  # plotする
-#         plt.annotate(label,  # 文字列をつけたり、位置を調整したり
-#                      xy=(x, y),
-#                      xytext=(5, 2),
-#                      textcoords='offset points',
-#                      ha='right',
-#                      va='bottom')
-#
-#     plt.savefig(filename)
-#
-#
-# try:
-#     from sklearn.manifold import TSNE
-#     import matplotlib.pyplot as plt
-#
-#     tsne = TSNE(perplexity=30, n_components=2, init='pca', n_iter=5000)
-#     plot_only = 500
-#     low_dim_embs = tsne.fit_transform(final_embeddings[:plot_only, :])  # [[x,y]]
-#     labels = [freq_rank_word_dict[i] for i in xrange(plot_only)]
-#     plot_with_labels(low_dim_embs, labels)
-#
-# except ImportError:
-#     print("Please install sklearn, matplotlib, and scipy to visualize embeddings.")
