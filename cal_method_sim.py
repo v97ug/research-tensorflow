@@ -27,3 +27,16 @@ def find_near_words(resource_name, large_sim_indices, freq_rank_word_dict, num_s
         if close_w != resource_name:
             near_word_list.append(close_w)
     return near_word_list
+
+
+# 返り値は、(word, sim_value)のリスト
+def find_near_words_sim(resource_name, large_sim_indices, most_sim_values, freq_rank_word_dict, num_slice_words):
+    near_word_list = list()
+    close_word_indices = large_sim_indices[1:num_slice_words + 1]  # 0番目は自分自身が入っている
+    slice_most_sim = most_sim_values[1:num_slice_words + 1]
+
+    for close_word_index, sim_value in zip(close_word_indices, slice_most_sim):
+        close_w = freq_rank_word_dict[close_word_index]
+        if close_w != resource_name:
+            near_word_list.append( (close_w, sim_value) )
+    return near_word_list
