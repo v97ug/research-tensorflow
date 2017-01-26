@@ -1,0 +1,505 @@
+Nearest to values() : getAllJobStatuses(), supportsSymlinks()
+Nearest to close() : getIncreaseRequests(), serviceStart(), getQueueName()
+Nearest to toString() : getStagingAreaDir(), getJobEndNotificationURI(), getStart(), isSuccessful()
+Nearest to reset() : getTypeID(), getStartTime(), getNumExcludedNodes(), getPort()
+Nearest to getConf() : values(), supportsSymlinks(), getEmptier()
+Nearest to stop() :
+Nearest to hashCode() : getResourceKey()
+Nearest to get() : getOutputCommitter()
+Nearest to getWorkingDirectory() :
+Nearest to getLength() : getBlockSize(), getFieldTypeInfos()
+Nearest to getId() : getQueue(), mark(), getDefaultExtension()
+Nearest to nextKeyValue() : getTypeID(), getStagingAreaDir(), getType(), getUri(), getApplicationAttemptId(), getPort()
+Nearest to value() : getOutputFormat()
+Nearest to getProgress() :
+Nearest to getName() : getCanonicalServiceName(), getOutputCommitter(), hsync()
+Nearest to start() : getMapOutputValueClass()
+Nearest to getInstance() : getScheme()
+Nearest to getCurrentValue() : context(), getRolledLogsExcludePattern(), getTypes()
+Nearest to getCurrentKey() : run(org.apache.hadoop.mapreduce.Reducer.Context)
+Nearest to run() :
+Nearest to name() : getJobName(), done()
+Nearest to getUri() : getApplicationAttemptId(), createCheckpoint(), getAllJobStatuses(), getAMRMToken()
+Nearest to getUser() :
+Nearest to getApplicationId() : reduceProgress(), shutdown()
+Nearest to id() : getFinishTime()
+Nearest to getHomeDirectory() : getContainerToken(), getNeededResources()
+Nearest to getScheme() : getBlockSize(), hasNext()
+Nearest to clear() :
+Nearest to getBytes() :
+Nearest to getRemaining() : getJobEndNotificationURI(), getStagingAreaDir()
+Nearest to isEnabled() : getHistoryUrl(), getJobEndNotificationURI(), mark()
+Nearest to incr() : getQueueName()
+Nearest to getKind() :
+Nearest to hasNext() : getKeyClass(), getRawFileSystem(), getRootQueueInfos()
+Nearest to finished() :
+Nearest to getPriority() : getCreationTime()
+Nearest to getStart() : getScheme(), isSuccessful(), serviceStop()
+Nearest to supportsSymlinks() : get(), getSpeculativeExecution(), getApplicationAttemptId()
+Nearest to size() :
+Nearest to flush() : getRemaining()
+Nearest to clone() : run()
+Nearest to shutdown() : getApplicationId()
+Nearest to getSingleton() : getRawFileSystem()
+Nearest to getStartTime() : getTypeID(), reset(), isRecoverySupported()
+Nearest to checkpoint() :
+Nearest to serviceStop() : getStart()
+Nearest to getQueueName() : getIncreaseRequests(), getJobTrackerState(), hasNext(), getClusterNodeCount()
+Nearest to getDefaultBlockSize() : getGroupingComparator()
+Nearest to getLocations() : getJobName()
+Nearest to getHost() :
+Nearest to resetState() : getReservationId()
+Nearest to getJobName() : getLocations()
+Nearest to getServerDefaults() : getApplicationName()
+Nearest to needsInput() :
+Nearest to getPos() :
+Nearest to getTrackingUrl() : getScheme(), enable_tracing()
+Nearest to getQueue() : hasNext()
+Nearest to serviceStart() : close(), getIncreaseRequests(), getQueueName()
+Nearest to getApplicationAttemptId() : supportsSymlinks()
+Nearest to getMaxReduceAttempts() : newMetricsSourceName(), getDisplayName(), getClientAcls(), createTimelineClient()
+Nearest to getMemoryForMapTask() :
+Nearest to getFailureCause() : getAMContainerSpec()
+Nearest to getConfiguration() : getBlockers()
+Nearest to getJobID() : getProfileParams()
+Nearest to copyBytes() :
+Nearest to getDecompressorType() : getServiceStatus()
+Nearest to getReservationId() : getBytes()
+Nearest to createValue() : finished()
+Nearest to getDiagnostics() : clone(), getBlacklistedTrackerNames(), getModificationTime()
+Nearest to getStatus() : getDuration(), getResourceName(), getMapSlotCapacity(), getSpeculativeExecution()
+Nearest to createCompressor() : getNMTokenCache(), getFencer()
+Nearest to getInitialWorkingDirectory() :
+Nearest to not() : getUsedResources(), getContainerList()
+Nearest to finish() : getUgi(), getFileDefault(), getAMContainerSpec()
+Nearest to getMemoryForReduceTask() : getPartitionerClass(), sync()
+Nearest to createDecompressor() : getDiagnosticsInfo(), getCacheFiles(), getFinalApplicationStatus()
+Nearest to isSymlink() : getMaxMemory()
+Nearest to getUsed() : getTopologyPaths(), newKey()
+Nearest to getDefaultExtension() : getStagingAreaDir(), isAbsolute(), getAccessTime(), getId(), toString()
+Nearest to getDisplayName() : getClientAcls(), getContainerList(), getIncludeChildQueues(), getMaxReduceAttempts(), getTaskID()
+Nearest to getState() : listSpanReceivers(), getApplicationTags()
+Nearest to getCapacity() : mapProgress()
+Nearest to getCompressorType() : getDefaultNodeLabelExpression(), getJobTrackerStatus()
+Nearest to getContainerId() : getFileSystem()
+Nearest to getMaxMapAttempts() : isSuccessful(), getTaskType()
+Nearest to getFinishTime() : getNumExcludedNodes(), getApplicationName()
+Nearest to getContainers() : getFailureCause()
+Nearest to getDefaultReplication() : incr(), getClusterNodeCount()
+Nearest to getDescription() : getReducerClass(), isTransient()
+Nearest to getApplications() : isSuccessful()
+Nearest to getCombinerKeyGroupingComparator() :
+Nearest to context() : getCurrentValue()
+Nearest to getCanonicalServiceName() : getUsedMemory(), getName()
+Nearest to getPermission() : getNMTokens(), getBlacklistedTrackerNames(), depth()
+Nearest to getCount() : getReservedReduceSlots(), getStartTime(), getAlgorithmName()
+Nearest to monitorAndPrintJob() : getFencer(), getTaskAttemptId()
+Nearest to getJobFile() : isTypeQuotaSet(), getProfileEnabled()
+Nearest to getAllJobStatuses() : supportsSymlinks(), values(), getMaxReduceAttempts(), getAMRMToken()
+Nearest to getOwner() :
+Nearest to getUriDefaultPort() :
+Nearest to createDirectDecompressor() : next(), getUriDefaultPort()
+Nearest to depth() :
+Nearest to getMessage() :
+Nearest to getEntityType() : getMaxMemory(), id(), isSuccessful()
+Nearest to waitForCompletion() : isTypeConsumedAvailable(), getFileSystem()
+Nearest to printStatistics() : getIncreaseRequests()
+Nearest to getType() : getConfig()
+Nearest to getFailedRequests() : getScheme()
+Nearest to decr() : getState(), setupProgress(), getNodeLabels(), listSpanReceivers(), setRetired()
+Nearest to getEntityId() : dumpTopology(), getDefaultPort()
+Nearest to getTypes() : read(), getBlacklistedTrackerNames()
+Nearest to reloadCachedMappings() :
+Nearest to getResource() : getAMContainerId(), getPriority(), getLength(), getScheme(), getBlockSize()
+Nearest to getAvailableResources() : getBlackListedTrackersInfo()
+Nearest to getDelegate() :
+Nearest to getSelectQuery() : getContainerId(), not()
+Nearest to read() : getTypes()
+Nearest to getNodeId() :
+Nearest to getRpcPort() :
+Nearest to getAllStatistics() : set(byte[]), reduceProgress()
+Nearest to getCapability() : getCumulativeCpuTime()
+Nearest to newInstance() : isRetired(), getDirDefault(), getVersion(), clearStatistics()
+Nearest to toArray() :
+Nearest to getLocationInfo() : getFailureState()
+Nearest to getPort() : isSuccessful()
+Nearest to getProfileEnabled() : getGroupingComparator()
+Nearest to isRetired() : getPermission()
+Nearest to getStagingAreaDir() : getTypeID(), nextKeyValue(), getRemaining()
+Nearest to getNodeLabelExpression() : getRelaxLocality()
+Nearest to getBlockers() : getNMTokens(), getKeyFieldPartitionerOption(), getConfiguration()
+Nearest to getMapOutputValueClass() : isSuccessful()
+Nearest to getPartitionerClass() :
+Nearest to getContainerIds() :
+Nearest to isCompleted() :
+Nearest to isSingleSwitch() :
+Nearest to getLifecycleHistory() : getNumClusterNodes(), not()
+Nearest to clearStatistics() : getKeepContainersAcrossApplicationAttempts(), getAppId()
+Nearest to getMapOutputKeyClass() :
+Nearest to getQueueState() : isAbsolute(), getArchiveClassPaths()
+Nearest to getFieldTypeInfos() : getAssignedNode(), getLength(), getBlockSize(), getApplicationResourceUsageReport(), directoryDeleted()
+Nearest to getJar() : getCanonicalServiceName(), isUber()
+Nearest to getContainerToken() : getHomeDirectory(), getLocalCacheArchives(), webResponse()
+Nearest to Record() :
+Nearest to getCounters() :
+Nearest to getTrackingURL() : getMaximumResourceCapability(), getOutputCommitter(), getReservedMapSlots(), getNumReduceTasks(), getCurrentTrashDir()
+Nearest to getPath() : FillBuff()
+Nearest to getTimestamp() : getQueueAclsInfo(), getPos()
+Nearest to getGroup() :
+Nearest to iterator() :
+Nearest to emit(org.apache.hadoop.mapreduce.lib.join.TupleWritable) :
+Nearest to getAppId() :
+Nearest to getRawFileSystem() : getSingleton(), webResponse()
+Nearest to getFailureInfo() : getJarUnpackPattern()
+Nearest to getNumContainers() : getReduceSpeculativeExecution()
+Nearest to getRootQueues() : getGraylistedTrackerNames(), getApplicationAttemptList()
+Nearest to getSystemDir() : Record(), getNumReduceTasks()
+Nearest to getJobState() :
+Nearest to getClusterTimestamp() : getAliases(), getApplicationSubmissionContext(), getIdentifier()
+Nearest to getEvents() : getRecordReaderQueue()
+Nearest to getContainerLogDir() : getResourceBlacklistRequest(), getOutputCommitter(), getApplicationTags()
+Nearest to getFinalApplicationStatus() : getNumClusterNodes(), getCacheFiles()
+Nearest to getJobTrackerStatus() : createValue(), getCompressorType()
+Nearest to key() :
+Nearest to getTaskType() : getTaskID()
+Nearest to getServiceState() :
+Nearest to getMaximumResourceCapability() : getSupportedCompressionAlgorithms()
+Nearest to cleanupProgress() : getDefaultBlockSize()
+Nearest to reduceProgress() : getStore(), getApplicationId()
+Nearest to getResponseId() : createKey(), getCapacity()
+Nearest to mapProgress() : getKeyFieldComparatorOption(), getCapacity()
+Nearest to getApplicationTags() : getJobACLs()
+Nearest to getDefaultPort() : getPermission()
+Nearest to getApplicationType() :
+Nearest to submit() : getContainerLogDir(), getResourceBlacklistRequest(), getAMRMToken(), supportsSymlinks()
+Nearest to getOutputValueClass() : jobsToComplete(), shutdown()
+Nearest to getProfileParams() : getNodeReports()
+Nearest to validate() : getReservedResources()
+Nearest to setupProgress() : getOutputFormat()
+Nearest to getAMRMToken() : startMonitoring(), getIncludeChildQueues()
+Nearest to getTaskID() : getDisplayName(), isTypeConsumedAvailable()
+Nearest to hsync() : getResourceName(), getOutputCommitter(), getLocations()
+Nearest to getClusterStatus() : getResourceBlacklistRequest()
+Nearest to getReducerClass() :
+Nearest to getNextToken() : getEventId()
+Nearest to isRecoverySupported() : getDecompressorType(), isTransient()
+Nearest to getEmptier() : getBlackListedTaskTrackers()
+Nearest to getFormatMinSplitSize() : getTaskTrackerName(), getContainerToken(), getBlockSize()
+Nearest to getFileDefault() : getSupportedCompressionAlgorithms(), getApplicationOwner()
+Nearest to getSize() :
+Nearest to getValue() : getMaxReduceTaskFailuresPercent(), getEvents()
+Nearest to isSuccessful() : getApplications(), getJobEndNotificationURI()
+Nearest to instance() : getNMTokensFromPreviousAttempts(), getContextName()
+Nearest to isTransient() :
+Nearest to killJob() : getChildQueues()
+Nearest to getOutputCommitter() : get(), getContainerLogDir()
+Nearest to getSchedulingInfo() : getReservedMapSlots(), getJobFile(), getMemoryForMapTask()
+Nearest to getQueues() : getApplicationTypes()
+Nearest to getAllJobs() : getJobName()
+Nearest to getChildFileSystems() :
+Nearest to attributes() :
+Nearest to getOutputKeyClass() :
+Nearest to getFsStatus() : clear(), getFormatMinSplitSize()
+Nearest to getCredentials() : getRunningMaps(), getNumReduceTasks()
+Nearest to isComplete() : getNumTasksToExecutePerJvm()
+Nearest to getCanonicalUri() : getDomains()
+Nearest to build() :
+Nearest to sync() : getMemoryForReduceTask()
+Nearest to getNodeHttpAddress() : getInstance(), getApplicationTags(), getAMRMToken()
+Nearest to getDirDefault() :
+Nearest to hflush() :
+Nearest to getMapperClass() :
+Nearest to getHistoryUrl() : isEnabled(), getJobEndNotificationURI(), mark()
+Nearest to getConfig() : getType()
+Nearest to end() : getEndLine()
+Nearest to getInputSplit() : getWorkPath(), getDomainId()
+Nearest to getClusterNodeCount() : getDefaultReplication(), getJobTrackerState(), getQueueName()
+Nearest to getCombinerClass() : getDiagnostics()
+Nearest to isMap() : getNumTasksToExecutePerJvm()
+Nearest to getNMTokenCache() : createCompressor()
+Nearest to getVersion() : getKeyFieldPartitionerOption(), newInstance(), getDirDefault(), getPermission()
+Nearest to getResourceKey() : getCurrentCapacity()
+Nearest to getFailureState() : isAbsolute()
+Nearest to getQueueAclsForCurrentUser() : getActiveTaskTrackers(), getUser(), getNumReduceTasks()
+Nearest to createKey() : getResponseId()
+Nearest to getReservationDefinition() :
+Nearest to getNumReduceTasks() : getQueueAclsForCurrentUser(), getTrackingURL(), getUser()
+Nearest to getSwitchMap() :
+Nearest to run(org.apache.hadoop.mapreduce.Reducer.Context) : getCurrentKey()
+Nearest to getErrors() :
+Nearest to getOccupiedMapSlots() : getMemoryForMapTask()
+Nearest to getCompletedContainersStatuses() :
+Nearest to getRolledLogsIncludePattern() :
+Nearest to getContainerState() :
+Nearest to getAMContainerSpec() : finish()
+Nearest to getComparator() : deleteCheckpoint(), getAMContainerId()
+Nearest to Map() : getToken()
+Nearest to getWorkPath() : getGraylistedTrackerNames(), getReservationResources()
+Nearest to getCurrentMaximumDownloadBandwidth() :
+Nearest to done() :
+Nearest to needsDictionary() :
+Nearest to getClusterHandle() :
+Nearest to getID() : getBlacklistedTrackerNames(), getNumContainers(), getDiagnostics(), checkpoint()
+Nearest to getJobTrackerState() : getRecursive()
+Nearest to getEndLine() : getApplicationAcls()
+Nearest to getAdjustedStart() : deleteCheckpoint()
+Nearest to setChanged() :
+Nearest to isEncrypted() : getTokens()
+Nearest to getCreationTime() : getPriority(), getOriginalTrackingUrl(), setRetired()
+Nearest to getGroupNames() : getContainerId(), getClusterMetrics()
+Nearest to getBlackListedTrackersInfo() : decr(), getAvailableResources()
+Nearest to getMaxReduceTaskFailuresPercent() : getValue(), getEvents()
+Nearest to Include() : Input()
+Nearest to clientErrorEncountered() : getJobEndNotificationURI(), jobsToComplete()
+Nearest to getJarUnpackPattern() : getFailureInfo(), getOriginalTrackingUrl(), stopped(), getSize()
+Nearest to getLogAggregationContext() :
+Nearest to getModifiedTime() : getScope()
+Nearest to getMaxMemory() : getCanonicalServiceName(), isSymlink(), getDefaultExtension()
+Nearest to getBlockSize() : getLength(), getScheme(), getFieldTypeInfos()
+Nearest to getBytesWritten() : getOutputKeyClass()
+Nearest to getNumExcludedNodes() : getDomains(), getTrackingUrl(), getMaxReduceAttempts(), getUriDefaultPort()
+Nearest to getUseNewReducer() : getDefaultPort()
+Nearest to getBlockUploadLatency() :
+Nearest to createTupleWritable() :
+Nearest to getActiveTaskTrackers() :
+Nearest to directoryDeleted() :
+Nearest to getSpaceQuota() : set(byte[])
+Nearest to getElementType() : clear()
+Nearest to getSortComparator() : hasNext(), getCurrentTrashDir()
+Nearest to getLocalCacheArchives() : getExitStatus()
+Nearest to getApplicationTypes() : getNodeReports()
+Nearest to getApplicationAttemptReport() : getCpuUsagePercent(), makeEscapedCompactString(), isTypeConsumedAvailable()
+Nearest to isUriPathAbsolute() :
+Nearest to getApplicationAcls() : getEndLine()
+Nearest to jobsToComplete() : isAbsolute()
+Nearest to getNumMapTasks() : getSessionId()
+Nearest to getTTExpiryInterval() : hsync()
+Nearest to getResourceName() :
+Nearest to getIdentifier() : getAliases(), getClusterTimestamp()
+Nearest to toShort() :
+Nearest to getCumulativeVmem() : getPrimaryFilters()
+Nearest to getIsKillCompleted() : getFinalApplicationStatus()
+Nearest to getKeepFailedTaskFiles() : isDir()
+Nearest to getRMDelegationToken() : getToken()
+Nearest to getChildQueues() :
+Nearest to useQueryStringForDelegationToken() :
+Nearest to getClientAcls() : getDisplayName(), getMaxReduceAttempts()
+Nearest to getReduceSlotCapacity() : getContainerList(), getDefaultExtension()
+Nearest to makeEscapedCompactString() :
+Nearest to getKeepContainersAcrossApplicationAttempts() : getApplicationSubmissionContext(), getCacheArchives(), getAppId(), clearStatistics()
+Nearest to getApplicationResourceUsageReport() :
+Nearest to run(org.apache.hadoop.mapreduce.Mapper.Context) :
+Nearest to getNodeLabels() :
+Nearest to getShouldBeUploadedToSharedCache() : reloadCachedMappings()
+Nearest to getMaxMapTasks() : getNodeReports(), getRawFileSystem()
+Nearest to Input() : getQueueAclsInfo(), Include()
+Nearest to getDomainId() : isDir(), getInputSplit()
+Nearest to getMaxReduceTasks() :
+Nearest to getJobPriority() : getMaxTaskFailuresPerTracker()
+Nearest to getClassLoader() : getStagingAreaDir(), isUriPathAbsolute(), getMapSlotCapacity(), closeAll()
+Nearest to newMetricsSourceName() : emit(org.apache.hadoop.mapreduce.lib.join.TupleWritable), getJobState(), getMaxReduceAttempts()
+Nearest to getApplicationSubmissionContext() : getUseNewReducer(), getAppId()
+Nearest to getSchedulerResourceTypes() :
+Nearest to findTimestampedDirectories() : getGraylistedTrackerNames()
+Nearest to getKeyFieldComparatorOption() : getWorkPath(), mapProgress()
+Nearest to type() :
+Nearest to getAllQueues() : getTaskTrackerName()
+Nearest to getReservedMapSlots() : getEntityId(), getSchedulingInfo()
+Nearest to getBlacklistedTrackers() : getJobName(), getCurrentValue()
+Nearest to getIncludeChildQueues() : getDisplayName()
+Nearest to Module() :
+Nearest to clearChanged() : getStatus()
+Nearest to homePathForCurrentUser() :
+Nearest to getReduceTasks() :
+Nearest to listSpanReceivers() : decr()
+Nearest to resume() :
+Nearest to getLen() : getClusterHandle()
+Nearest to getSessionId() : getResourceBlacklistRequest(), getNumMapTasks(), getDefaultExtension()
+Nearest to getOccupiedReduceSlots() : getJobSetupCleanupNeeded()
+Nearest to getIncreaseRequests() : close(), getNumClusterNodes()
+Nearest to getNeededResources() :
+Nearest to getReaders() : getApplicationSubmissionContext()
+Nearest to getAllEvents() :
+Nearest to getExitStatus() : getLocalCacheArchives(), enable_tracing()
+Nearest to setRetired() : getCurrentCapacity(), getCreationTime(), toArray()
+Nearest to getAlgorithmName() : getReduceTasks()
+Nearest to mark() : isEnabled(), getId()
+Nearest to getJobStatus() : getCanonicalServiceName()
+Nearest to isTypeConsumedAvailable() : getDisplayName(), waitForCompletion(), getTaskID()
+Nearest to getContainersFromPreviousAttempts() : start(), getProcessTreeDump(), getApplicationName()
+Nearest to getCurrentCapacity() :
+Nearest to getQueueAclsInfo() : Input(), getTimestamp()
+Nearest to getTaskTrackerCount() :
+Nearest to getDigester() : getQueue(), needsInput()
+Nearest to getBlockDownloadLatency() :
+Nearest to getOriginalTrackingUrl() : getFileSystem()
+Nearest to getJobLocalDir() :
+Nearest to getTaskTrackers() :
+Nearest to getSymlink() :
+Nearest to isDir() : jobsToComplete(), getKeepFailedTaskFiles(), getUriDefaultPort()
+Nearest to getConcurrency() :
+Nearest to getTaskCleanupNeeded() : clearStatistics()
+Nearest to getRootQueueInfos() :
+Nearest to getBlackListedTaskTrackers() : getEmptier()
+Nearest to getScope() : getMaxMapAttempts()
+Nearest to getUpdatedNodes() : printStatistics(), getEmptier()
+Nearest to createCheckpoint() : getAllJobStatuses(), getReservationId(), getUri(), getApplicationAttemptId(), getId(), getAMRMToken(), getOriginalTrackingUrl()
+Nearest to getNMTokens() : getBlockers(), getFailureCause(), getPermission()
+Nearest to getStore() : getDiagnostics()
+Nearest to getCreatedTime() : getClusterTimestamp()
+Nearest to getIncludePattern() :
+Nearest to getRelaxLocality() : getNodeLabelExpression()
+Nearest to getOutputValueGroupingComparator() :
+Nearest to getReservationResources() :
+Nearest to getKeyFieldPartitionerOption() : getBlockers(), key()
+Nearest to getMaxVirtualMemoryForTask() :
+Nearest to getTokens() :
+Nearest to getArchiveClassPaths() : key(), getQueueState(), getCacheArchives()
+Nearest to parent() : getNumTasksToExecutePerJvm()
+Nearest to getEventType() : getFs()
+Nearest to getFileSystemInstanceId() : getCurrentValue()
+Nearest to generateParseException() : getRolledLogsExcludePattern()
+Nearest to getGraylistedTrackers() : getJobEndNotificationURI()
+Nearest to isAbsoluteAndSchemeAuthorityNull() :
+Nearest to getAccessTime() : getContextFactory(), needsInput()
+Nearest to getContextName() : instance(), getRunningReduces(), dumpTopology()
+Nearest to getContainerExitStatus() :
+Nearest to getClusterMetrics() : getGroupNames(), getFailureCause()
+Nearest to isTypeQuotaSet() : getApplicationStates(), getProfileEnabled()
+Nearest to getDefaultMaps() :
+Nearest to getDecommissionedTaskTrackerCount() : getReaders(), getLocationInfo(), clearStatistics()
+Nearest to getContextFactory() : start(), getMaxMapTaskFailuresPercent()
+Nearest to getMapSlotCapacity() : getStatus(), getContainerList(), getClassLoader(), getSpeculativeExecution()
+Nearest to stopped() :
+Nearest to getBeginLine() : getApplicationType()
+Nearest to readChar() :
+Nearest to getRecordReaderQueue() : getEvents()
+Nearest to getIncludeApplications() :
+Nearest to usage() :
+Nearest to getNumClusterNodes() :
+Nearest to getMaxMapTaskFailuresPercent() : getRunningMaps(), getContextFactory()
+Nearest to getJobEndNotificationURI() : isSuccessful(), getRemaining()
+Nearest to getFencer() : getToken(), getResourceName()
+Nearest to getCacheArchives() : getApplicationSubmissionContext(), getKeepContainersAcrossApplicationAttempts()
+Nearest to disable_tracing() : getHistoryUrl(), getDefaultNodeLabelExpression(), getReleaseList(), not()
+Nearest to getCachePoolDefault() : clear()
+Nearest to getTaskAttemptId() :
+Nearest to getUnmanagedAM() :
+Nearest to startMonitoring() : jobsToComplete(), getAMRMToken()
+Nearest to getJobACLs() : getState(), getApplicationTags(), getDomains()
+Nearest to getApplicationAttemptList() :
+Nearest to getProblems() : getBlacklistedTrackers(), getCacheFiles()
+Nearest to getMetricNames() : getIsKillCompleted()
+Nearest to getToken() : getNMTokenCache(), flush(), getSwitchMap()
+Nearest to getFs() :
+Nearest to getDiagnosticsInfo() : createDecompressor(), getFinalApplicationStatus(), getRemaining()
+Nearest to getConnection() :
+Nearest to setNumMapTasks(int) : getVirtualCores()
+Nearest to getKeyClass() : getUsedResources(), hasNext()
+Nearest to getMemory() :
+Nearest to getEntities() :
+Nearest to getDefaultNodeLabelExpression() : getHistoryUrl(), clearStatistics(), getGroup(), getCompressorType()
+Nearest to getDigest() :
+Nearest to getTaskId() :
+Nearest to webResponse() : getRawFileSystem()
+Nearest to getTopologyPaths() : getUsed(), getNodeLabelExpression()
+Nearest to getFileSystem() :
+Nearest to getUsedMemory() : getCanonicalServiceName()
+Nearest to getRMIdentifier() : getContextFactory()
+Nearest to getOutputFormat() : getLen(), Done(), getRMDelegationToken(), getContainers(), getPrimaryFilters(), getAvailableResources()
+Nearest to getJobSetupCleanupNeeded() :
+Nearest to getAliases() : getIdentifier(), getClusterTimestamp()
+Nearest to getTypeID() : getStagingAreaDir(), nextKeyValue(), reset(), getStartTime()
+Nearest to getEndColumn() :
+Nearest to getEncryptedBit() : getNextToken()
+Nearest to getReservedResources() : validate(), getDefaultDelegationTokenAuthenticator()
+Nearest to getMapDebugScript() : isAbsolute(), waitForCompletion(), getContainerIds()
+Nearest to getRunningReduces() : parent(), getLength()
+Nearest to closeAll() : getClassLoader(), getVirtualCores()
+Nearest to getSupportedCompressionAlgorithms() : getKeyFieldPartitionerOption(), getName()
+Nearest to getUgi() :
+Nearest to getGraylistedTrackerNames() : getWorkPath(), findTimestampedDirectories()
+Nearest to isStickyBit() : isAbsolute(), getKeepFailedTaskFiles()
+Nearest to getMaxTaskFailuresPerTracker() : isRetired(), getJobPriority()
+Nearest to getDefaultDelegationTokenAuthenticator() : getReservedResources()
+Nearest to getReservationName() : getProcessTreeDump()
+Nearest to isMonitoring() :
+Nearest to getRolledLogsExcludePattern() : getCurrentValue()
+Nearest to getApplicationStates() : isTypeQuotaSet(), getQueues(), getNeededResources(), getMemoryForMapTask()
+Nearest to getBlacklistedTrackerNames() :
+Nearest to getDuration() : getStatus(), getSupportedCompressionAlgorithms()
+Nearest to getReduceSpeculativeExecution() : getDiagnostics(), getNumContainers(), getModificationTime()
+Nearest to getNMTokensFromPreviousAttempts() :
+Nearest to getSpeculativeExecution() :
+Nearest to getNumPaths() : getKeyFieldComparatorOption()
+Nearest to isUber() : getAMContainerId()
+Nearest to getCurrentWebResponses() : getMapDebugScript(), getMessage(), getNumReduceTasks()
+Nearest to deleteCheckpoint() :
+Nearest to enable_tracing() :
+Nearest to createAMRMClient() :
+Nearest to cleanup(org.apache.hadoop.mapreduce.Mapper.Context) : getAllQueues(), getJobTrackerState(), getModifiedTime()
+Nearest to getTotalJobSubmissions() : getOutputCommitter()
+Nearest to getCacheFiles() : getProblems(), getFinalApplicationStatus()
+Nearest to deleteLocalFiles() :
+Nearest to createAHSClient() :
+Nearest to getCpuUsagePercent() : getNodeLabelExpression(), getContainers()
+Nearest to publishMetricsNow() :
+Nearest to startMetricsMBeans() :
+Nearest to processDeleteOnExit() :
+Nearest to getEventId() : Record()
+Nearest to getReservedReduceSlots() : getCount(), getTrackingURL(), getMapSlotCapacity(), getEventType()
+Nearest to getCurrentTrashDir() : getTaskTrackerName(), getTrackingURL(), clear(), getFsStatus(), getMaximumResourceCapability()
+Nearest to Vector() : getJobEndNotificationURI()
+Nearest to getCumulativeCpuTime() : Input(), metrics()
+Nearest to getValueTypeID() : getRMIdentifier()
+Nearest to getRunningMaps() : getCredentials()
+Nearest to getResourceBlacklistRequest() : finished(), values()
+Nearest to getProcessTreeDump() : nextKeyValue(), getReservationName(), getContainersFromPreviousAttempts()
+Nearest to getPrimaryFilters() : getEncryptedBit()
+Nearest to checkPidPgrpidForMatch() :
+Nearest to createYarnClient() : disable_tracing()
+Nearest to getLastHealthReportTime() : getMaxVirtualMemoryForTask()
+Nearest to isAbsolute() : getFailureState(), isStickyBit(), key()
+Nearest to Done() :
+Nearest to countCounters() : size(), getId(), checkpoint()
+Nearest to dumpTopology() :
+Nearest to tags() :
+Nearest to getOtherInfo() :
+Nearest to getKeys() : clientErrorEncountered()
+Nearest to getDomains() : getCanonicalUri(), getReduceTasks(), getNumExcludedNodes()
+Nearest to getLogUrl() : finish()
+Nearest to isCorrupt() : sync(), Record()
+Nearest to createTimelineClient() : getMaxReduceAttempts()
+Nearest to next() : isDir(), createDirectDecompressor()
+Nearest to set(byte[]) : toExtendedShort()
+Nearest to getApplicationOwner() : getFileDefault()
+Nearest to getServiceStatus() :
+Nearest to getAMContainerId() : getPriority(), getResource()
+Nearest to getModificationTime() : getDiagnostics(), getStore(), setRetired()
+Nearest to getLabelsToNodes() :
+Nearest to getUseNewMapper() : getStart()
+Nearest to toExtendedShort() : set(byte[]), getVersion()
+Nearest to getUsedResources() : getKeyClass()
+Nearest to metrics() : getCumulativeCpuTime(), Input(), getShouldBeUploadedToSharedCache()
+Nearest to getReleaseList() : reloadCachedMappings(), disable_tracing()
+Nearest to getCurrentApplicationAttemptId() :
+Nearest to serviceInit(org.apache.hadoop.conf.Configuration) : getTaskTrackerCount(), getTaskType()
+Nearest to isBlacklisted() : jobsToComplete()
+Nearest to getAclBit() :
+Nearest to buffer() : getMaxReduceAttempts()
+Nearest to getUserAclsInfoList() : isRetired()
+Nearest to FillBuff() : createCompressor(), getPath(), getKind(), getClassLoader()
+Nearest to getNodeReports() : getMaxMapTasks(), getProfileParams()
+Nearest to newKey() : getUsed()
+Nearest to getTaskTrackerName() : clear(), getFormatMinSplitSize(), getCurrentTrashDir()
+Nearest to stopMonitoring() :
+Nearest to getRecursive() :
+Nearest to getWriters() : getClusterHandle()
+Nearest to getContainerList() : getReduceSlotCapacity(), getDisplayName()
+Nearest to getNumTasksToExecutePerJvm() : parent()
+Nearest to getDeclaredClass() : getLocationInfo()
+Nearest to getVirtualCores() :
+Nearest to getApplicationName() :
+Nearest to getGroupingComparator() : getDefaultBlockSize()
+Nearest to getAssignedNode() : directoryDeleted()
+Nearest to getHttpAddress() : stopped()

@@ -29,13 +29,15 @@ from six.moves import urllib
 from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
 import types
-from cal_method_sim import cal_similarity,find_near_words
+from cal_method_sim import cal_similarity,find_near_words, find_near_words_sim
 
 # Step 1: Read the data.
-words = open('input-file/ALL-HADOOP-API-ascii.txt').read().split()
+# words = open('input-file/ALL-HADOOP-API-ascii.txt').read().split()
+words = open('input-file/ALL-API.txt').read().split()
 
 # Step 2: Build the dictionary and replace rare words with UNK token.
-vocabulary_size = 20000
+# vocabulary_size = 20000
+vocabulary_size = 50000
 
 all_method_words = open('all-methods-really.txt', 'r').read().split("\n")  # 改行でsplitするよ
 
@@ -161,8 +163,9 @@ with graph.as_default():
     init = tf.global_variables_initializer()
 
 # Step 5: Begin training.
+num_steps = 130001
 # num_steps = 100001
-num_steps = 10001
+# num_steps = 10001
 
 with tf.Session(graph=graph) as session:
     # We must initialize all variables before we use them.
@@ -204,8 +207,15 @@ for i in xrange(vocabulary_size):
         most_sim_values = np.sort(sim_array)[::-1]
 
         resource_name = freq_rank_word_dict[i]
+
+
         nearest_word_list = find_near_words(resource_name, large_sim_indices, freq_rank_word_dict, num_slice_words=6)
-        print("Nearest to %s: %s" % (resource_name, ", ".join(nearest_word_list)) )
+
+        nearest_method_list = filter(lambda x: x in all_method_words, nearest_word_list)
+        # print("Nearest to %s: %s" % (resource_name, ", ".join(nearest_method_list)))
+
+        log_str_list = list()
+        # print("Nearest to %s: %s" % (resource_name, ", ".join(nearest_word_list)) )
 
         for nearest_word in nearest_word_list:
             freq_rank = word_freq_rank_d[nearest_word]
@@ -217,9 +227,16 @@ for i in xrange(vocabulary_size):
             _large_sim_indices = np.argsort(_sim_array)[::-1]
             _most_sim_values = np.sort(_sim_array)[::-1]
 
-            _nearest_word_list = find_near_words(nearest_word, _large_sim_indices, freq_rank_word_dict, 100)
-            _filter_method_list = filter(lambda x: x in all_method_words, _nearest_word_list)
-            print("near to %s: %s" % (nearest_word, ", ".join(_filter_method_list)))
+            _nearest_word_sim_tuple = find_near_words_sim(nearest_word, _large_sim_indices, _most_sim_values, freq_rank_word_dict, 25)
+            _filter_method_list = filter(lambda tuple: (tuple[0] in all_method_words and tuple[0] != resource_name and tuple[1] >= 0.85), _nearest_word_sim_tuple)
+            # print("near to %s: %s" % (nearest_word, _filter_method_list))
+            # print(_nearest_word_sim_tuple)
+            # print("Nearest to %s: %s" % (resource_name, ", ".join(map(lambda tuple: tuple[0],_filter_method_list))))
+            if _filter_method_list != []:
+                # log_str_list.append( ", ".join(map(lambda tuple: tuple[0],_filter_method_list)) )
+                log_str_list.extend(map(lambda tuple: tuple[0],_filter_method_list))
 
+        # setは順序が変わる恐れあり
+        print(("Nearest to %s : " % resource_name) + ", ".join(set(log_str_list)))
 
 print(count)

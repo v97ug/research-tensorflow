@@ -40,3 +40,8 @@ def find_near_words_sim(resource_name, large_sim_indices, most_sim_values, freq_
         if close_w != resource_name:
             near_word_list.append( (close_w, sim_value) )
     return near_word_list
+
+def filter_sim_method(tuple):
+    word = tuple[0]
+    _similarity = tuple[1]
+    return word in a
