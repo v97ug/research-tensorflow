@@ -29,7 +29,7 @@ from six.moves import urllib
 from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
 import types
-from cal_method_sim import cal_similarity,find_near_words, find_near_words_sim
+from cal_method_sim import cal_similarity, find_near_words, find_near_words_sim
 
 # Step 1: Read the data.
 # words = open('input-file/ALL-HADOOP-API-ascii.txt').read().split()
@@ -37,10 +37,10 @@ words = open('input-file/ALL-API.txt').read().split()
 
 # Step 2: Build the dictionary and replace rare words with UNK token.
 # vocabulary_size = 20000
-vocabulary_size = 50000
+vocabulary_size = 59683
 
-all_method_words = open('all-methods-really.txt', 'r').read().split("\n")  # 改行でsplitするよ
-
+all_method_words = open('target-methods/all-methods-really.txt', 'r').read().split("\n")  # 改行でsplitするよ
+twitter_method_words = open('target-methods/all-twitter-methods-simple.txt', 'r').read().split("\n")
 
 def build_dataset(param_words):
     pair_word_and_word_freq = [['UNK', -1]]
@@ -66,6 +66,8 @@ def build_dataset(param_words):
 
 # 以下の２つの変数の必要性は？
 word_ranks, freq_rank_word_dict, word_freq_rank_d = build_dataset(words)
+print("dict size : %s" % len(freq_rank_word_dict))
+
 del words  # Hint to reduce memory.
 
 data_index = 0
@@ -163,8 +165,8 @@ with graph.as_default():
     init = tf.global_variables_initializer()
 
 # Step 5: Begin training.
-num_steps = 130001
-# num_steps = 100001
+# num_steps = 130001
+num_steps = 100001
 # num_steps = 10001
 
 with tf.Session(graph=graph) as session:
@@ -192,10 +194,10 @@ with tf.Session(graph=graph) as session:
 
     final_embeddings = normalized_embeddings.eval()
 
-
+# TODO wordを引数にとり、そのwordのfeatureVectorを返す関数を作る
 count = 0
 for i in xrange(vocabulary_size):
-    if freq_rank_word_dict[i] in all_method_words:
+    if freq_rank_word_dict[i] in all_method_words or freq_rank_word_dict[i] in twitter_method_words:
         count += 1
 
         resource_method_mat = final_embeddings[i, :].reshape(1, embedding_size)  # 縦ベクトルになってるので、reshapeで行列にする
@@ -208,18 +210,20 @@ for i in xrange(vocabulary_size):
 
         resource_name = freq_rank_word_dict[i]
 
+        # nearest_word_list = find_near_words(resource_name, large_sim_indices, freq_rank_word_dict, num_slice_words=6)
+        nearest_word_sim_tuple = find_near_words_sim(resource_name, large_sim_indices, most_sim_values,
+                                                     freq_rank_word_dict, num_slice_words=6)
 
-        nearest_word_list = find_near_words(resource_name, large_sim_indices, freq_rank_word_dict, num_slice_words=6)
-
-        nearest_method_list = filter(lambda x: x in all_method_words, nearest_word_list)
+        # nearest_method_list = filter(lambda x: x in all_method_words, nearest_word_list)
         # print("Nearest to %s: %s" % (resource_name, ", ".join(nearest_method_list)))
 
         log_str_list = list()
         # print("Nearest to %s: %s" % (resource_name, ", ".join(nearest_word_list)) )
 
-        for nearest_word in nearest_word_list:
+        for nearest_word, nearest_sim in nearest_word_sim_tuple:
             freq_rank = word_freq_rank_d[nearest_word]
-            _resource_method_mat = final_embeddings[freq_rank, :].reshape(1, embedding_size)  # 縦ベクトルになってるので、reshapeで行列にする
+            _resource_method_mat = final_embeddings[freq_rank, :].reshape(1,
+                                                                          embedding_size)  # 縦ベクトルになってるので、reshapeで行列にする
             _sim_array = cal_similarity(_resource_method_mat, final_embeddings)
 
             # sim_arrayを逆順ソートし、上位３つのindexを取ってくる。
@@ -227,16 +231,26 @@ for i in xrange(vocabulary_size):
             _large_sim_indices = np.argsort(_sim_array)[::-1]
             _most_sim_values = np.sort(_sim_array)[::-1]
 
-            _nearest_word_sim_tuple = find_near_words_sim(nearest_word, _large_sim_indices, _most_sim_values, freq_rank_word_dict, 25)
-            _filter_method_list = filter(lambda tuple: (tuple[0] in all_method_words and tuple[0] != resource_name and tuple[1] >= 0.85), _nearest_word_sim_tuple)
+            # TODO zipしたものを渡すような設計にする
+            _nearest_word_sim_tuple = find_near_words_sim(nearest_word, _large_sim_indices, _most_sim_values,
+                                                          freq_rank_word_dict, 25)
+            _filter_method_tuple = filter(
+                lambda tuple: (tuple[0] in all_method_words and tuple[0] != resource_name and tuple[1] >= 0.85),
+                _nearest_word_sim_tuple)
             # print("near to %s: %s" % (nearest_word, _filter_method_list))
             # print(_nearest_word_sim_tuple)
             # print("Nearest to %s: %s" % (resource_name, ", ".join(map(lambda tuple: tuple[0],_filter_method_list))))
-            if _filter_method_list != []:
+            if _filter_method_tuple != []:
                 # log_str_list.append( ", ".join(map(lambda tuple: tuple[0],_filter_method_list)) )
-                log_str_list.extend(map(lambda tuple: tuple[0],_filter_method_list))
+                log_str_list.extend(map(lambda tuple: tuple[0], _filter_method_tuple))
+
 
         # setは順序が変わる恐れあり
-        print(("Nearest to %s : " % resource_name) + ", ".join(set(log_str_list)))
+        # print("Nearest to %s : %s" % (resource_name, ", ".join(set(log_str_list))))
+
+        related_values = map(lambda x: x[1], nearest_word_sim_tuple)
+        related_average_value = sum(related_values) / len(related_values)
+        related_methods = ", ".join(set(log_str_list))
+        print("%s, %s, %s" % (resource_name, related_average_value, related_methods))
 
 print(count)

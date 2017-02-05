@@ -1,0 +1,505 @@
+values(), 0.887556324402, getLocationInfo(), dumpTopology()
+close(), 0.880283425252, getFormatMinSplitSize(), clientErrorEncountered(), getMemoryForMapTask()
+toString(), 0.887755264839,
+reset(), 0.897249748309,
+getConf(), 0.891931116581, getLifecycleHistory()
+stop(), 0.903737127781, FillBuff()
+hashCode(), 0.906407386065, read(), clientErrorEncountered()
+get(), 0.906966179609, getRMDelegationToken(), dumpTopology()
+getWorkingDirectory(), 0.899584650993, getMaxReduceTasks()
+getLength(), 0.886932760477, getCurrentKey()
+getId(), 0.897553791602, getAllJobStatuses()
+nextKeyValue(), 0.893313954274,
+value(), 0.884396314621, finish()
+getProgress(), 0.889867097139, reset()
+getName(), 0.899846335252, getDescription(), getId(), getBytesWritten()
+start(), 0.898584971825,
+getInstance(), 0.876338362694, get(), hashCode()
+getCurrentValue(), 0.894668171803, getOutputFormat(), getMaximumResourceCapability()
+getCurrentKey(), 0.889252543449, getCreationTime(), getLength(), getNMTokenCache(), getShouldBeUploadedToSharedCache()
+run(), 0.914527018865, iterator()
+name(), 0.870747079452, getTaskType()
+getUri(), 0.881807923317, getRMDelegationToken(), getHomeDirectory()
+getUser(), 0.899924745162, getAllEvents(), getSize()
+getApplicationId(), 0.889696488778,
+id(), 0.912611424923, getSingleton()
+getHomeDirectory(), 0.912676225106, Input()
+getScheme(), 0.89788416028, set(byte[]), FillBuff(), flush(), getElementType()
+clear(), 0.890641381343, getSystemDir(), getNMTokenCache(), getOutputValueClass()
+getBytes(), 0.892038166523,
+getRemaining(), 0.901669243972,
+isEnabled(), 0.876945982377, reduceProgress(), serviceStart()
+incr(), 0.912718623877, getEntityType()
+getKind(), 0.896477083365, getSupportedCompressionAlgorithms(), getQueue()
+hasNext(), 0.895792951186,
+finished(), 0.897329181433, resetState(), getComparator()
+getPriority(), 0.906169255575, getPort(), getFsStatus()
+getStart(), 0.892359644175, isBlacklisted(), isStickyBit()
+supportsSymlinks(), 0.887796550989, getDeclaredClass(), clearChanged()
+size(), 0.904432336489, getUnmanagedAM(), serviceStop(), isStickyBit()
+flush(), 0.911010593176, set(byte[]), getScheme()
+clone(), 0.87763718764,
+shutdown(), 0.889443814754, getApplicationType(), getBlockUploadLatency(), getMemoryForReduceTask()
+getSingleton(), 0.896392653386, getDefaultReplication()
+getStartTime(), 0.903911858797, jobsToComplete()
+checkpoint(), 0.901203632355,
+serviceStop(), 0.90592221419, getApplicationType(), size()
+getQueueName(), 0.903928856055, getFailureState(), getEntityId(), getApplicationTags()
+getDefaultBlockSize(), 0.891081094742, getMapOutputValueClass(), getJar(), getSystemDir(), getPrimaryFilters()
+getLocations(), 0.894052048524, getContainerId()
+getHost(), 0.902683158716, getRMDelegationToken()
+resetState(), 0.903042048216, finished(), getRpcPort()
+getJobName(), 0.894357273976, getOutputFormat(), getComparator(), webResponse()
+getServerDefaults(), 0.899021665255,
+needsInput(), 0.901734809081, isRetired()
+getPos(), 0.895123253266, isEnabled()
+getTrackingUrl(), 0.876926799615, getResourceKey()
+getQueue(), 0.892070819934, stop()
+serviceStart(), 0.903871347507, getReducerClass(), getRpcPort(), getContainerExitStatus(), getUser()
+getApplicationAttemptId(), 0.894129663706, isTypeQuotaSet(), getContainerIds()
+getMaxReduceAttempts(), 0.89367650946, toArray()
+getMemoryForMapTask(), 0.8865206937, getNextToken(), close()
+getFailureCause(), 0.896507402261, getEntityId(), getDescription(), toExtendedShort()
+getConfiguration(), 0.918295969566,
+getJobID(), 0.890067845583, getRunningReduces()
+copyBytes(), 0.888588637114, run(org.apache.hadoop.mapreduce.Reducer.Context), getGraylistedTrackers()
+getDecompressorType(), 0.893536458413, getUseNewReducer()
+getReservationId(), 0.886337280273, getFailureInfo()
+createValue(), 0.883273770412,
+getDiagnostics(), 0.902677545945, getContainerId()
+getStatus(), 0.901136587063, getAppId(), getScheme(), getUser(), getCurrentMaximumDownloadBandwidth()
+createCompressor(), 0.876601527135, getNumReduceTasks()
+getInitialWorkingDirectory(), 0.91015029947,
+not(), 0.89393773675,
+finish(), 0.905218193928, isStickyBit()
+getMemoryForReduceTask(), 0.890794356664, getModificationTime()
+createDecompressor(), 0.894379715125, getProfileParams()
+isSymlink(), 0.897021710873,
+getUsed(), 0.892906119426, getStart(), getDefaultReplication(), read(), clientErrorEncountered(), getLogUrl()
+getDefaultExtension(), 0.911058068275, getJobStatus()
+getDisplayName(), 0.888635903597, getPath(), clearChanged(), getRelaxLocality()
+getState(), 0.8767687579,
+getCapacity(), 0.90362940232,
+getCompressorType(), 0.87340365847,
+getContainerId(), 0.902557969093,
+getMaxMapAttempts(), 0.887526889642,
+getFinishTime(), 0.909408181906,
+getContainers(), 0.896042346954, get(), getBlockSize()
+getDefaultReplication(), 0.902113755544, getSingleton()
+getDescription(), 0.909795661767, getCanonicalServiceName()
+getApplications(), 0.877366314332, getDefaultExtension(), getEndColumn()
+getCombinerKeyGroupingComparator(), 0.866832653681, listSpanReceivers(), getMemory()
+context(), 0.893550604582, getUseNewReducer(), reduceProgress()
+getCanonicalServiceName(), 0.89535416166, getCount(), end()
+getPermission(), 0.886569370826,
+getCount(), 0.909343610207, getJobFile()
+monitorAndPrintJob(), 0.878234446049, getRMIdentifier()
+getJobFile(), 0.908118526141, getCount(), getModifiedTime(), type()
+getAllJobStatuses(), 0.889656444391, getDigester(), getId()
+getOwner(), 0.91033834219, getAllEvents(), reloadCachedMappings(), getModificationTime()
+getUriDefaultPort(), 0.894320656856, getContainerLogDir()
+createDirectDecompressor(), 0.888100892305,
+depth(), 0.892164230347, getNumContainers()
+getMessage(), 0.893984933694, run(), getGraylistedTrackers()
+getEntityType(), 0.899960637093, incr()
+waitForCompletion(), 0.893126606941, getContextName()
+printStatistics(), 0.898191213608, getRMIdentifier(), getFailureCause()
+getType(), 0.886915107568, getCacheArchives(), getConfig(), dumpTopology(), getAMRMToken()
+getFailedRequests(), 0.904513806105,
+decr(), 0.903416275978, getBytesWritten()
+getEntityId(), 0.898979643981,
+getTypes(), 0.886389255524, Module()
+reloadCachedMappings(), 0.897179365158,
+getResource(), 0.897687315941,
+getAvailableResources(), 0.893458108107, stopped()
+getDelegate(), 0.890187392632, Done()
+getSelectQuery(), 0.890183627605, getIncludeApplications()
+read(), 0.90567022562, getTopologyPaths(), hashCode(), getOwner(), getChildQueues()
+getNodeId(), 0.889214783907, getAssignedNode()
+getRpcPort(), 0.901287903388, resetState()
+getAllStatistics(), 0.896574894587,
+getCapability(), 0.889204710722,
+newInstance(), 0.86358504494,
+toArray(), 0.89719782273, getMapOutputKeyClass(), getMaxVirtualMemoryForTask()
+getLocationInfo(), 0.901797751586, getProfileEnabled()
+getPort(), 0.902522742748, getSpeculativeExecution()
+getProfileEnabled(), 0.910333464543, getLocationInfo()
+isRetired(), 0.890096654495, getTrackingURL()
+getStagingAreaDir(), 0.890240540107, getRecursive(), Done()
+getNodeLabelExpression(), 0.898630122344,
+getBlockers(), 0.899151563644, getPort()
+getMapOutputValueClass(), 0.901739110549, getDefaultBlockSize(), run(org.apache.hadoop.mapreduce.Mapper.Context), submit()
+getPartitionerClass(), 0.898175299168, getQueueName(), mapProgress()
+getContainerIds(), 0.89438388745, getApplicationAttemptId()
+isCompleted(), 0.901135156552, getIncludeChildQueues()
+isSingleSwitch(), 0.88177583615,
+getLifecycleHistory(), 0.891000072161, hashCode(), processDeleteOnExit()
+clearStatistics(), 0.908263593912, Module(), getDisplayName(), getIdentifier(), getQueueState()
+getMapOutputKeyClass(), 0.889019519091,
+getQueueState(), 0.898462613424, getReaders(), hasNext(), getMaxVirtualMemoryForTask()
+getFieldTypeInfos(), 0.906281381845,
+getJar(), 0.884864876668, getDuration()
+getContainerToken(), 0.896419038375, getOriginalTrackingUrl(), shutdown()
+Record(), 0.892666578293, getUseNewReducer()
+getCounters(), 0.900052636862, getDiagnosticsInfo(), hflush(), getOutputValueClass()
+getTrackingURL(), 0.905182212591,
+getPath(), 0.894580761592, getOriginalTrackingUrl(), getContextName()
+getTimestamp(), 0.886215855678, getServiceStatus(), stopped()
+getGroup(), 0.904400567214, getMaxMemory(), getReduceSlotCapacity(), getJobState()
+iterator(), 0.897870878379, run()
+emit(org.apache.hadoop.mapreduce.lib.join.TupleWritable), 0.892570187648,
+getAppId(), 0.901788880428, createYarnClient(), getRolledLogsIncludePattern(), getApplicationTypes(), getFinalApplicationStatus()
+getRawFileSystem(), 0.89325127999, getDuration(), getFileDefault(), getLocationInfo()
+getFailureInfo(), 0.898495097955, getPrimaryFilters()
+getNumContainers(), 0.901557137569, depth(), getJobEndNotificationURI()
+getRootQueues(), 0.884691874186, getBlockSize()
+getSystemDir(), 0.884096175432, clear(), Vector(), getOutputValueClass(), getDefaultBlockSize()
+getJobState(), 0.903032779694, getMaxMemory(), getGroup(), stop()
+getClusterTimestamp(), 0.882394492626,
+getEvents(), 0.890728225311,
+getContainerLogDir(), 0.901502758265, getEventId()
+getFinalApplicationStatus(), 0.891278962294, getAppId(), getMaximumResourceCapability()
+getJobTrackerStatus(), 0.885789275169, getMapOutputKeyClass(), getIncludeApplications()
+key(), 0.903879304727, getSchedulingInfo(), getTTExpiryInterval()
+getTaskType(), 0.889008740584,
+getServiceState(), 0.889864335457, getJobTrackerState()
+getMaximumResourceCapability(), 0.893841336171, getCurrentValue(), getFinalApplicationStatus()
+cleanupProgress(), 0.898778190215, incr(), getCumulativeVmem()
+reduceProgress(), 0.897449990114, getSchedulingInfo(), getDefaultExtension(), getTTExpiryInterval()
+getResponseId(), 0.887589772542,
+mapProgress(), 0.90656871597, getServiceState(), getPartitionerClass(), getSpeculativeExecution()
+getApplicationTags(), 0.87291653951, getQueueName()
+getDefaultPort(), 0.906896263361, getDecommissionedTaskTrackerCount(), getAllQueues(), getValue()
+getApplicationType(), 0.909540712833, getBlockUploadLatency(), shutdown(), supportsSymlinks()
+submit(), 0.911611944437, getMapOutputValueClass(), run(org.apache.hadoop.mapreduce.Mapper.Context)
+getOutputValueClass(), 0.899506707986, getDiagnosticsInfo(), getContainerToken(), getSystemDir(), Vector(), clear()
+getProfileParams(), 0.890895813704, getReservedReduceSlots(), hflush(), createDecompressor()
+validate(), 0.887312193712, key(), readChar()
+setupProgress(), 0.894640733798,
+getAMRMToken(), 0.914098272721, done()
+getTaskID(), 0.881352156401, finished(), run()
+hsync(), 0.886477917433, getNextToken()
+getClusterStatus(), 0.888591130575, getUseNewReducer(), getDefaultDelegationTokenAuthenticator()
+getReducerClass(), 0.880805532138, serviceStart()
+getNextToken(), 0.896386315425, getCredentials()
+isRecoverySupported(), 0.876013159752,
+getEmptier(), 0.909355243047, getTaskTrackers(), name()
+getFormatMinSplitSize(), 0.883767684301, close()
+getFileDefault(), 0.896194229523, getServiceStatus()
+getSize(), 0.901237954696, getRolledLogsIncludePattern(), getNMTokenCache()
+getValue(), 0.894466559092, getDefaultPort()
+isSuccessful(), 0.893291880687,
+instance(), 0.881064633528, getUseNewMapper(), getLifecycleHistory()
+isTransient(), 0.909130781889, getDigester()
+killJob(), 0.881031185389, getUsedResources(), startMonitoring(), getApplicationTags()
+getOutputCommitter(), 0.894278029601,
+getSchedulingInfo(), 0.899543633064, key(), getConfig(), getTTExpiryInterval(), not()
+getQueues(), 0.887642165025, getUserAclsInfoList()
+getAllJobs(), 0.894651989142,
+getChildFileSystems(), 0.88256072998, get(), getEventId()
+attributes(), 0.866305013498,
+getOutputKeyClass(), 0.890938768784, getAllEvents(), getWorkPath(), getRootQueueInfos(), submit()
+getFsStatus(), 0.895042508841, getPriority()
+getCredentials(), 0.873516539733, getSchedulerResourceTypes(), isDir()
+isComplete(), 0.875991255045, getProfileEnabled(), getCacheArchives()
+getCanonicalUri(), 0.888745456934,
+build(), 0.899459322294,
+sync(), 0.890926818053,
+getNodeHttpAddress(), 0.902626593908, getGroupNames(), getLabelsToNodes(), getCumulativeVmem()
+getDirDefault(), 0.90351614356, getClusterNodeCount(), getAllStatistics()
+hflush(), 0.889416317145, createDecompressor(), getProfileParams()
+getMapperClass(), 0.880942900976, getReduceSpeculativeExecution(), getDomains()
+getHistoryUrl(), 0.890532304843,
+getConfig(), 0.902929951747, getReduceSpeculativeExecution(), newKey()
+end(), 0.887428889672,
+getInputSplit(), 0.901305884123, getOwner()
+getClusterNodeCount(), 0.901572058598, getMaxReduceTaskFailuresPercent()
+getCombinerClass(), 0.882378816605, run(), getApplicationName()
+isMap(), 0.889964083831,
+getNMTokenCache(), 0.913761069377, clear(), getVirtualCores()
+getVersion(), 0.897547374169, getMaxReduceTasks(), Input(), hasNext(), getClassLoader()
+getResourceKey(), 0.891524940729, getTrackingUrl()
+getFailureState(), 0.906263401111,
+getQueueAclsForCurrentUser(), 0.89020990332,
+createKey(), 0.880734423796,
+getReservationDefinition(), 0.899986128012, getMapDebugScript(), getTaskId(), getAvailableResources()
+getNumReduceTasks(), 0.877438882987, createCompressor()
+getSwitchMap(), 0.873252073924,
+run(org.apache.hadoop.mapreduce.Reducer.Context), 0.907839675744,
+getErrors(), 0.891351789236, getBlockUploadLatency(), needsDictionary()
+getOccupiedMapSlots(), 0.886063357194,
+getCompletedContainersStatuses(), 0.893239994844, start(), getNodeLabels()
+getRolledLogsIncludePattern(), 0.909264038006, getNMTokenCache(), getVirtualCores(), getJobState(), getSize()
+getContainerState(), 0.878837148348, getAllJobStatuses()
+getAMContainerSpec(), 0.876288861036, getGraylistedTrackerNames(), getOccupiedReduceSlots(), getContainerList()
+getComparator(), 0.898975878954,
+Map(), 0.899779687325, getJobSetupCleanupNeeded()
+getWorkPath(), 0.905858139197, getContextName()
+getCurrentMaximumDownloadBandwidth(), 0.886452992757, getCacheFiles(), getTaskAttemptId(), getDefaultExtension(), clientErrorEncountered(), getCachePoolDefault(), getMetricNames()
+done(), 0.890116999547, getAMRMToken()
+needsDictionary(), 0.900004078945,
+getClusterHandle(), 0.891720761855, getContainerId(), getUsed()
+getID(), 0.880059967438, getKeyClass(), getRpcPort(), getKeepFailedTaskFiles()
+getJobTrackerState(), 0.879957338174,
+getEndLine(), 0.875742246707, type()
+getAdjustedStart(), 0.897017319997, getType(), getCurrentTrashDir()
+setChanged(), 0.882708609104,
+isEncrypted(), 0.886223614216, clearStatistics(), getFailedRequests()
+getCreationTime(), 0.899442921082,
+getGroupNames(), 0.882012426853,
+getBlackListedTrackersInfo(), 0.885623127222, attributes()
+getMaxReduceTaskFailuresPercent(), 0.898200968901, getEmptier(), getClusterNodeCount()
+Include(), 0.879704376062,
+clientErrorEncountered(), 0.909423669179, getUsed(), getCurrentMaximumDownloadBandwidth()
+getJarUnpackPattern(), 0.883211990197, getApplicationResourceUsageReport(), deleteLocalFiles()
+getLogAggregationContext(), 0.864082296689, getEntities()
+getModifiedTime(), 0.897048463424, getVersion()
+getMaxMemory(), 0.891007343928, isBlacklisted(), isRetired(), getGroup()
+getBlockSize(), 0.888581047455, getContainers()
+getBytesWritten(), 0.883934855461, decr(), getJobFile(), getName()
+getNumExcludedNodes(), 0.900748997927, getStartTime(), clearChanged()
+getUseNewReducer(), 0.889062742392, getDecompressorType()
+getBlockUploadLatency(), 0.885575970014, getApplicationType(), getNodeLabelExpression(), shutdown()
+createTupleWritable(), 0.893167684476,
+getActiveTaskTrackers(), 0.864547103643,
+directoryDeleted(), 0.893484413624, getLength(), reduceProgress(), finish(), cleanupProgress()
+getSpaceQuota(), 0.896522303422, getDefaultBlockSize(), FillBuff(), getRMDelegationToken()
+getElementType(), 0.891883750757, getTaskCleanupNeeded(), getQueueName()
+getSortComparator(), 0.882279942433, getNumReduceTasks()
+getLocalCacheArchives(), 0.876467814048,
+getApplicationTypes(), 0.894813686609, getReservedResources(), getExitStatus(), getSchedulingInfo()
+getApplicationAttemptReport(), 0.879868149757,
+isUriPathAbsolute(), 0.88706706961, cleanup(org.apache.hadoop.mapreduce.Mapper.Context), Include()
+getApplicationAcls(), 0.882190475861,
+jobsToComplete(), 0.901711672544, getIsKillCompleted(), getOutputValueGroupingComparator()
+getNumMapTasks(), 0.878001779318, getAllJobs()
+getTTExpiryInterval(), 0.892581323783, getDirDefault(), reduceProgress(), getDefaultExtension()
+getResourceName(), 0.886437197526,
+getIdentifier(), 0.892295261224, getOriginalTrackingUrl(), clearStatistics()
+toShort(), 0.879652142525, resume()
+getCumulativeVmem(), 0.899554421504, getRMDelegationToken(), cleanupProgress()
+getIsKillCompleted(), 0.883549143871, getOutputValueGroupingComparator()
+getKeepFailedTaskFiles(), 0.884383360545, getID()
+getRMDelegationToken(), 0.904790421327, finished(), run()
+getChildQueues(), 0.899490227302, read(), getLifecycleHistory()
+useQueryStringForDelegationToken(), 0.901833812396, get(), getIncludeApplications()
+getClientAcls(), 0.868069152037,
+getReduceSlotCapacity(), 0.900218794743, getNumTasksToExecutePerJvm(), getGroup()
+makeEscapedCompactString(), 0.890456447999,
+getKeepContainersAcrossApplicationAttempts(), 0.89280406634,
+getApplicationResourceUsageReport(), 0.904150704543, getRMDelegationToken()
+run(org.apache.hadoop.mapreduce.Mapper.Context), 0.894491046667, getMapOutputValueClass(), getPath(), submit()
+getNodeLabels(), 0.893981158733, getCompletedContainersStatuses()
+getShouldBeUploadedToSharedCache(), 0.892517666022, submit(), getIsKillCompleted()
+getMaxMapTasks(), 0.881942798694, isBlacklisted()
+Input(), 0.88625929753, getClassLoader(), getVersion(), getHomeDirectory()
+getDomainId(), 0.884304374456, getClusterNodeCount()
+getMaxReduceTasks(), 0.882942726215, getConfiguration(), getFieldTypeInfos(), getWorkingDirectory()
+getJobPriority(), 0.874980101983, not()
+getClassLoader(), 0.887316972017, Input(), getBlockUploadLatency(), getVersion()
+newMetricsSourceName(), 0.894338538249,
+getApplicationSubmissionContext(), 0.877036333084, getApplicationName()
+getSchedulerResourceTypes(), 0.888533045848, getCredentials()
+findTimestampedDirectories(), 0.897842357556,
+getKeyFieldComparatorOption(), 0.889074802399,
+type(), 0.904627958934, isSymlink(), getJarUnpackPattern(), getProcessTreeDump(), getUriDefaultPort(), getBlacklistedTrackers(), mapProgress()
+getAllQueues(), 0.884538809458, getKeyFieldComparatorOption()
+getReservedMapSlots(), 0.886719683806, getNodeHttpAddress()
+getBlacklistedTrackers(), 0.89867084225, getJobStatus()
+getIncludeChildQueues(), 0.894265373548, isCompleted()
+Module(), 0.904014716546, getDescription(), getIdentifier(), getProcessTreeDump(), getDeclaredClass(), clearStatistics()
+clearChanged(), 0.89571510752, getNumExcludedNodes()
+homePathForCurrentUser(), 0.896839777629, getUnmanagedAM()
+getReduceTasks(), 0.878731042147, getCanonicalServiceName()
+listSpanReceivers(), 0.88200990359, getSessionId()
+resume(), 0.890157262484,
+getLen(), 0.886240969102,
+getSessionId(), 0.893002738555,
+getOccupiedReduceSlots(), 0.889218270779, getContainerList(), setNumMapTasks(int)
+getIncreaseRequests(), 0.87630824248, getPriority(), getTrackingURL()
+getNeededResources(), 0.878059049447,
+getReaders(), 0.895245561997, getQueueState()
+getAllEvents(), 0.897840678692, getOwner(), reloadCachedMappings()
+getExitStatus(), 0.881162256002,
+setRetired(), 0.875761459271,
+getAlgorithmName(), 0.897293031216, getContainerId()
+mark(), 0.882930705945, getContainerIds()
+getJobStatus(), 0.881404956182, getConcurrency(), getBlacklistedTrackers(), flush(), getDefaultExtension()
+isTypeConsumedAvailable(), 0.868962367376,
+getContainersFromPreviousAttempts(), 0.886927793423, createCheckpoint()
+getCurrentCapacity(), 0.891151030858, getLifecycleHistory(), getIncludeChildQueues()
+getQueueAclsInfo(), 0.905318299929, homePathForCurrentUser(), id(), getOtherInfo()
+getTaskTrackerCount(), 0.890344659487, getLocationInfo()
+getDigester(), 0.8845406274, iterator(), isTransient(), resetState()
+getBlockDownloadLatency(), 0.881502489249,
+getOriginalTrackingUrl(), 0.913642505805, getPath(), getWorkPath()
+getJobLocalDir(), 0.888973464568,
+getTaskTrackers(), 0.873345593611, depth()
+getSymlink(), 0.871801386277, getSupportedCompressionAlgorithms(), getLocationInfo()
+isDir(), 0.901171435912,
+getConcurrency(), 0.892800082763,
+getTaskCleanupNeeded(), 0.87370650967, getScheme(), iterator()
+getRootQueueInfos(), 0.900384416183,
+getBlackListedTaskTrackers(), 0.908538053433,
+getScope(), 0.90538662672,
+getUpdatedNodes(), 0.870895604293, isEnabled(), getEntities()
+createCheckpoint(), 0.894964466492, getPriority(), getDomainId(), getValue()
+getNMTokens(), 0.875096678734,
+getStore(), 0.881760448217,
+getCreatedTime(), 0.887410114209, getState(), run(org.apache.hadoop.mapreduce.Reducer.Context)
+getIncludePattern(), 0.885466367006,
+getRelaxLocality(), 0.900460292896, getDisplayName()
+getOutputValueGroupingComparator(), 0.897004723549, key()
+getReservationResources(), 0.878298183282,
+getKeyFieldPartitionerOption(), 0.889102399349,
+getMaxVirtualMemoryForTask(), 0.907671471437,
+getTokens(), 0.865929375092, value()
+getArchiveClassPaths(), 0.882929593325, getInitialWorkingDirectory()
+parent(), 0.87476866444,
+getEventType(), 0.881141493718,
+getFileSystemInstanceId(), 0.877066344023, needsInput()
+generateParseException(), 0.880085378885,
+getGraylistedTrackers(), 0.893979330858, createKey()
+isAbsoluteAndSchemeAuthorityNull(), 0.88853858908, getJobID()
+getAccessTime(), 0.884303708871, getAliases()
+getContextName(), 0.894382417202, getPath(), getWorkPath()
+getContainerExitStatus(), 0.911428332329, getComparator()
+getClusterMetrics(), 0.872858246168,
+isTypeQuotaSet(), 0.887103190025, getInputSplit()
+getDefaultMaps(), 0.891269852718, getGroupNames(), getJobName()
+getDecommissionedTaskTrackerCount(), 0.898692925771,
+getContextFactory(), 0.865049769481,
+getMapSlotCapacity(), 0.887463261684,
+stopped(), 0.90160976847, getTimestamp(), getOriginalTrackingUrl(), getMaxVirtualMemoryForTask(), clearStatistics(), getShouldBeUploadedToSharedCache()
+getBeginLine(), 0.886775384347, clearChanged()
+readChar(), 0.892859260241,
+getRecordReaderQueue(), 0.877511401971, getTaskID()
+getIncludeApplications(), 0.891273876031, getSelectQuery()
+usage(), 0.879924356937,
+getNumClusterNodes(), 0.891606092453,
+getMaxMapTaskFailuresPercent(), 0.886250982682,
+getJobEndNotificationURI(), 0.884309768677,
+getFencer(), 0.888889561097,
+getCacheArchives(), 0.888760556777, getType(), dumpTopology()
+disable_tracing(), 0.871400296688,
+getCachePoolDefault(), 0.882140904665, getMetricNames(), getNMTokenCache(), getCurrentMaximumDownloadBandwidth()
+getTaskAttemptId(), 0.888316124678, getCacheFiles(), getAllJobStatuses(), getCurrentMaximumDownloadBandwidth()
+getUnmanagedAM(), 0.913032700618, getRunningMaps()
+startMonitoring(), 0.89455657204, getUsedResources()
+getJobACLs(), 0.892067015171, getContextName()
+getApplicationAttemptList(), 0.876034537951, getHistoryUrl()
+getProblems(), 0.889428844055,
+getMetricNames(), 0.889078954856, setNumMapTasks(int), getWriters()
+getToken(), 0.886745482683,
+getFs(), 0.888586034377, getMaxReduceAttempts()
+getDiagnosticsInfo(), 0.887978255749, getServiceStatus(), getApplicationResourceUsageReport(), getOutputValueClass(), getCounters()
+getConnection(), 0.882160544395, getEmptier()
+setNumMapTasks(int), 0.903436263402,
+getKeyClass(), 0.88532953461, submit(), getID(), getRpcPort()
+getMemory(), 0.884187052647, listSpanReceivers(), getCombinerKeyGroupingComparator(), getCurrentKey(), type()
+getEntities(), 0.895230998596, getUpdatedNodes()
+getDefaultNodeLabelExpression(), 0.893551041683,
+getDigest(), 0.887854705254, needsDictionary()
+getTaskId(), 0.88712794582, getReservationDefinition(), getTotalJobSubmissions()
+webResponse(), 0.889017850161, getJobName()
+getTopologyPaths(), 0.890155484279, read(), getDefaultNodeLabelExpression(), getDigest(), getOutputValueClass(), getChildQueues()
+getFileSystem(), 0.892650107543, getKeys()
+getUsedMemory(), 0.893366654714,
+getRMIdentifier(), 0.917207906644, getProgress()
+getOutputFormat(), 0.886876891057, getConfiguration(), getJobName()
+getJobSetupCleanupNeeded(), 0.886610259612, getResourceKey()
+getAliases(), 0.883022179206, Module(), getOutputFormat()
+getTypeID(), 0.872016181548, createCompressor()
+getEndColumn(), 0.88638111949, getApplications(), getDefaultExtension(), clearChanged()
+getEncryptedBit(), 0.887950360775, getContainerId()
+getReservedResources(), 0.882589360078, getApplicationTypes(), getFsStatus()
+getMapDebugScript(), 0.888314267,
+getRunningReduces(), 0.909444719553, getUserAclsInfoList()
+closeAll(), 0.867249429226,
+getSupportedCompressionAlgorithms(), 0.894913345575,
+getUgi(), 0.884610990683, getReduceSlotCapacity(), getMemoryForMapTask()
+getGraylistedTrackerNames(), 0.891517003377,
+isStickyBit(), 0.900374859571, isBlacklisted(), getStart()
+getMaxTaskFailuresPerTracker(), 0.896775186062,
+getDefaultDelegationTokenAuthenticator(), 0.88854303956, cleanupProgress()
+getReservationName(), 0.884669790665, getValue()
+isMonitoring(), 0.898947129647,
+getRolledLogsExcludePattern(), 0.900132983923,
+getApplicationStates(), 0.902410060167,
+getBlacklistedTrackerNames(), 0.88924596707,
+getDuration(), 0.887873162826, getJar(), getRawFileSystem(), getLocationInfo()
+getReduceSpeculativeExecution(), 0.886532674233, getMapperClass()
+getNMTokensFromPreviousAttempts(), 0.870612343152, needsDictionary()
+getSpeculativeExecution(), 0.883716642857, clone()
+getNumPaths(), 0.890842119853, getTotalJobSubmissions()
+isUber(), 0.879912018776,
+getCurrentWebResponses(), 0.901273220778,
+deleteCheckpoint(), 0.883010526498,
+enable_tracing(), 0.908155063788, getFinishTime()
+createAMRMClient(), 0.892678161462, getPos(), getLocationInfo()
+cleanup(org.apache.hadoop.mapreduce.Mapper.Context), 0.893315742413, getJobTrackerStatus()
+getTotalJobSubmissions(), 0.891055762768,
+getCacheFiles(), 0.891917467117, newMetricsSourceName(), getLifecycleHistory(), getOccupiedMapSlots(), getAllJobStatuses()
+deleteLocalFiles(), 0.873197138309,
+createAHSClient(), 0.882726033529,
+getCpuUsagePercent(), 0.886195838451, next()
+publishMetricsNow(), 0.861997922262,
+startMetricsMBeans(), 0.896755854289, getRawFileSystem()
+processDeleteOnExit(), 0.893169820309, getLifecycleHistory()
+getEventId(), 0.895668168863, getFileDefault()
+getReservedReduceSlots(), 0.89440998435,
+getCurrentTrashDir(), 0.880352665981,
+Vector(), 0.893371413151, getAssignedNode(), getOutputValueClass()
+getCumulativeCpuTime(), 0.890173494816,
+getValueTypeID(), 0.87091388305, getDefaultPort()
+getRunningMaps(), 0.884384830793, stop()
+getResourceBlacklistRequest(), 0.874623884757,
+getProcessTreeDump(), 0.880373358727, getCount(), isSymlink(), type()
+getPrimaryFilters(), 0.89420218269, getApplicationOwner()
+checkPidPgrpidForMatch(), 0.867665410042,
+createYarnClient(), 0.897798786561,
+getLastHealthReportTime(), 0.886260281006, getAllJobs()
+isAbsolute(), 0.879707852999, getAccessTime()
+Done(), 0.864855527878, getStagingAreaDir(), getFileSystem()
+countCounters(), 0.899289647738, getMessage(), getRpcPort()
+dumpTopology(), 0.89503505826, get(), getCacheArchives()
+tags(), 0.896407554547, hflush(), getID()
+getOtherInfo(), 0.881364186605, homePathForCurrentUser(), getQueueAclsInfo(), getHttpAddress()
+getKeys(), 0.892978578806,
+getDomains(), 0.892979105314, getLen(), getEntityType(), getConfig()
+getLogUrl(), 0.886093715827, getDefaultReplication(), getUsed()
+isCorrupt(), 0.878250708183,
+createTimelineClient(), 0.888186405102, getReservationDefinition()
+next(), 0.87535477678, getWorkingDirectory(), getCpuUsagePercent()
+set(byte[]), 0.912025054296, getNMTokenCache(), flush()
+getApplicationOwner(), 0.898584067822, getPrimaryFilters()
+getServiceStatus(), 0.876276761293, getDiagnosticsInfo(), getApplicationResourceUsageReport(), getFileDefault(), getTimestamp()
+getAMContainerId(), 0.88998323679, getProgress(), getGroup()
+getModificationTime(), 0.883650541306, getMemoryForReduceTask()
+getLabelsToNodes(), 0.896044751008,
+getUseNewMapper(), 0.898372352123, resetState()
+toExtendedShort(), 0.89274969697, getReservationDefinition(), getDescription()
+getUsedResources(), 0.910416732232, stop()
+metrics(), 0.893684764703, getDefaultNodeLabelExpression(), getOriginalTrackingUrl()
+getReleaseList(), 0.873491545518, getSchedulerResourceTypes(), values()
+getCurrentApplicationAttemptId(), 0.883216291666,
+serviceInit(org.apache.hadoop.conf.Configuration), 0.891559223334, deleteLocalFiles(), getAlgorithmName()
+isBlacklisted(), 0.898562053839, getApplicationTags()
+getAclBit(), 0.874423205853, stopped()
+buffer(), 0.881750712792,
+getUserAclsInfoList(), 0.904518514872, getRunningReduces(), getInputSplit()
+FillBuff(), 0.891364167134, getSpaceQuota(), getRMDelegationToken(), processDeleteOnExit(), getQueueName()
+getNodeReports(), 0.89489454031,
+newKey(), 0.877965291341, getConfig()
+getTaskTrackerName(), 0.879736691713, size()
+stopMonitoring(), 0.902853697538, getServiceState(), run(), getSpeculativeExecution()
+getRecursive(), 0.889628350735,
+getWriters(), 0.88562353452, getMetricNames(), getApplicationTypes()
+getContainerList(), 0.893343011538,
+getNumTasksToExecutePerJvm(), 0.885462522507, getUsedMemory()
+getDeclaredClass(), 0.899856497844, getQueueAclsInfo()
+getVirtualCores(), 0.896619419257, getRolledLogsIncludePattern(), needsDictionary()
+getApplicationName(), 0.891224443913, getApplicationSubmissionContext()
+getGroupingComparator(), 0.883308668931, getJobEndNotificationURI()
+getAssignedNode(), 0.890627036492, Vector(), checkpoint()
+getHttpAddress(), 0.894174486399, getOtherInfo(), clientErrorEncountered()
