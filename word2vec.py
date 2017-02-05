@@ -210,15 +210,10 @@ for i in xrange(vocabulary_size):
 
         resource_name = freq_rank_word_dict[i]
 
-        # nearest_word_list = find_near_words(resource_name, large_sim_indices, freq_rank_word_dict, num_slice_words=6)
         nearest_word_sim_tuple = find_near_words_sim(resource_name, large_sim_indices, most_sim_values,
                                                      freq_rank_word_dict, num_slice_words=6)
 
-        # nearest_method_list = filter(lambda x: x in all_method_words, nearest_word_list)
-        # print("Nearest to %s: %s" % (resource_name, ", ".join(nearest_method_list)))
-
         log_str_list = list()
-        # print("Nearest to %s: %s" % (resource_name, ", ".join(nearest_word_list)) )
 
         for nearest_word, nearest_sim in nearest_word_sim_tuple:
             freq_rank = word_freq_rank_d[nearest_word]
@@ -237,20 +232,12 @@ for i in xrange(vocabulary_size):
             _filter_method_tuple = filter(
                 lambda tuple: (tuple[0] in all_method_words and tuple[0] != resource_name and tuple[1] >= 0.85),
                 _nearest_word_sim_tuple)
-            # print("near to %s: %s" % (nearest_word, _filter_method_list))
-            # print(_nearest_word_sim_tuple)
-            # print("Nearest to %s: %s" % (resource_name, ", ".join(map(lambda tuple: tuple[0],_filter_method_list))))
             if _filter_method_tuple != []:
-                # log_str_list.append( ", ".join(map(lambda tuple: tuple[0],_filter_method_list)) )
                 log_str_list.extend(map(lambda tuple: tuple[0], _filter_method_tuple))
-
-
-        # setは順序が変わる恐れあり
-        # print("Nearest to %s : %s" % (resource_name, ", ".join(set(log_str_list))))
 
         related_values = map(lambda x: x[1], nearest_word_sim_tuple)
         related_average_value = sum(related_values) / len(related_values)
-        related_methods = ", ".join(set(log_str_list))
+        related_methods = ", ".join(set(log_str_list)) # setは順序が変わる恐れあり
         print("%s, %s, %s" % (resource_name, related_average_value, related_methods))
 
 print(count)
