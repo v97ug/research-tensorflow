@@ -1,0 +1,1033 @@
+toString() ,
+hashCode() , getTaskTrackerCount()
+values(), getTaskTrackerName(), getVersion()
+close(),
+toString(), getMapOutputValueClass(), getHistoryUrl(), getIncludeChildQueues(), createTimelineClient()
+reset(),
+getConf(), getProfileEnabled()
+stop(), getLabelsToNodes(), getRemaining()
+close() ,
+hashCode(), createSymlink(), publishMetricsNow()
+get(),
+getWorkingDirectory(),
+getLength(), createValue(), getApplicationId()
+getId(), getConfig()
+nextKeyValue(), values(), Vector(), supportsSymlinks()
+value(), getNodeLabels(), getBlackListedTrackersInfo()
+getProgress(), getRecordName(), nextKeyValue()
+verifyCredentials(),
+getName(),
+start(), getKind(), getDisplayName()
+getInstance(), getNodeReports(), isSymlink(), getApplicationAttemptId()
+getCurrentValue(), ModuleName(), getMemoryForReduceTask(), getCumulativeRssmem()
+getCurrentKey(), getMaxMemory()
+getName() , getPassword()
+run(), getMemoryForMapTask()
+name(),
+getUri(), clear(), getDelegate()
+getUser(),
+getApplicationId(), publishMetricsNow()
+id(), emit(org.apache.hadoop.mapreduce.lib.join.TupleWritable), isCorrupt()
+getHomeDirectory(), getDisplayName()
+getScheme(), getReservationName(), getAMRMToken()
+clear(), getAllocatedResource(), isTransient()
+getBytes(), FillBuff()
+getRemaining(), stop()
+getRateLimitStatus(), name()
+isEnabled(),
+incr(), reloadConfiguration(), supportsSymlinks()
+getKind(), getOutputFormat(), getCreationTime(), getLocations()
+hasNext(), getErrorCode(), getFs(), getBlacklistedTrackers(), getKeepFailedTaskFiles()
+finished(),
+getPriority(), getJobACLs(), getContainerLaunchContext()
+build() , stopMetricsMBeans(), getMaxVirtualMemoryForTask()
+getId() , getOffset()
+getStart(), getQueueAclsInfo(), getRecursive()
+supportsSymlinks(),
+size(), getKeepTaskFilesPattern(), getUnmanagedAM()
+flush(),
+clone(),
+getScreenName(), getMemoryForMapTask()
+shutdown(),
+getSingleton(),
+getStartTime(),
+checkpoint(), getConfiguration(), clearWriteAccessors(), isUber(), getBlacklistedTrackerNames(), getLengths(), getJobName()
+getFavorites(), getFileSystemInstanceId()
+hasNext() ,
+serviceStop(), getRpcPort(), setRetired()
+sample(), getDecommissionedTaskTrackerCount(), getPermission()
+getQueueName(),
+getMessage() , generateParseException(), isDirectory()
+getDefaultBlockSize(), getTokens(), createValue()
+getLocations(), getKind()
+getHost(), finished(), shutdown()
+resetState(), getResourceBlacklistRequest()
+getJobName(),
+getText(), getTaskID(), getOffset()
+getServerDefaults(), directoryCreated(), getEndColumn()
+postUpload() , getDecompressorType(), getBlackListedTaskTrackers(), Include(), getJobID(), Field()
+needsInput(), getContainerId(), getId()
+getPos(), printStatistics()
+getTrackingUrl(), getAllocatedResource(), getEntityType()
+getQueue(), getStatus(), getApplicationList()
+getURL(), getTaskTrackerExpiryInterval(), getSelectQuery(), getMapperClass(), listSpanReceivers()
+getEnd(), getFinishTime()
+preUpload() ,
+serviceStart(),
+getApplicationAttemptId(), getAllEvents(), getContainerList(), getContainers(), getInstance()
+getMaxReduceAttempts(), getSessionId(), getNumContainers(), processDeleteOnExit(), supportsSymlinks()
+getSavedSearches(), getConfiguration(), getBlacklistedTrackerNames()
+getRetweetsOfMe(), getBeginLine()
+getMemoryForMapTask(),
+getFailureCause(), getDecommissionedTaskTrackerCount(), getAllStatistics()
+getSuggestedUserCategories(),
+asHttpParameterArray() ,
+getConfiguration(), getBlacklistedTrackerNames(), getLengths()
+getJobID(), getTaskTrackerName(), getReservationName(), supportsSymlinks()
+copyBytes(),
+getUserTimeline(),
+getDecompressorType(), getPassword()
+getReservationId(), getCapacity()
+invalidateOAuth2Token(), getInstance(), getOutputKeyClass()
+getStatus() , getOffset(), getJobName(), usage(), stop()
+createValue(), getApplicationSubmissionContext(), next(), getTrackingURL()
+getPrivacyPolicy(), getEnvironment(), hsync()
+getDiagnostics(), getClusterHandle()
+getLanguages(), getOutputKeyClass(), Field(), getOtherAction()
+getTermsOfService(),
+getStatus(), getIsUnregistered(), getCombinerClass()
+removeProfileBanner(), getContainersFromPreviousAttempts(), getBytesRead(), stopMonitoring()
+createCompressor(), getFieldID()
+getInitialWorkingDirectory(), getNodeLabels(), getReservedMapSlots(), value()
+not(), getChildQueues()
+getAvailableTrends(),
+getAPIConfiguration(),
+getSentDirectMessages(), getBlackListedTrackersInfo()
+finish(), type()
+getMemoryForReduceTask(), monitorHealth(), getYarnApplicationAttemptState()
+createDecompressor(), setDeprecatedProperties()
+getBlocksList(), getOccupiedMapSlots(), getUriDefaultPort(), getAMRMToken()
+isSymlink(), getGroupingComparator()
+getUsed(), getSchedulerResourceTypes(), getKeyClass(), getNames()
+getDefaultExtension(), getApplicationAcls(), getServices(), getQueueInfo(), getEntityType(), getStartContainerRequests()
+getUserId() , needsDictionary()
+getOAuthRequestToken(), killJob(), getGroupAction()
+getPassword() ,
+getCreatedAt() , getUserInfo(), toArray()
+getHomeTimeline(), getUserAction(), run(), getRecursive()
+getAccountSettings(), getOwner(), getApplicationSubmissionContext(), getDecompressorType()
+getDisplayName(), getJobSetupCleanupNeeded(), getName(), build()
+getState(), getHealthReport(), monitorAndPrintJob()
+getCapacity(), getFieldTypeInfos(), getTaskID()
+getOAuthAccessToken(),
+getBlocksIDs(), getLength(), cleanupProgress()
+getCompressorType(), isMap(), getKind(), getCreationTime(), getAMContainerSpec()
+getContainerId(), needsInput(), getId()
+getMaxMapAttempts(), getAvailableResources()
+getFinishTime(),
+getDirectMessages(), getPriority(), getContainerLaunchContext()
+getContainers(), getTagNames()
+getOAuth2Token(), set(byte[]), getApplicationTags()
+getURL() , createDirectDecompressor()
+getDefaultReplication(),
+getLang(), killJob(), Done(), getDiagnostics()
+getDescription(), getHistoryUrl(), getMapDebugScript(), getEnvironment()
+getOAuth2TokenType() ,
+getNextCursor() , getLocations()
+getApplications(), getSpaceConsumed(), Include(), getHosts()
+hasPrevious() , getMapperClass()
+getCombinerKeyGroupingComparator(), reduceProgress(), makeEscapedCompactString(), getMaximumResourceCapability()
+context(), getAllocatedResource(), getKeys(), getDefaultMaps(), type()
+getVersion() , getReduceSlotCapacity(), getProgress(), values(), getContainerId(), name()
+getOAuthAccessToken() , getFormatMinSplitSize(), getAccessibleNodeLabels()
+getCanonicalServiceName(), getStagingAreaDir()
+getPermission(), values(), hasNext()
+getCount(), getSymlink(), getMemoryForMapTask()
+monitorAndPrintJob(), getState()
+getJobFile(), getUsed(), supportsSymlinks()
+getAllJobStatuses(), isAbsolute()
+getOwner(),
+getUriDefaultPort(),
+createDirectDecompressor(),
+depth(), getContainerReport()
+getMessage(), createAHSClient(), getApplicationReport()
+getEntityType(), getServices(), getApplicationAcls(), AbstractDNSToSwitchMapping(), getDefaultExtension()
+getQuery() , getContainerReport()
+waitForCompletion(),
+readResolve() , getReasonForBlacklist(), setNumMapTasks(int), getResource()
+getPreviousCursor() ,
+getOAuthConsumerKey() , getNMTokens()
+printStatistics(), getPos()
+getType(), getStartTime(), getApplicationType(), getStore()
+getOAuthAccessTokenSecret() ,
+getFailedRequests(), getLocationInfo()
+decr(),
+getEntityId(),
+getInstance() , serviceInit(org.apache.hadoop.conf.Configuration)
+getOAuthConsumerSecret() , isTypeQuotaSet(), fileCreated()
+getTypes(),
+reloadCachedMappings(), getFailureInfo(), getVirtualMemorySize(), mapProgress()
+getResource(), getConfiguration(), getAllQueues(), getBlacklistedTrackerNames()
+getUser() , isSuccessful()
+getAvailableResources(), getCompletedContainersStatuses()
+getDelegate(),
+getSelectQuery(), getTaskTrackerExpiryInterval(), getAliases()
+read(), getLogAggregationContext()
+getNodeId(),
+getRpcPort(),
+getAllStatistics(), getArchiveTimestamps()
+getOAuth2AccessToken() , getVersion(), getReservationId()
+getCapability(), getCount(), getReservationName()
+getLocation() ,
+newInstance(), getSchedulingInfo(), getElementType()
+toArray(), getQueue(), getApplicationList()
+getLocationInfo(), directoryCreated(), getFailedRequests()
+onClose() , getUsed(), getJobStatus()
+getOAuth2Scope() ,
+getPort(), getNMTokensFromPreviousAttempts()
+list() , depth()
+getHttpClientConfiguration() , getFileTimestamps(), getApplicationAttemptId()
+getProfileEnabled(),
+isRetired(), getNumContainers(), getTaskRunTime(), getEvents()
+getStagingAreaDir(), getResourceBlacklistRequest(), key(), getCanonicalServiceName(), getLocalCacheFiles(), getApplicationName()
+placesGeo() ,
+getNodeLabelExpression(), getModificationTime()
+getStatusId() , getIncludeChildQueues()
+getDispatcher() , getInstrumentation()
+getBlockers(), getCacheFiles()
+getMentionsTimeline(), emit(org.apache.hadoop.mapreduce.lib.join.TupleWritable), id(), getBytes()
+getMapOutputValueClass(), emit(org.apache.hadoop.mapreduce.lib.join.TupleWritable), build()
+getPartitionerClass(), getWorkingDirectory()
+getContainerIds(),
+isCompleted(), getReasonForBlacklist(), getValue(), getRecursive()
+getStreamBaseURL() , getSuccessfullyStartedContainers()
+isSingleSwitch(), getPos(), getId(), closeAll()
+isUserStreamRepliesAllEnabled() ,
+cleanUp(), getReservedReduceSlots()
+timelines() , Record()
+getLifecycleHistory(),
+user(), getRemaining()
+clearStatistics(), getDomainId()
+getMapOutputKeyClass(), getDeadline()
+getMentions(), getToken(), getDiagnostics(), getJobID(), createTupleWritable(), getShouldBeUploadedToSharedCache()
+getQueueState(), getServices(), getContainerToken(), getFileContext()
+getMaxId() , getRecordName(), fileCreated(), isAbsoluteAndSchemeAuthorityNull()
+getFieldTypeInfos(),
+getJar(),
+getContainerToken(), getStatus()
+dispose(),
+Record(),
+getCounters(), getPreemptionMessage()
+getTrackingURL(),
+getAuthorization(),
+isApplicationOnlyAuthEnabled() , add(T), closeAll()
+getPath(), getLabelsToNodes(), getVersion()
+getTimestamp(), resume(), getIdentifier()
+directMessages() , read(), getHttpAddress()
+getOAuth2TokenURL() , serverErrorEncountered(), getWorkingDirectory()
+getGroup(), getReduceSlotCapacity()
+iterator(),
+emit(org.apache.hadoop.mapreduce.lib.join.TupleWritable), id()
+getAppId(),
+getRawFileSystem(), getCumulativeVmem(), setNumMapTasks(int), serviceStop()
+getContributingTo() , getResource(), incr(), getFileDefault()
+getRestBaseURL() , getContainerId(), needsInput(), getId()
+isIncludeMyRetweetEnabled() ,
+favorites() , getEntityType(), getNumExcludedNodes()
+search() , getConcurrency()
+isTrimUserEnabled() , getReservationName()
+isJSONStoreEnabled() , getSupportedCompressionAlgorithms(), directoryCreated(), getIncludePattern(), getEndColumn()
+getFailureInfo(), hashCode(), reloadCachedMappings(), getVirtualMemorySize()
+getScreenName() , isSingleSwitch(), getAlgorithmName(), getJobID()
+getSize() , getReservationRequests(), getCpuUsagePercent()
+getMediaProvider() , getContainerReport(), getApplicationAttemptReport()
+getNumContainers(), getSessionId(), isRetired(), getEvents()
+getMediaProviderParameters() , getHosts()
+getOAuthAccessTokenURL() , getDefaultBlockSize(), getUsed(), getCacheFiles(), getTaskRunTime(), cleanup(org.apache.hadoop.mapreduce.Mapper.Context), hsync()
+getCode() , getEndLine(), getStartTime()
+getRootQueues(), getMaxMemory(), needsDictionary(), webResponse()
+getSystemDir(), getReservedReduceSlots()
+getJobState(),
+help() , getContainerToken()
+getClusterTimestamp(),
+isIncludeEntitiesEnabled() , getBytesPerSum(), shutdown()
+getEvents(), serverErrorEncountered(), getHomeDirectory()
+getUserStreamBaseURL() , getMessage(), isAbsolute(), getJobStatus(), getAllJobStatuses()
+getContainerLogDir(), getBlacklistRemovals(), getInstrumentation()
+getFinalApplicationStatus(),
+getAccessLevel() , getProblems()
+getAsyncNumThreads() , getTagNames()
+getJobTrackerStatus(),
+key(), getOccupiedReduceSlots(), getLocalCacheFiles(), getStagingAreaDir()
+getTaskType(),
+tweets() , getYarnApplicationAttemptState()
+getServiceState(), execute()
+getOAuthAuthorizationURL() , getAliases(), getRpcPort(), getFencer()
+getNoRetweetsFriendships(), getLocalResources()
+getMaximumResourceCapability(),
+cleanupProgress(),
+reduceProgress(),
+getResponseId(), getFileSystem(), getCurrentApplicationAttemptId(), getSpaceConsumed(), getReservationName(), getCurrentMaximumDownloadBandwidth()
+retweet(), getSymlink(), getCount(), processDeleteOnExit()
+getUploadBaseURL() , getGraylistedTrackerNames()
+mapProgress(),
+getApplicationTags(), cleanupProgress()
+removedProfileBanner() , isMonitoring(), getQueueAclsForCurrentUser()
+getOAuthRequestTokenAsync(),
+getDefaultPort(), getReservedResources()
+getApplicationType(), getType()
+savedSearches() , getTopologyPaths()
+submit(), getChildFileSystems()
+getOutputValueClass(), getServiceData()
+getProfileParams(),
+validate(),
+getDispatcherImpl() , getUgi()
+setupProgress(),
+getAMRMToken(), resume(), getShouldBeUploadedToSharedCache()
+getTaskID(), getLength(), getTrackingURL(), getProfileEnabled()
+getWithheldInCountries(), getNodeStates(), getBlackListedTaskTrackers()
+hsync(), getFormatMinSplitSize()
+getClusterStatus(), getLastHealthReportTime()
+updatedProfileBanner() , isAbsolute(), getClusterTimestamp()
+isMBeanEnabled() , getBlockSize(), name()
+getReducerClass(), run(org.apache.hadoop.mapreduce.Reducer.Context)
+getNextToken(), getDirDefault()
+getOAuthAuthenticationURL() , webResponse()
+isRecoverySupported(), isSymlink(), getNodeLabelExpression()
+getEmptier(), getInputFormat()
+friendsFollowers() , getClusterTimestamp()
+getFormatMinSplitSize(), getBlockLocations()
+isDaemonEnabled() , isEnabled(), Include()
+isStallWarningsEnabled() , supportsSymlinks()
+getFileDefault(), isSymlink(), getAccessTime(), finish(), type()
+getSize(), getGraylistedTrackerNames(), monitorHealth()
+getCountryCode() , getAliases()
+getValue(), getUseNewReducer(), getAllQueues(), flush()
+getSiteStreamBaseURL() , getHomeDirectory()
+isSuccessful(),
+getCount() , hsync()
+getLocation(),
+getSinceId() , copyBytes(), RecordList(), getNumReduceTasks(), getEntries()
+instance(), getResourceName(), getBlockSize()
+isTransient(), add(T), getSchedulingInfo(), getAdjustedStart(), getQueueName()
+killJob(), getDiagnostics()
+getOutputCommitter(), metrics()
+getSchedulingInfo(), getReservedResources(), getKind(), getContainerStatuses()
+getQueues(), getQueueAclsForCurrentUser()
+isUserStreamWithFollowingsEnabled() , getAskList(), isMonitoring(), getReservationId(), getRelaxLocality()
+getAllJobs(), getWorkingDirectory()
+getOAuthAccessTokenAsync(),
+getChildFileSystems(), FillBuff()
+attributes(), getExitStatus(), getCombinerKeyGroupingComparator(), getUserAclsInfoList(), getQuota()
+getLoggerFactory() ,
+getOutputKeyClass(), Field()
+getFsStatus(), checkPidPgrpidForMatch(), getOccupiedMapSlots()
+getCredentials(),
+isComplete(), serviceInit(org.apache.hadoop.conf.Configuration)
+getCanonicalUri(), getType(), createAMRMClient()
+trends() ,
+getOAuth2TokenAsync(), getPath(), getContainerId(), getVersion()
+getQuery(), getTaskAttemptID()
+build(), getAllServicesMetaData()
+sync(), isRetired()
+getHttpStreamingReadTimeout() , getMapSlotCapacity(), getHosts()
+getNodeHttpAddress(), getProgress()
+getDirDefault(), getMapSlotCapacity()
+hflush(),
+getMapperClass(),
+getHistoryUrl(), getRecordReaderQueue()
+getOAuth2InvalidateTokenURL() ,
+suggestedUsers() , getRunningMaps(), isCompleted()
+getConfig(), getId()
+getMediaProviderAPIKey() ,
+end(), createAHSClient(), getEventId(), getApplicationId()
+getInputSplit(),
+getClusterNodeCount(),
+getCombinerClass(), getIsUnregistered()
+isMap(), getDiagnosticsInfo(), directoryDeleted()
+getNMTokenCache(),
+getOAuthRequestTokenURL() , getRelatedEntities(), getDisplayName(), getBytesRead()
+isDebugEnabled() ,
+getVersion(), getJobSetupCleanupNeeded(), getPath(), getKeepFailedTaskFiles()
+clearListeners(), getInitialWorkingDirectory()
+spamReporting() , getMemoryForReduceTask()
+getResourceKey(), getConfiguration(), getContainerLaunchContext()
+getFailureState(),
+getQueueAclsForCurrentUser(), getRootQueueInfos()
+createKey(), getNodeId()
+getReservationDefinition(), getReduceSlotCapacity(), getMapDebugScript()
+getNumReduceTasks(), getLogAggregationContext(), getUriDefaultPort()
+getSwitchMap(), serverErrorEncountered(), monitorAndPrintJob()
+run(org.apache.hadoop.mapreduce.Reducer.Context),
+getErrors(), getCumulativeVmem(), getOutputFormatClass()
+getOccupiedMapSlots(), checkPidPgrpidForMatch(), getAMRMToken(), getFsStatus()
+getLatitude(), getInitialWorkingDirectory()
+getCompletedContainersStatuses(), getAvailableResources()
+getHashtagEntities(),
+getPhotoSizeLimit() ,
+getRolledLogsIncludePattern(), getAvailableResources()
+getContainerState(),
+isWith() ,
+getAMContainerSpec(),
+getComparator(), getTotalJobSubmissions()
+Map(),
+getRawStreamListeners() , resetState(), getMemory()
+getHttpProxyHost() ,
+getWorkPath(), finish(), getEmptier()
+getCurrentMaximumDownloadBandwidth(), getCurrentApplicationAttemptId(), getResponseId(), getFileSystem()
+done(), getAllQueues(), newKey(), getResourceRequest()
+isPossiblySensitive() , createSymlink(), getFailureInfo()
+needsDictionary(), incr(), getMaxMapTasks(), getJobStatus(), getRootQueues()
+isGeoEnabled(), getQueueAclsForCurrentUser()
+getClusterHandle(), getDiagnostics(), FillBuff()
+getID(), getGrayListedTaskTrackerCount()
+getMediaURLHttps(), newMetricsSourceName()
+getJobTrackerState(), getCumulativeCpuTime(), getSortComparator()
+getCountry() , getGroupingComparator(), getScheme(), getHomeDirectory(), getRelatedEntities()
+getEndLine(), getCurrentCapacity()
+getAdjustedStart(), validate()
+setChanged(), getInputFormatClass(), getApplicationAttemptReport()
+isEncrypted(), getTaskTrackerName(), stopped(), getModificationTime()
+getCreationTime(), getDiagnosticsInfo(), getOccupiedMapSlots()
+getGroupNames(), getReasonForBlacklist()
+getImageHeight() , isEnabled()
+getWoeid() , getGraylistedTrackerNames(), getUpdatedNodes()
+getCountryName() , clearStatistics(), getReservationId()
+getBlackListedTrackersInfo(),
+getTimeZone(), needsInput(), getValue(), getBlockUploadLatency()
+getMaxReduceTaskFailuresPercent(), getMemoryForMapTask()
+Include(), getApplications(), getBlackListedTaskTrackers()
+clientErrorEncountered(), startMonitoring()
+getJarUnpackPattern(), getCompressMapOutput(), getCurrentKey()
+getMediaEntities(),
+getLogAggregationContext(), getUseNewMapper(), read()
+getTokenSecret() , getSupportedCompressionAlgorithms()
+getModifiedTime(),
+getMaxMemory(), createAHSClient()
+getBlockSize(),
+getBytesWritten(),
+getOAuth() , needsInput(), quarterDigest(), nextKeyValue()
+getNumExcludedNodes(),
+getHttpProxyPort() , set(byte[]), getCumulativeCpuTime(), getRssMemorySize()
+getUseNewReducer(), getLifecycleHistory(), getValue(), getTaskTrackerCount(), isTransient()
+getBlockUploadLatency(), getRunningMaps(), getMemoryForMapTask()
+createTupleWritable(), getProcessTreeDump(), needsInput()
+getStackLineHash() ,
+getRateLimitStatus() , isUber()
+getTargetUserId(), get(), getLastHealthReportTime(), serviceStart()
+getActiveTaskTrackers(),
+directoryDeleted(), getDiagnosticsInfo(), isMap(), clearChanged()
+NullAuthorization() , getFailureState(), isMap(), getDiagnosticsInfo()
+getSpaceQuota(), getRMDelegationToken()
+getElementType(),
+getSortComparator(),
+getUsers() ,
+getLocalCacheArchives(),
+getApplicationTypes(), Map()
+getApplicationAttemptReport(), getTopologyPaths(), getUriDefaultPort(), webResponse()
+getMaxMediaPerUpload() ,
+isUriPathAbsolute(),
+getExtendedMediaEntities(),
+getShortURLLengthHttps() , getMaxPhysicalMemoryForTask(), getHosts()
+getProfileTextColor() , getAclBit()
+getApplicationAcls(), isEnabled(), getQueueState(), createSymlink()
+jobsToComplete(), getMaxReduceTasks()
+getMaxId(), getCpuUsagePercent(), getRootQueueInfos(), getShouldBeUploadedToSharedCache()
+getNumMapTasks(),
+getTTExpiryInterval(),
+getUrl() ,
+getResourceName(), getTypeID(), nextKeyValue(), findTimestampedDirectories(), getProgress()
+getIdentifier(), cleanup(org.apache.hadoop.mapreduce.Mapper.Context), getCompressMapOutput()
+toShort(), isMap()
+asPostParameterList() , getUsedMemory(), getTopologyPaths()
+getCumulativeVmem(), getLength(), getErrors()
+getIsKillCompleted(),
+ensureOAuthEnabled() , key(), getPeriod()
+getKeepFailedTaskFiles(), getPath(), getDescription(), getVersion()
+getRMDelegationToken(), getSpaceQuota(), isSymlink(), getIncludeChildQueues()
+getStackLineHashAsHex() , getResource(), getTaskAttemptID(), copyBytes()
+getErrorCode() , getGroupNames()
+generateAuthorizationHeader() ,
+getMemberCount(), getTypeID(), getDisplayName(), getHomeDirectory(), getJobFile(), getHistoryUrl(), supportsSymlinks()
+getChildQueues(), getMessage(), not()
+ensureSiteStreamsListenerIsSet() , getChildQueues()
+getErrorMessage(), getDefaultReplication(), reduceProgress()
+useQueryStringForDelegationToken(), remove()
+getClientAcls(), getSelectQuery(), AbstractDNSToSwitchMapping(), getResource(), getCumulativeRssmem()
+getReduceSlotCapacity(), getReservationDefinition(), getMapDebugScript(), getGroup()
+makeEscapedCompactString(), getMemory()
+getKeepContainersAcrossApplicationAttempts(), getContainerToken()
+getApplicationResourceUsageReport(),
+run(org.apache.hadoop.mapreduce.Mapper.Context),
+getInReplyToStatusId(), getAccessibleNodeLabels()
+setFactory() ,
+getAuthenticationURL() , getGraylistedTrackerNames(), getTrackingURL()
+getNodeLabels(), getInitialWorkingDirectory(), value(), newKey()
+getShouldBeUploadedToSharedCache(),
+getMaxMapTasks(), incr(), isAbsolute(), getResourceRequest(), needsDictionary()
+Input(),
+getDomainId(), getOwner()
+getMaxReduceTasks(), depth(), isUber(), webResponse()
+getJobPriority(), setNumMapTasks(int)
+getClassLoader(), getKeyTypeID()
+getResultType(),
+getProfileBannerRetinaURL() , end()
+newMetricsSourceName(), getMaximumCapacity()
+isDefaultProfile(), getMapOutputValueClass()
+isIncludeFollowingsActivity() ,
+getFullName(), isDir()
+getProfileBannerIPadURL() , getMaxMemory()
+getApplicationSubmissionContext(), getEndLine()
+getAuthorURL(), getEntities(), getJobState(), getAskList(), getApplicationReport()
+getSchedulerResourceTypes(), stop()
+findTimestampedDirectories(), getUriDefaultPort()
+ensureControlURISet() ,
+getOriginalProfileImageURLHttps() , getLength()
+getKeyFieldComparatorOption(),
+getFavouritesCount() , waitForCompletion(), Type()
+type(), finish(), getFileDefault(), getDefaultPort()
+getPlaceCode() , getCount(), processDeleteOnExit()
+getSource(), getAllServicesMetaData(), build()
+getAllQueues(), getResource(), toExtendedShort(), getValue(), publishMetricsNow(), done()
+getReservedMapSlots(), mapProgress()
+getBlacklistedTrackers(), hasNext(), getKeepFailedTaskFiles(), getMemory()
+getIncludeChildQueues(),
+isFavorited(), getModifiedTime(), webResponse()
+getHeight() , getEventInfo()
+Module(), getFs(), getDefault()
+clearChanged(), getAccessTime()
+homePathForCurrentUser(),
+getReduceTasks(), getCurrentTrashDir()
+listSpanReceivers(), getTaskTrackerExpiryInterval(), getSelectQuery()
+getSourceUserScreenName(), getMessage(), getSortComparator()
+VersionStream() , getKeepTaskFilesPattern(), getUnmanagedAM(), size()
+resume(), getTimestamp(), getAMRMToken()
+getLen(),
+encodeBasicAuthenticationString() , getGraylistedTrackerNames(), getKeyFieldPartitionerOption(), isRecoverySupported(), getReservationID()
+getSessionId(), getNumContainers(), getMaxReduceAttempts(), getReservationID()
+getStatusCode() ,
+getOccupiedReduceSlots(), getTaskTrackerName(), getKeyFieldComparatorOption(), getApplicationName(), key()
+isSourceNotificationsEnabled(), getAssignedNode()
+getIncreaseRequests(), getRpcPort(), getLocations()
+canSourceDm(),
+getNeededResources(), isRetired(), getEvents()
+getImageType() , getAssignedNode(), getIncreaseRequests()
+getTrendAt() , getClusterNodeCount()
+getReaders(), getRecordReaderQueue(), getJobSetupCleanupNeeded(), getStartTime(), supportsSymlinks()
+getAllEvents(), RecordList(), createTupleWritable(), getContainers()
+getPlaceType() ,
+getExitStatus(), getUserAclsInfoList(), attributes()
+isRetweet() , isBlacklisted(), getRemaining()
+setRetired(), getOutputFormat()
+getCreatedAt(),
+getTargetUserScreenName(), FillBuff(), getTaskTrackerCount()
+getHttpProxyPassword() , getClusterNodeCount()
+getAlgorithmName(), getInitialWorkingDirectory()
+getUtcOffset() ,
+getWidth(), getSortComparator(), getArrival()
+mark(), countCounters(), getRssMemorySize()
+getHttpRetryCount() , run(org.apache.hadoop.mapreduce.Reducer.Context)
+getJobStatus(), supportsSymlinks(), needsDictionary()
+dumpConfiguration() , getFailureState(), serverErrorEncountered()
+getGeometryType() ,
+isTypeConsumedAvailable(), usage(), getLocations()
+getProfileBannerURL() , getPassword(), getCapacity(), getReservationName()
+getContainersFromPreviousAttempts(), getDigest(), stopMonitoring()
+getCurrentCapacity(), getApplicationSubmissionContext(), getEndLine()
+getPlaceIds(), getAMContainerSpec()
+isFollowing(), getCpuUsagePercent()
+setNested() , getTaskID()
+getQueueAclsInfo(), toExtendedShort(), getStart(), getWorkingDirectory()
+isFollowRequestSent(), getNumExcludedNodes(), sync()
+getTaskTrackerCount(), getValue()
+getDigester(), getCompressMapOutput()
+getBiggerProfileImageURLHttps() , getUser()
+getBlockDownloadLatency(), getID()
+getOriginalTrackingUrl(), getServiceState(), resetState(), getFileContext()
+getJobLocalDir(), run(org.apache.hadoop.mapreduce.Mapper.Context)
+getTaskTrackers(),
+getFollowersCount(), getIncludeChildQueues(), getNodeId()
+getSymlink(), getCount()
+isProtected(), getRecordName(), getQueueAclsInfo(), getStart(), FillBuff()
+isDir(), getIdentifier()
+getProfileBackgroundColor() , homePathForCurrentUser(), getDefaultPort(), Type()
+getConcurrency(), getApplicationList(), getVolumeIds()
+getTaskCleanupNeeded(), getOutputKeyComparator()
+getProfileBannerIPadRetinaURL() , isUber()
+getRootQueueInfos(),
+getBlackListedTaskTrackers(), getPassword(), getKeyTypeID()
+getScope(), getAttemptFailuresValidityInterval(), getAllStatistics()
+getUpdatedNodes(),
+createCheckpoint(), getChildFileSystems(), getBytes()
+getNMTokens(),
+getStore(), getType(), getStartTime()
+getCreatedTime(), getTaskTrackerCount()
+getToken() , getMetricNames()
+getIncludePattern(), getEndColumn()
+getRelaxLocality(), getTagNames(), getArchiveTimestamps(), setNumMapTasks(int), getAskList(), getReservationId()
+getSymbolEntities(), close(), getReservedMapSlots()
+getOutputValueGroupingComparator(), deleteCheckpoint(), getPassword(), getLocationInfo()
+getInReplyToUserId(),
+getReservationResources(),
+getKeyFieldPartitionerOption(), Field(), getClusterNodeCount()
+getMaxVirtualMemoryForTask(),
+getTokens(), getPartitionerClass()
+getArchiveClassPaths(), startMonitoring()
+init() , getDefaultMaps()
+parent(),
+getEventType(), getLabelsToNodes(), getKind()
+getTokenType() , getMapDebugScript()
+getFriendsCount(), remove(), getChildFileSystems(), getBlackListedTrackersInfo(), value(), getFinalParameters()
+getFileSystemInstanceId(), getKeyTypeID()
+generateParseException(), getApplicationAttemptReport()
+getGraylistedTrackers(), getWorkPath(), getDigest(), getJobLocalDir(), getKeyTypeID()
+getURI(), waitForCompletion(), getContainerIds(), getRemaining()
+isAbsoluteAndSchemeAuthorityNull(), getCanonicalUri()
+getAccessTime(), clearChanged()
+getContextName(),
+getLimit(),
+getContainerExitStatus(), getCredentials()
+getClusterMetrics(), getApplicationId()
+isTypeQuotaSet(), fileCreated(), FillBuff(), getOtherAction()
+getDefaultMaps(), getArchiveClassPaths()
+ensureStatusStreamListenerIsSet(), newMetricsSourceName(), getEnvironment()
+getDecommissionedTaskTrackerCount(), key(), getFailureCause()
+getSourceUserId(), getServerDefaults(), endRecord()
+getOriginalProfileImageURL() , getSchedulingInfo(), getDigest()
+getContextFactory(), GetImage()
+getMapSlotCapacity(), getDeadline()
+isShowAllInlineMedia() , isAbsolute(), getContainerList(), getFileContext(), getFailureCause()
+stopped(), currentUser()
+getBeginLine(), getContainerId(), getKeepFailedTaskFiles()
+readChar(), getKeyFieldComparatorOption()
+getProfileSidebarBorderColor() , getUsedMemory(), getDigest()
+getRecordReaderQueue(), getJobSetupCleanupNeeded(), getReaders(), supportsSymlinks()
+getProfileBannerMobileRetinaURL() , reduceProgress()
+getIncludeApplications(), submit(), createDecompressor(), getBlockDownloadLatency()
+usage(), getErrorCode()
+getNumClusterNodes(), getAllJobStatuses()
+getMaxMapTaskFailuresPercent(), killJob(), getYarnApplicationState()
+isErrorMessageAvailable(), getChildFileSystems(), createSymlink(), hashCode(), getParent()
+getVideoDurationMillis() , clear(), getJobTrackerStatus(), disable_tracing()
+getJobEndNotificationURI(),
+getURLEntities(), depth(), getQueues(), getNumClusterNodes()
+clearThreadLocalMap(), getDiagnostics(), getNumPaths(), getBlacklistRemovals()
+getFencer(),
+getCacheArchives(),
+disable_tracing(), clear(), getEnvironment(), hsync()
+getCachePoolDefault(),
+getTaskAttemptId(),
+getProfileBannerMobileURL() , clear(), getCapacity(), getAskList()
+getUnmanagedAM(), getKeepTaskFilesPattern(), size(), isDirectory(), clear()
+startMonitoring(),
+getJobACLs(),
+getApplicationAttemptList(),
+getProblems(),
+isSourceWantRetweets(),
+getMetricNames(),
+getToken(),
+getFs(), Module(), getErrorCode(), hasNext()
+isDefaultProfileImage(), getNumReduceTasks(), isCompleted()
+getDiagnosticsInfo(), isMap(), getWorkingDirectory(), directoryDeleted()
+isDiscoverableByEmail(), getNumReduceTasks()
+getConnection(), getYarnClusterMetrics()
+setNumMapTasks(int), getLength(), getRawFileSystem(), cleanupProgress()
+getKeyClass(), getReservedReduceSlots()
+getMemory(), getDefaultPort()
+getEntities(),
+getDefaultNodeLabelExpression(),
+getDigest(), getPriority(), getScope()
+getTaskId(),
+webResponse(),
+getTopologyPaths(), createValue()
+getFileSystem(), getCurrentApplicationAttemptId(), directoryCreated(), getPassword(), getResponseId(), getCurrentMaximumDownloadBandwidth(), getModificationTime()
+onConnect(), getResourceBlacklistRequest(), getApplicationName()
+getUsedMemory(),
+getRMIdentifier(),
+getOutputFormat(), getAllocatedResource(), update(), hashCode()
+getJobSetupCleanupNeeded(), getRecordReaderQueue(), getReaders(), getVersion()
+getAliases(), getSelectQuery()
+getTypeID(), getQueueName()
+getEndColumn(), getIncludePattern(), dumpTopology()
+getEncryptedBit(), getTaskCleanupNeeded(), getContextName()
+getReservedResources(), getMapTasks(), getSchedulingInfo(), getEnvironment(), getDefaultPort()
+getMapDebugScript(),
+fillInIDAndScreenName() , getOutputFormatClass(), webResponse()
+getRunningReduces(), createYarnClient(), getStartOffsets(), getApplicationTypes(), getRelatedEntities()
+closeAll(), getReservationID()
+getSupportedCompressionAlgorithms(), getCpuUsagePercent(), stopMonitoring()
+getUgi(), getJobStatus()
+getGraylistedTrackerNames(), setRetired(), getSize()
+isStickyBit(),
+getTimeZone() , getCompressorType()
+getContainedWithIn() , getFencer()
+getMaxTaskFailuresPerTracker(), getBeginLine()
+isRetweeted(), finished(), iterator(), getUserAclsInfoList()
+getDefaultDelegationTokenAuthenticator(), getEnvironment()
+getExceptionCode(), getGroupAction()
+isGeoEnabled() ,
+getReservationName(), supportsSymlinks()
+getRecipient() , getMaximumResourceCapability()
+isProfileBackgroundTiled() , getAliases()
+isMonitoring(), getOutputFormatClass(), getDeclaredClass()
+getRolledLogsExcludePattern(), getTokens()
+getExceptionDiagnosis() , emit(org.apache.hadoop.mapreduce.lib.join.TupleWritable), getMapOutputValueClass()
+getApplicationStates(), instance()
+getBlacklistedTrackerNames(), getResource(), getYarnApplicationAttemptState()
+getRecipientId() , getBytes()
+isIPRateLimitStatus() , getContainerStatuses()
+getDuration(), isTransient()
+getReduceSpeculativeExecution(), getServices(), getGroup()
+getNMTokensFromPreviousAttempts(), getPort(), getUriDefaultPort()
+getSpeculativeExecution(),
+getNumPaths(), Input()
+isUber(), getJobName(), getBlacklistedTrackerNames(), getConfiguration(), getLengths(), checkpoint()
+getCurrentWebResponses(), getInstrumentation()
+deleteCheckpoint(), getTaskId()
+enable_tracing(),
+getHtml(), getDigester()
+createAMRMClient(),
+cleanup(org.apache.hadoop.mapreduce.Mapper.Context), incr(), getUsed()
+getTotalJobSubmissions(), quarterDigest(), getConf()
+utcOffset() ,
+getInReplyToScreenName(), getNumTasksToExecutePerJvm(), run(org.apache.hadoop.mapreduce.Reducer.Context)
+getResetTimeInSeconds(), incr(), clientErrorEncountered(), reloadConfiguration()
+getCacheFiles(), submit()
+isVerified() ,
+isTargetFollowingSource(), getTaskType()
+deleteLocalFiles(),
+getIp() , getContainerId()
+getRetweetedStatus() ,
+createAHSClient(), getMessage(), getApplicationReport()
+getCurrentUserRetweetId(), findTimestampedDirectories(), getAskList()
+getRefreshURL() , getAttemptId()
+getCpuUsagePercent(),
+publishMetricsNow(), getApplicationId()
+startMetricsMBeans(),
+onDisconnect(),
+getQuotedStatusId(), getResourceBlacklistRequest(), getDecommissionedTaskTrackerCount(), getFailureCause()
+processDeleteOnExit(), getDiagnostics(), getCount(), values(), getMaxReduceAttempts()
+isIncludeUserChanges() , getCurrentCapacity(), getVisibility()
+getSince(),
+getIDs() , getNumTasksToExecutePerJvm(), submit()
+getEventId(), getEntities(), getIncludePattern(), type()
+getReservedReduceSlots(), getSystemDir()
+getCurrentTrashDir(), getSpaceQuota(), getReduceTasks()
+Vector(), nextKeyValue(), getOutputValueClass()
+getCumulativeCpuTime(), getJobTrackerState()
+TwitterObjectFactory() ,
+getValueTypeID(), getInstrumentation()
+getRunningMaps(),
+getProfileImageURL(), getEntityId(), getComparator(), RecordList()
+getMediaId() ,
+getPlace(), getContainerLaunchContext(), getTaskType()
+getResourceBlacklistRequest(), getPeriod()
+getProcessTreeDump(), createTupleWritable(), getCurrentKey()
+getPrimaryFilters(),
+getFavoriteCount(), getMaxReduceAttempts(), getMapRunnerClass()
+checkPidPgrpidForMatch(), getFailedRequests(), waitForCompletion(), getOccupiedMapSlots(), getFsStatus()
+createYarnClient(), getLength(), getRunningReduces(), getCumulativeVmem(), getMaxPhysicalMemoryForTask(), getApplicationTypes()
+getProfileBackgroundImageURL() , getLabelsToNodes(), getClassLoader()
+isProfileUseBackgroundImage() , getIncreaseRequests(), getRpcPort(), getHttpAddress()
+getLastHealthReportTime(), get(), getClusterStatus()
+isAbsolute(), getAllJobStatuses(), getResourceRequest()
+Done(),
+countCounters(), mark(), getRssMemorySize()
+dumpTopology(), isSingleSwitch(), getId(), getEndColumn()
+getProfileSidebarFillColor() , getNodeHttpAddress()
+tags(),
+getOtherInfo(),
+isForUpdateWithMedia() , clone(), getJobTrackerStatus()
+getKeys(), cleanup(org.apache.hadoop.mapreduce.Mapper.Context), getDefaultMaps(), context(), getVolumeIds()
+getProfileBackgroundImageUrlHttps() , serverErrorEncountered(), getFencer(), getAccessibleNodeLabels()
+getDomains(), run(org.apache.hadoop.mapreduce.Reducer.Context)
+isSourceFollowingTarget(), resume()
+getInReplyToStatusId() , clear(), getUriDefaultPort(), webResponse()
+getSizes(), getJar(), getPos(), getKeyFieldComparatorOption()
+getLogUrl(),
+isCorrupt(),
+getSlug(), getNumTasksToExecutePerJvm(), getCapacity(), getYarnClusterMetrics()
+isSourceBlockingTarget(), getServiceState()
+createTimelineClient(), toString()
+VersionAsync() , needsInput(), getRssMemorySize(), getOutputValueGroupingComparator(), getLocationInfo()
+next(),
+getHttpProxyUser() , resetState()
+set(byte[]),
+getSenderId() ,
+getApplicationOwner(),
+getGeoLocation(),
+getServiceStatus(), getJobSetupCleanupNeeded(), getRecordReaderQueue(), makeEscapedCompactString(), getMapDebugScript()
+getAMContainerId(), createValue()
+isDisplayCoordinates() , getSupportedCompressionAlgorithms()
+getModificationTime(), getTaskTrackerName(), isEncrypted(), getFileSystem()
+getLabelsToNodes(), getPath(), stop()
+getUseNewMapper(),
+toExtendedShort(), getQueueAclsInfo(), getStart()
+getQuotedStatus(),
+getUsedResources(), getIncreasedContainers()
+upload() ,
+metrics(),
+getReleaseList(), countCounters()
+getCurrentApplicationAttemptId(),
+serviceInit(org.apache.hadoop.conf.Configuration), isComplete()
+isSourceFollowedByTarget(),
+isSleepTimeEnabled(), isEnabled(), getVersion(), name()
+isBlacklisted(),
+getAclBit(), getAMCommand(), run(org.apache.hadoop.mapreduce.Reducer.Context)
+getFollowers(), Record()
+buffer(), getArchiveTimestamps(), webResponse()
+getUserAclsInfoList(),
+getSlug() ,
+FillBuff(), getChildFileSystems(), halfDigest()
+getNodeReports(), getInstance()
+newKey(), value()
+getTaskTrackerName(), isEncrypted(), getJobID()
+stopMonitoring(), instance(), getContainersFromPreviousAttempts()
+getSleepEndTime(), getTaskTrackerExpiryInterval()
+getFullName() , getRMDelegationToken(), getAvailableResources()
+getRecursive(), getUserAction(), getContainerLaunchContext()
+getWriters(),
+getOAuth2() ,
+getContainerList(), getFileContext()
+getNumTasksToExecutePerJvm(),
+getRetweetCount(),
+exceededRateLimitation(), getResourceName(), getEntityType(), getFormatMinSplitSize()
+getDeclaredClass(),
+getVirtualCores(), getJar()
+getApplicationName(), getOccupiedReduceSlots(), getTaskTrackerName(), getStagingAreaDir()
+getGroupingComparator(), isSymlink(), getResource()
+getAssignedNode(), Field(), getRelaxLocality()
+getHttpAddress(), getUpdatedNodes(), hashCode(), getLogAggregationContext()
+isSourceMutingTarget(), getNMTokenCache(), getAttemptId()
+getSinceId(), cleanupProgress(), getBytesRead()
+getIsUnregistered(), getStatus(), getCombinerClass()
+isGZIPEnabled() , getMapTasks(), getGroupingComparator(), getCombinerKeyGroupingComparator()
+getUserMentionEntities(), getMaxVirtualMemoryForTask(), getJobTrackerStatus(), getChildQueues()
+onCleanUp(), getAssignedNode(), Field(), needsInput(), getOutputKeyClass(), getNumReduceTasks()
+getValues(), submit(), getMaxReduceTaskFailuresPercent(), not()
+getProfileLinkColor() , getRemaining()
+getContainerReport(), depth(), getKeepTaskFilesPattern()
+getCumulativeRssmem(),
+getPlaceId() , getRMDelegationToken()
+getQueueInfo(),
+getTargetQueue(), isSuccessful()
+isReplies() , getContainerList(), getFileContext()
+getInputFormatClass(), Done()
+getPage() ,
+getLineNumberHashAsHex() , getNumContainers(), getEnvironment()
+getInstrumentation(), getContainerLogDir(), getQueueAclsForCurrentUser(), toShort()
+nextQuery(), getQueueAclsInfo(), reduceProgress(), getArchiveClassPaths()
+getPreemptionMessage(), cleanupProgress(), getWorkingDirectory()
+add(T), isTransient()
+generateVerifyCredentialsAuthorizationHeader() ,
+getSubscriberCount(), homePathForCurrentUser(), getStartContainerRequests(), getAllServicesMetaData(), getNodeId()
+getTagNames(), getOwner()
+createNMClient(), build()
+getMetricsRegistryInfo(), getFailureState(), getPeriod(), getSpeculativeExecution()
+getPaths(),
+getPassword(), jobsToComplete(), getDecompressorType(), getClusterHandle(), getNodeHttpAddress()
+getNodeState(),
+stopMetricsMBeans(),
+setDeprecatedProperties(), getKeyFieldComparatorOption(), isDirectory(), getApplicationName()
+getKeyTypeID(), getClassLoader()
+getLongitude(),
+jjFillToken(), isRetired(), getNeededResources(), getEvents(), getMemoryForMapTask()
+update(), getOutputFormat(), getApplicationType(), hashCode(), hsync()
+getParent(), getAliases()
+getActiveTrackerNames(), getEndLine()
+getURLEntity(),
+clearWriteAccessors(),
+directoryCreated(), getServerDefaults(), getEndColumn()
+getGroupAction(),
+getNodeToLabels(),
+getClientToAMTokenMasterKey(),
+getSleepStartTime(), jobsToComplete(), Include()
+getDefault(), Module()
+getArchiveTimestamps(), getTagNames(), getReservedResources(), getApplicationOwner(), getRelaxLocality(), getUsedMemory()
+getImageWidth() ,
+getStatusListeners() , getCompletedContainersStatuses(), setupProgress(), getNumReduceTasks()
+getFriends(), getClientToAMTokenMasterKey(), isCorrupt()
+getAllocatedResource(), clear(), getOutputFormat(), getTrackingUrl(), isTransient()
+getInfo() , getNumClusterNodes(), getClusterTimestamp()
+BeginToken(), getLocations()
+isContributorsEnabled(), getMaxVirtualMemoryForTask(), getQuota()
+getRetweetStream(), next(), getTaskAttemptID()
+getLocalCacheFiles(), getSpaceConsumed()
+execute(), getServiceState()
+getMiniProfileImageURLHttps() , getEndLine()
+getText() , getToken(), set(byte[]), getNodeToLabels(), getLocationInfo(), getFailedRequests()
+getResourceRequest(), isAbsolute()
+isPublic(), set(byte[]), getCurrentValue()
+getNodeStates(), deleteCheckpoint(), getPaths(), name(), getRemaining()
+getEventInfo(),
+getDecreasedContainers(), getPartitionerClass(), reduceProgress()
+getStartContainerRequests(),
+checkNotBuilt() , getBlacklistedTrackers(), getEndLine()
+getAccuracy() , getSystemDir()
+isCausedByNetworkIssue(), getQueueAclsInfo(), getStart()
+GetImage(), getDecommissionedTaskTrackerCount(), getContainerLaunchContext(), getEncryptedBit(), getConfiguration()
+monitorHealth(), name()
+resetMinMax(), createAHSClient()
+getCacheAge(), getMaxMemory(), getRootQueues()
+getYarnApplicationState(), getSpaceQuota(), getJobName(), getTrackingURL(), getMaxMapTaskFailuresPercent(), getOffset()
+getOffset(), getFinishTime()
+getRetryAfter(), getOtherAction()
+getYarnApplicationAttemptState(), monitorHealth(), getTrackingURL(), getDigester(), getMemoryForReduceTask(), getBlacklistedTrackerNames()
+reloadConfiguration(), incr(), getReservedMapSlots(), getMaximumResourceCapability()
+getAllRecords(), supportsSymlinks()
+getUserInfo(),
+getServices(), getReduceSpeculativeExecution()
+ensureAuthorizationEnabled() ,
+getRssMemorySize(), getSelectQuery(), clear(), getProgress()
+remove(),
+getReservationID(), getMaxMemory(), getPos(), getResource(), isRecoverySupported()
+getHttpReadTimeout() , getInputFormat(), isRecoverySupported()
+getHttpRetryIntervalSeconds() , getQueueInfo(), tags()
+Field(), getResourceName(), getOutputKeyClass(), needsInput(), supportsSymlinks()
+getKeepTaskFilesPattern(), getContainerReport(), isUber(), getReservationId(), isDirectory()
+getClusterNodeLabels(), depth(), getFieldTypeInfos(), getWorkingDirectory()
+getHosts(),
+getPhotoSizes() , getPeriod(), getWorkingDirectory(), getMetricsRegistryInfo()
+getGrayListedTaskTrackerCount(),
+getRunningTaskAttempts(),
+getPeriod(), getResourceBlacklistRequest()
+updateListeners() , stop()
+asHexString() ,
+cacheInstance() , get()
+getCompressMapOutput(), getReasonForBlacklist(), getJarUnpackPattern(), getIdentifier()
+getMapRunnerClass(), hflush(), getClassLoader(), getBytes()
+getSpaceConsumed(), getApplications(), getResponseId(), getReservationName()
+createApplication(),
+getRecordName(), getProgress()
+getUserAction(), getSchedulerResourceTypes(), getCpuUsagePercent(), getRecursive()
+nextPage() , getScheme(), getNumContainers()
+getLocale(), getDisplayName()
+getServiceData(), getRolledLogsIncludePattern(), getDefaultReduces()
+fileDeleted(), getUsedMemory(), setupProgress()
+getAMCommand(), getHealthReport(), getAclBit(), halfDigest()
+getVirtualMemorySize(), reloadCachedMappings(), getFailureInfo()
+getPercentFull() , getMaxMemory()
+ModuleName(), startMetricsMBeans(), getGrayListedTaskTrackerCount()
+getSender() ,
+createSymlink(), getSingleton(), getClusterNodeCount()
+endRecord(), getScope()
+getLineNumberHash() ,
+getDefaultReduces(), getReducerClass(), getServiceData()
+isFile(), getLifecycleHistory()
+getMiniProfileImageURL() , isTypeConsumedAvailable(), getLocations()
+getCommands(), getFileSystemInstanceId()
+getOtherAction(), getResourceName(), getBeginLine()
+ensureTokenIsAvailable() , getOriginalTrackingUrl()
+getFieldID(), createCompressor(), getNames()
+getSiteStreamsListeners() , getJobLocalDir()
+Version() , validate(), getCanonicalServiceName()
+getAskList(),
+getYarnClusterMetrics(), getConnection()
+getVolumeIds(), getConcurrency(), getKeys()
+getAttemptFailuresValidityInterval(),
+isJobComplete(),
+getFinalParameters(),
+getContainerStatuses(), isTransient()
+getBytesPerSum(), name()
+getUpdates(), isEnabled(), build(), createNMClient()
+getAccessToken() ,
+getBeginColumn(),
+getMetricsCopy(), getCumulativeCpuTime()
+isPossiblySensitive(), getBlockDownloadLatency(), getTotalJobSubmissions()
+getHealthReport(), createApplication(), getFormatMinSplitSize()
+quarterDigest(), getClusterHandle(), getTotalJobSubmissions()
+getAccessibleNodeLabels(), flush(), setRetired()
+getEnvironment(), getDescription(), getMapDebugScript(), getDigest()
+getInputFormat(), publishMetricsNow()
+getStatusesCount() , getSize(), stop()
+getGranularity() , emit(org.apache.hadoop.mapreduce.lib.join.TupleWritable), id(), build()
+getIncreasedContainers(), createTupleWritable()
+getMaxPhysicalMemoryForTask(), getMapOutputKeyClass()
+isTargetFollowedBySource(), id()
+getExpandedURL(),
+getTaskTrackerExpiryInterval(), getSelectQuery(), getStatistics()
+getLengths(), getConfiguration(), isCompleted()
+getTaskOutputFilter(),
+getTaskRunTime(), isRetired(), sync()
+getDescriptionURLEntities(), getUsed(), hashCode(), getContextName()
+getStatistics(), getMapperClass()
+isAlwaysUseHttps(), getAllocatedResource(), getLocationInfo(), getQueueName()
+halfDigest(), getAMCommand(), FillBuff()
+getNonUsernamePaths() ,
+getContainerLaunchContext(), getReservedReduceSlots(), createValue(), clearWriteAccessors(), getId(), getRecursive()
+resourceNotFound(), isFile()
+getQuota(), getExitStatus(), getCombinerKeyGroupingComparator(), attributes()
+getHttpConnectionTimeout() , getReaders(), getTaskTrackerName()
+getFileTimestamps(), getUsedMemory(), getApplicationAttemptId()
+getGeometryCoordinates() , getDiagnostics(), getClusterHandle()
+getNames(), getKeys(), cleanup(org.apache.hadoop.mapreduce.Mapper.Context), newMetricsSourceName(), getYarnClusterMetrics()
+getReduceDebugScript(), finished()
+getMapTasks(), getEnvironment()
+getReservationRequests(), getCpuUsagePercent()
+getListedCount(), serviceStart()
+addDefaults(), getReduceTasks(), getWorkingDirectory(), reloadConfiguration()
+getAttemptId(), hflush(), getContainerIds()
+getVideoAspectRatioHeight() , getQueueAclsForCurrentUser(), getCurrentWebResponses(), getInstrumentation()
+getCountQuery(), getGroup()
+getNumUsedContainers(), copyBytes(), getFailureCause()
+getCurrentMaximumUploadBandwidth(),
+getMediaURL(), getNeededResources()
+isDirectory(),
+getClientToAMToken(), getNumReduceTasks()
+getBlockLocations(), getFormatMinSplitSize(), getIncreasedContainers()
+getSuccessfullyStartedContainers(),
+expunge(),
+getApplicationReport(), createAHSClient(), getMessage()
+getLocalResources(), getDecommissionedTaskTrackerCount(), getMapDebugScript(), getGroupAction(), getCredentials()
+getBytesRead(), cleanupProgress(), getContainersFromPreviousAttempts()
+supplyBindingInformation(),
+getErrorCode(), getFs(), getReduceTasks(), hasNext()
+getGeocode(), getRecursive()
+getSuccessfulTaskAttempt(), getOriginalTrackingUrl()
+getDeadline(),
+getBoundingBoxType() , directoryCreated(), getAttemptId()
+getScopes(), getHost(), publishMetricsNow()
+isTruncated(), getLabelsToNodes(), isRecoverySupported()
+getFileContext(), getContainerList()
+getOutputFormatClass(), isMonitoring()
+RecordList(), getAllEvents(), reduceProgress(), next(), getContainers(), getNumReduceTasks()
+isFollowing() , getShouldBeUploadedToSharedCache()
+getTaskTrackerHttp(), clear(), getOutputFormatClass()
+getStartOffsets(), getBeginColumn(), getRelatedEntities(), getApplicationTypes()
+getBlacklistRemovals(), getResourceName(), getContainerLogDir()
+currentUser(), getPriority(), stopped()
+getTrendLocations(), getPos(), printStatistics(), getId()
+fileCreated(), isTypeQuotaSet()
+getOutputKeyComparator(), getAllJobs(), getTaskCleanupNeeded()
+getPattern(),
+getSampleStream(), getCreationTime(), getMemoryForReduceTask()
+getRecipientScreenName() , getOccupiedReduceSlots()
+getTaskAttemptID(), getAMContainerId()
+getMaximumCapacity(), getCounters()
+ConfigurationBase() ,
+getReasonForBlacklist(), isCompleted(), getYarnApplicationState()
+isRetweetedByMe(),
+getSecondsUntilReset(), getLogUrl()
+AbstractDNSToSwitchMapping(),
+getVisibility(), getStartContainerRequests(), getCurrentCapacity()
+Type(),
+getVideoAspectRatioWidth() , countCounters(), getFencer()
+getFileClassPaths(),
+getApplicationList(), getBytesWritten(), toArray()
+TwitterAPIMonitor(), isSingleSwitch()
+getMaxResults() , getKeepContainersAcrossApplicationAttempts(), isCorrupt()
+asPostParameterArray() , getJobSetupCleanupNeeded(), getReaders(), getJar(), getDisplayName()
+getPlaceName() , isRecoverySupported(), getCounters()
+getTweets() ,
+getProfileImageURLHttps() ,
+getUntil(), getLen()
+getAllServicesMetaData(), getPaths(), build(), getRemaining()
+getEntries(), getKeyClass(), getNumReduceTasks()
+getArrival(), getFileSystemInstanceId()
+getMapSpeculativeExecution(), getHost()
+getRelatedEntities(), getStartOffsets(), getApplicationTypes(), supportsSymlinks(), getHomeDirectory(), getKeepFailedTaskFiles()
+serverErrorEncountered(),
+getSecretKeySpec() , getKeys(), makeEscapedCompactString()
+getReplication(), needsInput()
+getControlURI() , getGroupingComparator(), getIncludeApplications()
+getWidth() ,

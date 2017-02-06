@@ -230,7 +230,7 @@ for i in xrange(vocabulary_size):
             _nearest_word_sim_tuple = find_near_words_sim(nearest_word, _large_sim_indices, _most_sim_values,
                                                           freq_rank_word_dict, 25)
             _filter_method_tuple = filter(
-                lambda tuple: (tuple[0] in all_method_words and tuple[0] != resource_name and tuple[1] >= 0.85),
+                lambda tuple: (tuple[0] in all_method_words and tuple[0] != resource_name and tuple[1] >= 0.70),
                 _nearest_word_sim_tuple)
             if _filter_method_tuple != []:
                 log_str_list.extend(map(lambda tuple: tuple[0], _filter_method_tuple))
@@ -238,6 +238,7 @@ for i in xrange(vocabulary_size):
         related_values = map(lambda x: x[1], nearest_word_sim_tuple)
         related_average_value = sum(related_values) / len(related_values)
         related_methods = ", ".join(set(log_str_list)) # setは順序が変わる恐れあり
-        print("%s, %s, %s" % (resource_name, related_average_value, related_methods))
+        # print("%s, %s, %s" % (resource_name, related_average_value, related_methods))
+        print("%s, %s" % (resource_name, related_methods))
 
 print(count)
